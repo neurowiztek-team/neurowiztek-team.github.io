@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* 목차 스타일 (모바일 친화적) */
+.toc {
+    display: flex;
+    flex-wrap: wrap;
+    background: #e9ecef;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* 동영상 컨테이너 (반응형 영상 삽입을 위해 중요) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.note {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #ffeeba;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #666;
+    background: #f4f4f9;
+}
+
+/* style.css 파일에 다음 코드 추가 또는 수정 */
+
+/* 모든 이미지에 적용하여 부모 요소 너비를 넘지 않도록 합니다. */
+img {
+    max-width: 100%; /* 부모 요소의 최대 너비를 100%로 제한 */
+    height: auto;    /* 이미지의 원래 비율을 유지하며 높이 자동 조정 */
+    display: block;  /* 이미지를 블록 요소로 만들어 독립적인 줄에 배치 */
+    margin: 10px auto; /* 상하 10px 여백, 좌우 auto로 중앙 정렬 (선택 사항) */
+    border-radius: 5px; /* 모서리 둥글게 처리 (선택 사항) */
+    /* 아래 두 줄은 이미지 로딩 성능 향상에 도움이 됩니다. */
+    object-fit: contain; /* 이미지가 컨테이너 안에 맞춰서 표시되도록 합니다. */
+    /* loading: lazy; */ /* 이미지가 화면에 보일 때만 로드되도록 합니다 (최신 브라우저 지원) */
+}
+
+/* 특히, HTML에서 img 태그에 class="full-width-img"를 사용하셨다면 아래도 추가 */
+.full-width-img {
+    /* 이미 <img> 태그에 설정된 것이 우선 적용되겠지만, 혹시 모를 상황에 대비 */
+    max-width: 100%;
+    height: auto;
+}
+
+/* 이미지 컨테이너가 있다면 그 안의 이미지에도 적용 */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}

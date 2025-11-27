@@ -1,8 +1,122 @@
 <!DOCTYPE html>
-    <head>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeasureWiz 사용설명서 - NEUROWIZTEK</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="MeasureWiz 웨어러블 생체신호 측정 및 분석 시스템 사용설명서. EEG, ECG, EOG, EMG 등 측정 방법 안내.">
+</head>
+<body>
 
-    </head>
-    <body>
-        <h1>Measurewiz 앱 설명서</h1>
-    </body>
+    <header>
+        <div class="logo">NEUROWIZTEK</div>
+        <h1>MeasureWiz 사용설명서</h1>
+        <p>웨어러블 생체신호 측정 및 분석 시스템</p>
+    </header>
+
+    <nav class="toc">
+        <a href="#overview">제품 개요</a>
+        <a href="#components">구성품</a>
+        <a href="#setup">측정 준비 (셋업)</a>
+        <a href="#app_use">애플리케이션 사용법</a>
+        <a href="#charging">충전 안내</a>
+        <a href="#bio_example">생체신호 측정 예시</a>
+    </nav>
+
+    <main>
+        
+        <section id="overview">
+            <h2>1. 제품 개요</h2>
+            <ul>
+                [cite_start]<li>EEG/ECG/EOG/EMG 등 다양한 생체 신호 측정 가능 [cite: 41]</li>
+                [cite_start]<li>웨어러블 타입 [cite: 41]</li>
+                [cite_start]<li>블루투스 5.0 무선 통신으로 앱 연동 [cite: 42]</li>
+                [cite_start]<li>USB 충전식 [cite: 43]</li>
+            </ul>
+        </section>
+
+        <section id="components">
+            <h2>2. 구성품</h2>
+            <p>제품 상자를 열어 아래 구성품이 모두 들어있는지 확인해주세요.</p>
+            <ul>
+                [cite_start]<li>측정기 (Measure Wiz) [cite: 50, 53]</li>
+                [cite_start]<li>스냅형 전극 케이블 x 3개 [cite: 56]</li>
+            <div class="image-container">
+                <img src="../images/SnapCable.png" alt="스냅형 전극 케이블" class="full-width-img">
+                <p class="caption">생체신호 측정 예시 (EEG)</p>
+            </div>
+                [cite_start]<li>일회용 전극 패드 x 30개 [cite: 57]</li>
+                [cite_start]<li>사용설명서 (QR 코드 대체) [cite: 54]</li>
+            </ul>
+            <div class="image-placeholder"></div>
+        </section>
+
+        <section id="setup">
+            <h2>3. 측정 준비 (셋업)</h2>
+            <ol>
+                [cite_start]<li>각각의 케이블을 측정기의 **'SIG', 'GND', 'REF'** 극에 연결합니다. [cite: 59]</li>
+                [cite_start]<li>스냅형 전극 케이블과 일회용 전극 패드를 연결합니다. [cite: 60]</li>
+                [cite_start]<li>전극 패드를 알맞은 측정 부위 피부에 부착합니다. [cite: 61]</li>
+                <li>측정기의 전원을 켜줍니다. (블루투스 연결을 위한 초록색 LED가 켜집니다.) [cite_start][cite: 62, 63]</li>
+            </ol>
+            
+            <h3>🛠️ 전극 연결 팁 (측정 부위별)</h3>
+            <p>전극 부착 위치는 측정 부위에 따라 아래와 같이 다릅니다.</p>
+            <ul>
+                [cite_start]<li>**뇌전도(EEG):** ①SIG, ②GND, ③REF [cite: 2, 3, 4, 5]</li>
+                [cite_start]<li>**심전도(ECG):** ①SIG, ②GND, ③REF [cite: 6, 7, 8, 9]</li>
+                [cite_start]<li>**안전도(EOG):** ①SIG, ②GND, ③REF [cite: 10, 11, 12, 13]</li>
+                [cite_start]<li>**근전도(EMG):** ①SIG, ②GND, ③REF [cite: 14, 15, 16]</li>
+            </ul>
+            <div class="image-placeholder"></div>
+        </section>
+
+        <section id="app_use">
+            <h2>4. 애플리케이션 사용법</h2>
+            [cite_start]<p>스마트폰의 'MeasureWiz' 앱과 블루투스 연결을 진행해주세요. [cite: 64]</p>
+
+            <h3>4-1. 블루투스 연결</h3>
+            <ol>
+                [cite_start]<li>**블루투스 등록:** 스마트폰의 블루투스 설정에서 'Measure Wiz'을 등록합니다. [cite: 69]</li>
+                [cite_start]<li>**블루투스 연결:** MeasureWiz 앱을 실행하여, 블루투스 연결 버튼을 누릅니다. [cite: 71]</li>
+            </ol>
+            <div class="image-placeholder"></div>
+
+            <h3>4-2. 신호 측정 및 녹화</h3>
+            <ol>
+                [cite_start]<li>**생체 신호 선택:** App에서 뇌전도(EEG), 심전도(ECG), 안전도(EOG), 근전도(EMG) 중 하나를 선택합니다. [cite: 74]</li>
+                [cite_start]<li>**녹화 시작:** '녹화 시작' 버튼을 누르면 '녹화 중' 문구가 나옵니다. [cite: 76]</li>
+                [cite_start]<li>**저장 단위:** 녹화는 30초 단위로 자동 저장됩니다. [cite: 77]</li>
+            </ol>
+            
+            <h3>4-3. 신호 분석 결과 확인</h3>
+            [cite_start]<p>'기록'을 누르면 저장 위치 폴더(경로: Download > Measure)에서 데이터 자료(.csv 파일)를 불러와 기록된 자료 확인이 가능합니다. [cite: 79]</p>
+            [cite_start]<p>측정 신호, 스펙트로그램, 파워 스펙트럼 결과를 확인할 수 있습니다. [cite: 79]</p>
+        </section>
+
+        <section id="charging">
+            <h2>5. 충전 안내</h2>
+            [cite_start]<p>측정기 우측 부분의 **USB-C 타입 포트**에 충전 케이블을 연결하여 충전합니다. [cite: 101]</p>
+            [cite_start]<p class="note">⚠️ 케이블 정상 연결 시, 초록색 LED 불이 들어옵니다. [cite: 101]</p>
+        </section>
+        
+        <section id="bio_example">
+            <h2>6. 생체신호 측정 예시 영상 (튜토리얼)</h2>
+            <p>보다 쉽고 정확한 측정을 위해 아래 튜토리얼 영상을 참고해주세요.</p>
+            
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://youtu.be/kUrsGQ9KpC8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p class="note">측정기 사용 전, 전극 패드 부착 방법 영상 시청을 권장합니다.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; NEURO WIZ TEK. [cite_start]문의: www.neurowiztek.com [cite: 47]</p>
+    </footer>
+
+</body>
 </html>
