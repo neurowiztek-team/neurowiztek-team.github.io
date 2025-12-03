@@ -29,6 +29,7 @@
         
         <section id="overview">
             <h2>1. 제품 개요</h2>
+                <img src="images/뉴로위즈텍_MeasureWiz 설명서-최종(20240103)-01.jpg" class="full-width-img">
             <ul>
                 <li>EEG/ECG/EOG/EMG 등 다양한 생체 신호 측정 가능</li>
                 <li>웨어러블 타입</li>
@@ -37,44 +38,109 @@
             </ul>
         </section>
 
-        <section id="components">
-            <h2>2. 구성품</h2>
-            <p>제품 상자를 열어 아래 구성품이 모두 들어있는지 확인해주세요.</p>
-            <ul>
-                <li>측정기 (Measure Wiz)</li>
-                <li>스냅형 전극 케이블 x 3개</li>
-                <li>일회용 전극 패드 x 30개</li>
-                <li>사용설명서 (QR 코드 대체)</li>
-            </ul>
+    <section id="components">
+    <h2>2. 구성품</h2>
+    <p>제품 상자를 열어 아래 구성품이 모두 들어있는지 확인해주세요.</p>
 
-            <div class="image-container">
-                <img src="images/SnapCable.png" alt="스냅형 전극 케이블" class="full-width-img">
-                <p class="caption">스냅형 전극 케이블</p>
-                <img src="images/3M 2223H.png" alt="일회용 전극 패드" class="full-width-img">
-                <p class="caption">일회용 전극 패드</p>
-            </div>
+    <div class="component-container">
+        
+        <div class="component-item">
+            <img src="images/Measurewiz 사용설명서 측정기.png" alt="측정기">
+            <p>측정기</p>
+        </div>
 
-            <div class="image-placeholder"></div>
-        </section>
+        <div class="component-item">
+            <img src="images/Measurewiz 사용설명서 어플리케이션.png" alt="어플리케이션">
+            <p>어플리케이션</p>
+        </div>
 
+        <div class="component-item">
+            <img src="images/Measurewiz 사용설명서 스냅형 전극 케이블.png" alt="스냅형 전극 케이블">
+            <p>스냅형 전극 케이블 x 3개</p>
+        </div>
+
+        <div class="component-item">
+            <img src="images/Measurewiz 사용설명서 일회용 전극패드.png" alt="일회용 전극 패드">
+            <p>일회용 전극 패드 x 30개</p>
+        </div>
+
+    </div>
+    </section>
         <section id="setup">
             <h2>3. 측정 준비 (셋업)</h2>
-            <ol>
-                <li>각각의 케이블을 측정기의 **'SIG', 'GND', 'REF'** 극에 연결합니다.</li>
+            <ol class="step-list">
+                <li>각각의 케이블을 측정기의 'SIG', 'GND', 'REF' 극에 연결합니다.</li>
                 <li>스냅형 전극 케이블과 일회용 전극 패드를 연결합니다.</li>
                 <li>전극 패드를 알맞은 측정 부위 피부에 부착합니다.</li>
                 <li>측정기의 전원을 켜줍니다. (블루투스 연결을 위한 초록색 LED가 켜집니다.)</li>
+                <li>스마트폰의 ‘MeasureWiz’ 앱과 블루투스 연결을 합니다.</li>
+                <li>EEG, ECG, EOG, EMG 중 하나를 선택하여 신호를 측정합니다.</li>
             </ol>
             
-            <h3>🛠️ 전극 연결 팁 (측정 부위별)</h3>
-            <p>전극 부착 위치는 측정 부위에 따라 아래와 같이 다릅니다.</p>
-            <ul>
-                <li>**뇌전도(EEG):** ①SIG, ②GND, ③REF</li>
-                <li>**심전도(ECG):** ①SIG, ②GND, ③REF</li>
-                <li>**안전도(EOG):** ①SIG, ②GND, ③REF</li>
-                <li>**근전도(EMG):** ①SIG, ②GND, ③REF</li>
-            </ul>
-            <div class="image-placeholder"></div>
+            <section id="setup-guide">
+    <h3>🛠️ 전극 연결 팁 (측정 부위별)</h3>
+    <p>전극 부착 위치는 측정 부위에 따라 아래와 같이 다릅니다.</p>
+
+    <div class="guide-container">
+
+        <div class="guide-card">
+            <h4 class="guide-title">뇌전도 (EEG)</h4>
+            <div class="guide-content">
+                <ul class="guide-text">
+                    <li><span class="num">1</span> <strong>SIG</strong> : 이마 왼편</li>
+                    <li><span class="num">2</span> <strong>REF</strong> : 귀 뒤 뼈</li>
+                    <li><span class="num">3</span> <strong>GND</strong> : 이마 중앙</li>
+                </ul>
+                <div class="guide-image">
+                    <img src="images/Measurewiz 사용설명서 EEG 측정 예시.png" alt="EEG 측정 예시">
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-card">
+            <h4 class="guide-title">심전도 (ECG)</h4>
+            <div class="guide-content">
+                <ul class="guide-text">
+                    <li><span class="num">1</span> <strong>SIG</strong> : 왼 발목</li>
+                    <li><span class="num">2</span> <strong>REF</strong> : 오른 손목</li>
+                    <li><span class="num">3</span> <strong>GND</strong> : 왼 손목</li>
+                </ul>
+                <div class="guide-image">
+                    <img src="images/Measurewiz 사용설명서 ECG 측정 예시.png" alt="ECG 측정 예시">
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-card">
+            <h4 class="guide-title">안전도 (EOG)</h4>
+            <div class="guide-content">
+                <ul class="guide-text">
+                    <li><span class="num">1</span> <strong>SIG</strong> : 왼 눈썹 위</li>
+                    <li><span class="num">2</span> <strong>REF</strong> : 왼 이마 위</li>
+                    <li><span class="num">3</span> <strong>GND</strong> : 이마 중앙</li>
+                </ul>
+                <div class="guide-image">
+                    <img src="images/Measurewiz 사용설명서 EOG 측정 예시.png" alt="EOG 측정 예시">
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-card">
+            <h4 class="guide-title">근전도 (EMG)</h4>
+            <div class="guide-content">
+                <ul class="guide-text">
+                    <li><span class="num">1</span> <strong>SIG</strong> : 상박(이두)</li>
+                    <li><span class="num">2</span> <strong>REF</strong> : 하박 위</li>
+                    <li><span class="num">3</span> <strong>GND</strong> : 하박 아래</li>
+                </ul>
+                <div class="guide-image">
+                    <img src="images/Measurewiz 사용설명서 EMG 측정 예시.png" alt="EMG 측정 예시">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
         </section>
 
         <section id="app_use">
@@ -83,21 +149,64 @@
 
             <h3>4-1. 블루투스 연결</h3>
             <ol>
-                <li>**블루투스 등록:** 스마트폰의 블루투스 설정에서 'Measure Wiz'을 등록합니다.</li>
-                <li>**블루투스 연결:** MeasureWiz 앱을 실행하여, 블루투스 연결 버튼을 누릅니다.</li>
+                <li>블루투스 등록: 스마트폰의 블루투스 설정에서 'MeasureWiz'을 등록합니다.</li>
+                <li>블루투스 연결: MeasureWiz 앱을 실행하여, 블루투스 연결 버튼을 누릅니다.</li>
             </ol>
-            <div class="image-placeholder"></div>
 
             <h3>4-2. 신호 측정 및 녹화</h3>
             <ol>
-                <li>**생체 신호 선택:** App에서 뇌전도(EEG), 심전도(ECG), 안전도(EOG), 근전도(EMG) 중 하나를 선택합니다.</li>
-                <li>**녹화 시작:** '녹화 시작' 버튼을 누르면 '녹화 중' 문구가 나옵니다.</li>
-                <li>**저장 단위:** 녹화는 30초 단위로 자동 저장됩니다.</li>
+                <li>생체 신호 선택: App에서 뇌전도(EEG), 심전도(ECG), 안전도(EOG), 근전도(EMG) 중 하나를 선택합니다.</li>
+                <li>녹화 시작: '녹화 시작' 버튼을 누르면 '녹화 중' 문구가 나옵니다.</li>
+                <li>저장 단위: 녹화는 30초 단위로 자동 저장됩니다.</li>
             </ol>
             
             <h3>4-3. 신호 분석 결과 확인</h3>
             <p>'기록'을 누르면 저장 위치 폴더(경로: Download > Measure)에서 데이터 자료(.csv 파일)를 불러와 기록된 자료 확인이 가능합니다.</p>
             <p>측정 신호, 스펙트로그램, 파워 스펙트럼 결과를 확인할 수 있습니다.</p>
+
+                   <div class="app-guide-container">
+    
+    <div class="app-guide-item">
+        <div class="img-box">
+            <img src="images/Measurewiz 사용설명서 블루투스 등록.png" alt="블루투스 등록 화면">
+        </div>
+        <p>1. 블루투스 등록</p>
+    </div>
+
+    <div class="app-guide-item">
+        <div class="img-box">
+            <img src="images/Measurewiz 사용설명서 블루투스 연결.png" alt="블루투스 연결 화면">
+        </div>
+        <p>2. 블루투스 연결</p>
+    </div>
+
+    <div class="app-guide-item">
+        <div class="img-box">
+            <img src="images/Measurewiz 사용설명서 생체신호 선택.png" alt="생체 신호 선택 화면">
+        </div>
+        <p>3. 생체신호 선택</p>
+    </div>
+
+    <div class="app-guide-item">
+        <div class="img-box">
+            <img src="images/Measurewiz 사용설명서 녹화.png" alt="녹화 화면">
+        </div>
+        <p>4. 녹화</p>
+    </div>
+
+    <div class="app-guide-item">
+        <div class="img-box">
+            <img src="images/Measurewiz 사용설명서 실시간 측정 및 녹화.png" alt="실시간 측정 화면">
+        </div>
+        <p>5. 실시간 측정 및 녹화</p>
+    </div>
+
+    <div class="app-guide-item">
+        <div class="img-box">
+            <img src="images/Measurewiz 사용설명서 생체신호 기록 결과.png" alt="기록 결과 화면">
+        </div>
+        <p>6. 생체신호 기록 결과</p>
+    </div>
         </section>
 
         <section id="charging">
@@ -115,8 +224,12 @@
             </div>
             
             <p class="note">측정기 사용 전, 전극 패드 부착 방법 영상 시청을 권장합니다.</p>
-        </section>
 
+            
+        </section>
+ 
+
+</div>
     </main>
 
     <footer>
