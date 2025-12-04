@@ -9,66 +9,79 @@
        1. 앱 사용법 섹션 (가로 스크롤 슬라이더)
        ---------------------------------------------------- */
     .app-guide-container {
-        display: flex !important;       /* 가로 배치 강제 */
-        flex-wrap: nowrap !important;   /* 줄바꿈 금지 */
-        overflow-x: scroll !important;  /* 스크롤 강제 허용 (auto 대신 scroll 사용) */
-        width: 100%;                    /* 컨테이너 너비 확보 */
+        /* [레이아웃] 가로 배치 및 줄바꿈 금지 */
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: 100% !important;
         
-        gap: 15px;                      /* 카드 사이 간격 */
-        padding-bottom: 15px;           /* 하단 여백 (스크롤바 공간) */
+        /* [스크롤] 가로 스크롤 허용 */
+        overflow-x: auto !important;
         
-        -webkit-overflow-scrolling: touch; /* 부드러운 스크롤 */
-        scroll-snap-type: x mandatory;     /* 스크롤 스냅 */
+        /* [간격 및 여백] */
+        gap: 15px;
+        padding-bottom: 20px !important; /* 스크롤바가 들어갈 공간 확보 */
+        
+        /* [스크롤 동작] */
+        scroll-snap-type: x mandatory;     
+        -webkit-overflow-scrolling: touch; 
+        
+        /* [⭐️ 핵심: 최신 브라우저 스크롤바 색상 강제 지정] */
+        scrollbar-width: thin;             /* 스크롤바 굵기: 얇게 */
+        scrollbar-color: #888 #f1f1f1;     /* 색상: 막대(진한회색) 트랙(연한회색) */
     }
 
-    /* 슬라이드 개별 아이템 */
+    /* ----------------------------------------------------
+       2. 스크롤바 디자인 (아이폰/구형 안드로이드 대응)
+       ---------------------------------------------------- */
+    .app-guide-container::-webkit-scrollbar {
+        height: 8px !important;            /* 스크롤바 높이 설정 */
+        display: block !important;         /* 강제 표시 */
+        -webkit-appearance: none;          /* 기본 모양 제거 */
+    }
+
+    .app-guide-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;         /* 트랙 배경색 */
+        border-radius: 4px;
+        margin: 0 10px;
+    }
+
+    .app-guide-container::-webkit-scrollbar-thumb {
+        background-color: #888;            /* 막대 색상 (눈에 띄게 진하게 설정) */
+        border-radius: 4px;
+    }
+
+    /* ----------------------------------------------------
+       3. 슬라이드 아이템 & 글자 크기 자동 조절
+       ---------------------------------------------------- */
     .app-guide-item {
-        /* flex: 0 0 auto; -> 너비 고정을 위해 아래처럼 변경 */
-        flex: 0 0 85% !important;       /* 화면의 85% 크기로 고정 */
-        width: 85% !important;          /* 확실하게 너비 지정 */
+        /* 카드 크기 고정: 화면의 85% */
+        flex: 0 0 85% !important; 
+        width: 85% !important;
         max-width: 85% !important;
-        
-        scroll-snap-align: center;      /* 스크롤 시 가운데 정렬 */
+        scroll-snap-align: center;
     }
 
-    /* [글자 자동 축소 및 한 줄 표시 설정] */
     .app-guide-item p {
-        display: block;                 /* 블록 요소로 변경 */
-        width: 100%;                    /* 부모 너비에 맞춤 */
-        margin-top: 5px;                /* 위쪽 여백 */
+        /* [필수] 텍스트가 이미지를 넘어가지 않도록 설정 */
+        width: 100% !important;
+        display: block !important;
+        margin-top: 8px;
+
+        /* [⭐️ 핵심] 글자 크기 자동 조절 */
+        /* 화면 너비의 4.5% 크기로 설정하되, 최소 12px ~ 최대 16px 사이 유지 */
+        font-size: clamp(12px, 4.5vw, 16px) !important; 
         
-        /* 한 줄 말줄임표(...) 필수 3속성 */
+        /* [한 줄 표시 및 말줄임표] */
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         
-        /* 화면 크기에 맞춰 글자 크기 자동 조절 (최소 12px ~ 최대 16px) */
-        font-size: clamp(12px, 4vw, 16px) !important;
+        color: #333;
+        font-weight: bold;
     }
 
     /* ----------------------------------------------------
-       2. 스크롤바 디자인 (강제 표시)
-       ---------------------------------------------------- */
-    .app-guide-container::-webkit-scrollbar {
-        height: 8px !important;            /* 스크롤바 높이 */
-        display: block !important;         /* 무조건 보이게 */
-        -webkit-appearance: none;          /* 브라우저 기본 스타일 제거 */
-    }
-
-    .app-guide-container::-webkit-scrollbar-track {
-        background: #f0f0f0;               /* 트랙 배경색 (회색) */
-        border-radius: 4px;
-        margin: 0 10px;                    /* 양옆 여백 */
-    }
-
-    .app-guide-container::-webkit-scrollbar-thumb {
-        background-color: #a0a0a0;         /* 스크롤바 색상 (진한 회색) */
-        border-radius: 4px;
-        border: 2px solid #f0f0f0;         /* 트랙과 구분되는 테두리 */
-    }
-
-    /* ----------------------------------------------------
-       3. 구성품 및 기타 레이아웃
+       4. 기타 구성품 섹션
        ---------------------------------------------------- */
     .component-container {
         gap: 10px;
@@ -76,7 +89,12 @@
     .component-item {
         padding: 10px;
     }
-    /* 전극 부착 팁 1열 배치 */
+    .component-item p {
+        /* 구성품 텍스트도 동일하게 자동 조절 */
+        font-size: clamp(11px, 4vw, 14px) !important;
+        white-space: nowrap !important;
+    }
+    
     .guide-container {
         grid-template-columns: 1fr !important;
     }
