@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* ========================================================
+   모바일 및 태블릿 화면 대응 (768px 이하)
+   ======================================================== */
+@media (max-width: 768px) {
+
+    /* ----------------------------------------------------
+       1. 구성품 섹션 (2x2 배치)
+       ---------------------------------------------------- */
+    .component-container {
+        gap: 10px;
+    }
+    
+    .component-item {
+        padding: 10px;
+    }
+
+    /* [글자 자동 축소 및 한 줄 표시 설정] */
+    .component-item p {
+        white-space: nowrap;              /* 무조건 한 줄로 표시 */
+        /* clamp(최소크기, 권장크기, 최대크기) -> 화면 폭에 따라 글자가 변함 */
+        font-size: clamp(11px, 3.5vw, 14px); 
+        overflow: hidden;                 /* 넘치는 부분 숨김 (안전장치) */
+        text-overflow: ellipsis;          /* 공간이 너무 부족하면 ... 표시 */
+    }
+
+
+    /* ----------------------------------------------------
+       2. 앱 사용법 섹션 (가로 스크롤 슬라이더)
+       ---------------------------------------------------- */
+    .app-guide-container {
+        display: flex !important;       /* 가로 배치 강제 */
+        flex-wrap: nowrap !important;   /* 줄바꿈 금지 강제 */
+        overflow-x: auto;               /* 가로 스크롤 허용 */
+        
+        gap: 15px;                      /* 카드 사이 간격 */
+        padding-bottom: 20px;           /* 하단 여백 */
+        
+        -webkit-overflow-scrolling: touch; /* 부드러운 스크롤 */
+        scroll-snap-type: x mandatory;     /* 스크롤 스냅 */
+    }
+
+    /* 슬라이드 개별 아이템 */
+    .app-guide-item {
+        flex: 0 0 85% !important;       /* 화면의 85% 차지 */
+        max-width: 85%;                 /* 너비 제한 */
+        scroll-snap-align: center;      /* 가운데 정렬 */
+    }
+
+    /* [글자 자동 축소 및 한 줄 표시 설정] */
+    .app-guide-item p {
+        white-space: nowrap;            /* 무조건 한 줄로 표시 */
+        /* 화면이 좁아지면 글자가 11px까지 작아짐 */
+        font-size: clamp(11px, 4vw, 1rem); 
+        width: 100%;                    /* 너비 꽉 채우기 */
+        display: block;                 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 스크롤바 숨기기 */
+    .app-guide-container::-webkit-scrollbar {
+        /* [수정] 스크롤바 스타일링 (숨김 해제 및 디자인 적용) */
+        .app-guide-container::-webkit-scrollbar {
+            height: 8px;               /* 스크롤바의 두께 (높이) */
+            display: block !important; /* 강제로 보이게 설정 */
+        }
+
+        .app-guide-container::-webkit-scrollbar-track {
+            background: #f1f1f1;       /* 스크롤바 배경색 (연한 회색) */
+            border-radius: 4px;        /* 둥근 모서리 */
+            margin: 0 10px;            /* 양쪽 끝 여백 */
+        }
+
+        .app-guide-container::-webkit-scrollbar-thumb {
+            background: #c1c1c1;       /* 스크롤바 손잡이 색 (진한 회색) */
+            border-radius: 4px;        /* 둥근 모서리 */
+        }
+
+        .app-guide-container::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;       /* 터치 시 색상 */
+        }
+    }
+
+
+    /* ----------------------------------------------------
+       3. 전극 부착 팁 (1열 배치)
+       ---------------------------------------------------- */
+    .guide-container {
+        grid-template-columns: 1fr; /* 한 줄에 하나씩 */
+    }
+
+}
+
+/* ⚠️ 중요: 
+   이전에 아래쪽에 있던 .app-guide-container 관련 grid 설정(repeat 2, 1fr 등)은 
+   위의 '가로 스크롤' 기능과 충돌하여 삭제했습니다. 
+   모바일에서는 스크롤 방식으로만 작동합니다.
+*/
