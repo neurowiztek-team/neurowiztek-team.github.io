@@ -292,12 +292,12 @@ ol.step-list li::before {
     line-height: 1.8;
 }
 
-/* 번호 동그라미 스타일 (①, ② 효과) */
+/* 1. 기본 번호 동그라미 스타일 (모양 유지) */
 .guide-text .num {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-color: #ff9800; /* 주황색 포인트 */
+    background-color: #ddd; /* 기본 회색 (혹시 클래스 빠졌을 때 대비) */
     color: white;
     border-radius: 50%;
     text-align: center;
@@ -305,6 +305,23 @@ ol.step-list li::before {
     font-size: 0.8rem;
     font-weight: bold;
     margin-right: 6px;
+}
+
+/* 2. 신호별 색상 커스텀 (여기가 핵심!) */
+
+/* SIG (신호) : 빨간색 (눈에 띄는 색) */
+.guide-text .num.sig {
+    background-color: #00FF00; 
+}
+
+/* REF (기준) : 파란색 (차분한 색) */
+.guide-text .num.ref {
+    background-color: #0000FF;
+}
+
+/* GND (접지) : 초록색 (안전/접지 표준 색) */
+.guide-text .num.gnd {
+    background-color: #FF7F00;
 }
 
 /* 이미지 영역 스타일 */
