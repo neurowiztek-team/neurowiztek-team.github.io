@@ -8,6 +8,11 @@
     /* ----------------------------------------------------
        1. [헤더] 제목 글자 크기 자동 조절
        ---------------------------------------------------- */
+
+    header {
+        position: relative;
+        padding-bottom: 40px; /* 뱃지가 들어갈 공간 확보 */
+    }
     header h1 {
         /* 화면 폭의 5% 크기 (최소 16px ~ 최대 24px) */
         font-size: clamp(16px, 5vw, 24px) !important;
@@ -22,9 +27,15 @@
     
     /* 버전 뱃지도 제목에 맞춰 작아짐 */
     .version-badge {
-        font-size: 0.6em !important;
-        padding: 2px 5px !important;
-        margin-left: 4px !important;
+        position: absolute !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        
+        font-size: 11px !important;
+        padding: 2px 8px !important;
+        background-color: rgba(255, 255, 255, 0.3) !important; /* 모바일에서 더 잘 보이게 */
+        color: white !important;
+        border: none !important;
     }
 
 
