@@ -221,21 +221,31 @@ img {
         padding: 10px;
     }
 
-    /* [새로 추가한 코드] 앱 사용법(6단계) 가로 스크롤 슬라이드 */
+/* [수정됨] 앱 사용법 가로 스크롤 슬라이더 강제 적용 */
     .app-guide-container {
-        display: flex;                  /* 그리드 해제 후 가로 배치(Flex) */
+        display: flex !important;       /* 강제로 Flex 적용 */
+        flex-wrap: nowrap !important;   /* 절대로 줄바꿈 하지 않음 (핵심) */
         overflow-x: auto;               /* 가로 스크롤 허용 */
-        scroll-snap-type: x mandatory;  /* 스크롤 시 딱딱 멈추는 효과(Snap) */
+        
         gap: 15px;                      /* 카드 사이 간격 */
-        padding-bottom: 10px;           /* 하단 여백 (스크롤바 공간) */
-        -webkit-overflow-scrolling: touch; /* 부드러운 터치 스크롤 */
+        padding-bottom: 20px;           /* 하단 스크롤 영역 확보 */
+        
+        /* 부드러운 스크롤 (아이폰 등) */
+        -webkit-overflow-scrolling: touch; 
+        
+        /* 스크롤 스냅 (넘기면 딱 멈추는 효과) */
+        scroll-snap-type: x mandatory; 
     }
 
+    /* 슬라이드 개별 아이템 */
     .app-guide-item {
-        flex: 0 0 80%;                  /* 카드 너비를 화면의 80%로 설정 (옆 카드가 살짝 보임) */
-        scroll-snap-align: center;      /* 스크롤 멈출 때 가운데 정렬 */
+        /* 너비 고정: 화면의 85% 차지 (줄어들지 않도록 설정) */
+        flex: 0 0 85% !important;  
+        max-width: 85%;                 /* 너비 제한 */
+        
+        scroll-snap-align: center;      /* 가운데 정렬 */
     }
-
+    
     /* 스크롤바 숨기기 (깔끔하게 보이려면 추가) */
     .app-guide-container::-webkit-scrollbar {
         display: none;
@@ -403,32 +413,18 @@ ol.step-list li::before {
     }
 }
 
-/* 버전 뱃지 스타일 */
+/* 버전 뱃지 스타일 (PC/모바일 공통) */
 .version-badge {
-    display: inline-block;          /* 글자와 나란히 배치 */
-    font-size: 0.4em;               /* 제목 크기의 40% 정도로 작게 */
+    display: inline-block;          /* 제목 옆에 나란히 배치 */
+    font-size: 0.5em;               /* 제목 크기의 절반 정도 */
     font-weight: normal;            /* 굵기 빼기 */
     background-color: #e7f1ff;      /* 배경색: 아주 연한 파랑 */
-    color: #0056b3;                 /* 글자색: 진한 파랑 (브랜드 컬러) */
-    padding: 4px 10px;              /* 안쪽 여백 */
+    color: #0056b3;                 /* 글자색: 진한 파랑 */
+    padding: 3px 8px;               /* 안쪽 여백 */
     border-radius: 20px;            /* 둥근 캡슐 모양 */
-    border: 1px solid #b3d7ff;      /* 테두리 살짝 */
-    vertical-align: middle;         /* 제목 텍스트와 높이 맞춤 */
-    margin-left: 10px;              /* 제목과 뱃지 사이 간격 */
-    transform: translateY(-3px);    /* 시각적으로 살짝 위로 올림 */
-}
-
-/* 모바일 화면에서는 뱃지가 제목 아래로 내려오게 (선택사항) */
-@media (max-width: 600px) {
-    header h1 {
-        display: flex;              /* 플렉스 박스로 변경 */
-        flex-direction: column;     /* 세로로 정렬 */
-        align-items: center;        /* 가운데 정렬 */
-        gap: 8px;                   /* 제목과 뱃지 사이 간격 */
-    }
-    
-    .version-badge {
-        margin-left: 0;             /* 왼쪽 여백 제거 */
-        transform: none;            /* 위치 조정 해제 */
-    }
+    border: 1px solid #b3d7ff;      /* 테두리 */
+    vertical-align: middle;         /* 높이 정렬 */
+    margin-left: 8px;               /* 제목과 뱃지 사이 간격 */
+    transform: translateY(-4px);    /* 시각적 높이 보정 */
+    white-space: nowrap;            /* 뱃지 내부 글자가 줄바꿈되지 않도록 고정 */
 }
