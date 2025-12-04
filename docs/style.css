@@ -210,13 +210,35 @@ img {
     word-break: keep-all;               
 }
 
-/* 모바일 화면 대응 (화면이 아주 좁을 때) */
-@media (max-width: 400px) {
+/* 모바일 화면 대응 (기존 400px -> 768px로 변경하여 대부분의 폰/태블릿 적용) */
+@media (max-width: 768px) {
+    
+    /* [기존 코드 1] 구성품(2x2) 간격 조정 */
     .component-container {
-        gap: 10px;                      /* 모바일에서는 간격을 좁힘 */
+        gap: 10px;
     }
     .component-item {
-        padding: 10px;                  /* 모바일에서는 내부 여백 줄임 */
+        padding: 10px;
+    }
+
+    /* [새로 추가한 코드] 앱 사용법(6단계) 가로 스크롤 슬라이드 */
+    .app-guide-container {
+        display: flex;                  /* 그리드 해제 후 가로 배치(Flex) */
+        overflow-x: auto;               /* 가로 스크롤 허용 */
+        scroll-snap-type: x mandatory;  /* 스크롤 시 딱딱 멈추는 효과(Snap) */
+        gap: 15px;                      /* 카드 사이 간격 */
+        padding-bottom: 10px;           /* 하단 여백 (스크롤바 공간) */
+        -webkit-overflow-scrolling: touch; /* 부드러운 터치 스크롤 */
+    }
+
+    .app-guide-item {
+        flex: 0 0 80%;                  /* 카드 너비를 화면의 80%로 설정 (옆 카드가 살짝 보임) */
+        scroll-snap-align: center;      /* 스크롤 멈출 때 가운데 정렬 */
+    }
+
+    /* 스크롤바 숨기기 (깔끔하게 보이려면 추가) */
+    .app-guide-container::-webkit-scrollbar {
+        display: none;
     }
 }
 
