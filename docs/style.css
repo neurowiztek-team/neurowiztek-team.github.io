@@ -210,48 +210,6 @@ img {
     word-break: keep-all;               
 }
 
-/* 모바일 화면 대응 (기존 400px -> 768px로 변경하여 대부분의 폰/태블릿 적용) */
-@media (max-width: 768px) {
-    
-    /* [기존 코드 1] 구성품(2x2) 간격 조정 */
-    .component-container {
-        gap: 10px;
-    }
-    .component-item {
-        padding: 10px;
-    }
-
-/* [수정됨] 앱 사용법 가로 스크롤 슬라이더 강제 적용 */
-    .app-guide-container {
-        display: flex !important;       /* 강제로 Flex 적용 */
-        flex-wrap: nowrap !important;   /* 절대로 줄바꿈 하지 않음 (핵심) */
-        overflow-x: auto;               /* 가로 스크롤 허용 */
-        
-        gap: 15px;                      /* 카드 사이 간격 */
-        padding-bottom: 20px;           /* 하단 스크롤 영역 확보 */
-        
-        /* 부드러운 스크롤 (아이폰 등) */
-        -webkit-overflow-scrolling: touch; 
-        
-        /* 스크롤 스냅 (넘기면 딱 멈추는 효과) */
-        scroll-snap-type: x mandatory; 
-    }
-
-    /* 슬라이드 개별 아이템 */
-    .app-guide-item {
-        /* 너비 고정: 화면의 85% 차지 (줄어들지 않도록 설정) */
-        flex: 0 0 85% !important;  
-        max-width: 85%;                 /* 너비 제한 */
-        
-        scroll-snap-align: center;      /* 가운데 정렬 */
-    }
-    
-    /* 스크롤바 숨기기 (깔끔하게 보이려면 추가) */
-    .app-guide-container::-webkit-scrollbar {
-        display: none;
-    }
-}
-
 /* 순서 목록 스타일 초기화 및 카운터 설정 */
 ol.step-list {
     list-style: none;           /* 기본 숫자(1. 2. 3.) 숨김 */
@@ -361,13 +319,6 @@ ol.step-list li::before {
     object-fit: cover;
 }
 
-/* 모바일 화면 대응 (1열로 변경) */
-@media (max-width: 768px) {
-    .guide-container {
-        grid-template-columns: 1fr; /* 모바일에서는 한 줄에 하나씩 */
-    }
-}
-
 /* 앱 가이드 그리드 컨테이너 (2x3 배치) */
 .app-guide-container {
     display: grid;
@@ -397,20 +348,6 @@ ol.step-list li::before {
     color: #333;
     margin: 0;
     word-break: keep-all;                  /* 단어 단위 줄바꿈 */
-}
-
-/* 반응형: 태블릿 이하 (2열로 변경) */
-@media (max-width: 768px) {
-    .app-guide-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* 반응형: 모바일 (1열로 변경) */
-@media (max-width: 480px) {
-    .app-guide-container {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* 버전 뱃지 스타일 (PC/모바일 공통) */
