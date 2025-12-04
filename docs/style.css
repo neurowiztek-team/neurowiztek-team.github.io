@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    position: relative;
     background: #007bff;
     color: white;
     padding: 20px;
@@ -352,16 +353,15 @@ ol.step-list li::before {
 
 /* 버전 뱃지 스타일 (PC/모바일 공통) */
 .version-badge {
-    display: inline-block;          /* 제목 옆에 나란히 배치 */
-    font-size: 0.5em;               /* 제목 크기의 절반 정도 */
-    font-weight: normal;            /* 굵기 빼기 */
-    background-color: #e7f1ff;      /* 배경색: 아주 연한 파랑 */
-    color: #0056b3;                 /* 글자색: 진한 파랑 */
-    padding: 3px 8px;               /* 안쪽 여백 */
-    border-radius: 20px;            /* 둥근 캡슐 모양 */
-    border: 1px solid #b3d7ff;      /* 테두리 */
-    vertical-align: middle;         /* 높이 정렬 */
-    margin-left: 8px;               /* 제목과 뱃지 사이 간격 */
-    transform: translateY(-4px);    /* 시각적 높이 보정 */
-    white-space: nowrap;            /* 뱃지 내부 글자가 줄바꿈되지 않도록 고정 */
+    position: absolute;  /* 절대 위치 사용 */
+    bottom: 15px;        /* 바닥에서 15px 위로 */
+    right: 20px;         /* 오른쪽에서 20px 안쪽으로 */
+    
+    font-size: 0.8rem;   /* 글자 크기 */
+    background-color: rgba(255, 255, 255, 0.2); /* 배경 반투명 흰색 (파란 배경과 어울림) */
+    color: #fff;         /* 글자색 흰색 */
+    padding: 4px 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: normal;
 }
