@@ -20,7 +20,7 @@
     header .logo {
         font-size: 13px !important;      /* 크기 작게 */
         font-weight: bold !important;    /* 굵게 */
-        color: #666 !important;          /* 회색으로 세련되게 */
+        color: #ffffff !important;          /* 회색으로 세련되게 */
         margin-bottom: 5px !important;   /* 제목과 간격 좁힘 */
         display: block !important;
         letter-spacing: 1px !important;  /* 자간 살짝 넓힘 */
@@ -36,7 +36,7 @@
         font-size: clamp(22px, 7vw, 28px) !important;
         
         font-weight: 900 !important;     /* 아주 굵게 강조 */
-        color: #333 !important;          /* 진한 검정 */
+        color: #ffffff !important;          /* 진한 검정 */
         margin: 0 0 8px 0 !important;    /* 아래 설명글과 간격 */
         line-height: 1.2 !important;     /* 줄 간격 타이트하게 */
         white-space: nowrap !important;  /* 한 줄 유지 */
@@ -47,7 +47,7 @@
        ---------------------------------------------------- */
     header p {
         font-size: 14px !important;      /* 본문 정도 크기 */
-        color: #555 !important;          /* 약간 연한 색 */
+        color: #ffffff !important;          /* 약간 연한 색 */
         margin: 0 !important;
         font-weight: normal !important;
         white-space: nowrap !important;  /* 한 줄 유지 */
@@ -60,11 +60,11 @@
        ---------------------------------------------------- */
     .version-badge {
         position: absolute !important;
-        bottom: 15px !important;         /* 바닥에서 15px 위 */
-        right: 15px !important;          /* 오른쪽에서 15px 안쪽 */
+        bottom: 5px !important;         /* 바닥에서 15px 위 */
+        right: 10px !important;          /* 오른쪽에서 15px 안쪽 */
         
         font-size: 11px !important;      /* 작게 표시 */
-        background-color: rgba(0, 86, 179, 0.1) !important; /* 연한 파랑 배경 */
+        background-color: rgba(255, 255, 255, 0.3) !important; /* 연한 파랑 배경 */
         color: #0056b3 !important;       /* 파란 글씨 */
         border: 1px solid #b3d7ff !important;
         
