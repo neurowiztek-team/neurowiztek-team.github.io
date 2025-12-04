@@ -6,44 +6,58 @@
 @media (max-width: 768px) {
 
     /* ----------------------------------------------------
-       1. [헤더] 제목 글자 크기 자동 조절
+       1. [헤더] 제목과 뱃지 세로 정렬 (줄바꿈)
        ---------------------------------------------------- */
     header h1 {
-        /* 화면 폭의 5% 크기 (최소 16px ~ 최대 24px) */
-        font-size: clamp(16px, 5vw, 24px) !important;
+        display: flex !important;           /* 플렉스 박스 적용 */
+        flex-direction: column !important;  /* 세로 방향 정렬 (위: 제목, 아래: 뱃지) */
+        align-items: center !important;     /* 가운데 정렬 */
+        justify-content: center !important;
+        
+        /* 제목 글자 크기 자동 조절 (한 줄 유지) */
+        font-size: clamp(20px, 6vw, 26px) !important;
         white-space: nowrap !important;
         
-        text-align: center;
         width: 100%;
         margin: 0 auto;
         padding: 0 5px;
-        box-sizing: border-box;
+        line-height: 1.2 !important;        /* 줄 간격 조정 */
     }
     
-    /* 버전 뱃지도 제목에 맞춰 작아짐 */
+    /* 버전 뱃지 스타일 */
     .version-badge {
-        font-size: 0.6em !important;
-        padding: 2px 5px !important;
-        margin-left: 4px !important;
+        font-size: 12px !important;         /* 뱃지 글자 크기 고정 또는 clamp 사용 가능 */
+        padding: 3px 8px !important;
+        margin-left: 0 !important;          /* 왼쪽 여백 제거 */
+        margin-top: 8px !important;         /* 제목과의 간격 추가 */
+        transform: none !important;         /* 위치 보정 해제 */
+        
+        /* 뱃지도 한 줄 유지 */
+        white-space: nowrap !important;
+        display: inline-block !important;
     }
 
 
     /* ----------------------------------------------------
-       2. [섹션 제목] "6. 생체신호..." 등 모든 소제목(h2)
+       2. [섹션 제목] "6. 생체신호..." 한 줄 유지
        ---------------------------------------------------- */
     main h2 {
-        /* 긴 제목도 한 줄에 나오도록 자동 축소 (최소 14px ~ 최대 20px) */
-        font-size: clamp(14px, 4.5vw, 20px) !important;
+        /* 글자가 길어서 화면 밖으로 나가지 않도록 크기 자동 축소 */
+        font-size: clamp(13px, 4vw, 20px) !important; 
+        
+        /* 무조건 한 줄 유지 */
         white-space: nowrap !important;
         overflow: hidden !important;
-        text-overflow: ellipsis !important;
+        text-overflow: ellipsis !important; /* 공간 부족 시 ... 표시 */
+        
         width: 100%;
         display: block;
+        margin-bottom: 15px;
     }
 
 
     /* ----------------------------------------------------
-       3. [구성품] 사진 아래 글자
+       3. [구성품] "스냅형 전극..." 한 줄 유지
        ---------------------------------------------------- */
     .component-container {
         gap: 10px;
@@ -53,10 +67,10 @@
     }
     
     .component-item p {
-        /* "스냅형 전극 케이블 x 3개" 처럼 긴 글자 대응 */
-        /* 최소 10px ~ 화면 3.5% ~ 최대 14px */
-        font-size: clamp(10px, 3.5vw, 14px) !important;
-        white-space: nowrap !important;
+        /* 긴 텍스트 한 줄 처리를 위해 최소 폰트를 10px까지 허용 */
+        font-size: clamp(10px, 3.2vw, 14px) !important;
+        
+        white-space: nowrap !important;     /* 줄바꿈 절대 금지 */
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         
@@ -66,28 +80,30 @@
 
 
     /* ----------------------------------------------------
-       4. [전극 연결 팁] "① SIG : 이마 왼편" 글자들
+       4. [전극 연결 팁] "① SIG : ..." 한 줄 유지
        ---------------------------------------------------- */
     .guide-container {
         grid-template-columns: 1fr !important; /* 1열 배치 */
     }
     
+    /* 카드 내부 리스트 */
     .guide-text li {
-        /* 리스트 항목 전체를 한 줄로 유지 */
+        width: 100%;
+        
+        /* 한 줄 유지 설정 */
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         
-        /* 화면 폭에 따라 글자 크기 조절 (최소 11px ~ 최대 15px) */
+        /* 글자 크기 자동 조절 */
         font-size: clamp(11px, 3.8vw, 15px) !important;
         
-        /* 줄 간격 살짝 좁힘 */
-        line-height: 1.6 !important;
+        line-height: 1.8 !important; /* 줄 간격 확보 */
     }
 
 
     /* ----------------------------------------------------
-       5. [앱 사용법] 가로 스크롤 슬라이더 & 글자
+       5. [앱 사용법] 가로 스크롤 슬라이더 (기존 유지)
        ---------------------------------------------------- */
     .app-guide-container {
         display: flex !important;
@@ -101,12 +117,10 @@
         scroll-snap-type: x mandatory;     
         -webkit-overflow-scrolling: touch; 
         
-        /* 스크롤바 디자인 */
         scrollbar-width: thin;
         scrollbar-color: #888 #f1f1f1;
     }
 
-    /* 슬라이드 아이템 */
     .app-guide-item {
         flex: 0 0 85% !important; 
         width: 85% !important;
@@ -114,15 +128,13 @@
         scroll-snap-align: center;
     }
 
-    /* 앱 가이드 텍스트 자동 조절 */
     .app-guide-item p {
         width: 100% !important;
         display: block !important;
         margin-top: 8px;
-        color: #333;
         font-weight: bold;
+        color: #333;
 
-        /* 최소 11px ~ 화면 4% ~ 최대 15px */
         font-size: clamp(11px, 4vw, 15px) !important; 
         
         white-space: nowrap !important;
@@ -130,7 +142,7 @@
         text-overflow: ellipsis !important;
     }
 
-    /* Webkit 브라우저 스크롤바 */
+    /* 스크롤바 디자인 */
     .app-guide-container::-webkit-scrollbar {
         height: 8px !important;
         display: block !important;
