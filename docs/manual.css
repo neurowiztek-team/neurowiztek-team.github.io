@@ -424,6 +424,12 @@ ol.step-list>li strong {
     align-items: start;
 }
 
+/* 간편 안내: 단계 안내 안에 들어가는 작은 스크린샷 */
+.step-shot {
+    max-width: 240px;
+    margin: 12px 0 2px;
+}
+
 .image-frame {
     border: 1px solid var(--line);
     border-radius: var(--radius);
