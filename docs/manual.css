@@ -532,14 +532,6 @@ ol.step-list>li strong {
     font-weight: 700;
 }
 
-.float-nav a.circle {
-    width: 44px;
-    padding: 0;
-    border-radius: 50%;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
 .float-nav a:hover {
     background: var(--brand-dark);
 }
