@@ -117,17 +117,22 @@
                             <td>1대</td>
                         </tr>
                         <tr>
-                            <td>전극 케이블</td>
-                            <td>본체와 전극을 연결하는 신호 케이블</td>
-                            <td><span class="tbd">제품 구성에 따라 상이</span></td>
+                            <td>골드컵 전극(Gold-cup electrode)</td>
+                            <td>두피에 접촉하여 EEG 신호를 수집하는 전극</td>
+                            <td>10개</td>
                         </tr>
                         <tr>
-                            <td>전극 / 전극 어댑터</td>
-                            <td>두피에 접촉하여 EEG 신호를 수집하는 전극 또는 어댑터</td>
-                            <td><span class="tbd">제품 구성에 따라 상이</span></td>
+                            <td>전도성 페이스트(Conductive paste)</td>
+                            <td>전극과 피부의 접촉을 돕고 신호 전달을 안정화하는 페이스트</td>
+                            <td>1개</td>
                         </tr>
                         <tr>
-                            <td>충전 케이블</td>
+                            <td>하이파픽스(Hypafix) 의료용 테이프</td>
+                            <td>전극을 측정 부위에 고정하는 의료용 테이프</td>
+                            <td>1개</td>
+                        </tr>
+                        <tr>
+                            <td>USB Type-C 충전 케이블</td>
                             <td>본체 배터리 충전용 케이블</td>
                             <td><span class="tbd">제품 구성에 따라 상이</span></td>
                         </tr>
@@ -135,11 +140,6 @@
                             <td>SignalWiz Mobile 앱</td>
                             <td>측정·점검·저장을 수행하는 Android 모바일 앱</td>
                             <td>별도 설치</td>
-                        </tr>
-                        <tr>
-                            <td>기타 구성품</td>
-                            <td>전극 젤, 보관 케이스 등</td>
-                            <td><span class="tbd">제품 구성에 따라 상이</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -151,8 +151,7 @@
             <h2><span class="sec-no">3</span> 제품 사양</h2>
 
             <h3>3.1 하드웨어 사양</h3>
-            <p>아래 항목 중 <span class="tbd">확인 필요</span>로 표기된 값은 앱 코드만으로는 확정할 수 없는 하드웨어 사양이므로, 실제 제품
-                사양서를 기준으로 확인하시기 바랍니다.</p>
+            <p>SignalWiz EEG 본체의 주요 하드웨어 사양은 다음과 같습니다.</p>
             <div class="table-wrap">
                 <table class="spec-table">
                     <tbody>
@@ -174,23 +173,35 @@
                         </tr>
                         <tr>
                             <th scope="row">샘플링 주파수</th>
-                            <td>250&nbsp;SPS (앱의 신호 처리·임피던스 분석 기준값) <span class="tbd">하드웨어 사양 확인 필요</span></td>
+                            <td>250&nbsp;SPS (초당 250 표본)</td>
                         </tr>
                         <tr>
                             <th scope="row">보조(Aux) 입력</th>
                             <td>16비트 보조 입력 3채널 (aux1~aux3)</td>
                         </tr>
                         <tr>
+                            <th scope="row">입력 커넥터</th>
+                            <td>DIN 42802 (touch-proof) 규격</td>
+                        </tr>
+                        <tr>
                             <th scope="row">통신 방식</th>
                             <td>Bluetooth (Classic, SPP 방식 페어링 연결)</td>
                         </tr>
                         <tr>
-                            <th scope="row">전원 / 배터리</th>
-                            <td><span class="tbd">확인 필요</span> (내장 충전식 배터리)</td>
+                            <th scope="row">배터리</th>
+                            <td>3.7&nbsp;V 900&nbsp;mAh 리튬폴리머(Li-Po) 배터리 내장</td>
                         </tr>
                         <tr>
-                            <th scope="row">입력 커넥터</th>
-                            <td><span class="tbd">확인 필요</span></td>
+                            <th scope="row">충전 방식</th>
+                            <td>USB Type-C 케이블로 충전</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">연속 사용 시간</th>
+                            <td>약 13시간 (사용 환경에 따라 상이)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">전원 조작</th>
+                            <td>전원 버튼을 한 번 터치하면 켜지고, 약 3초간 길게 누르면 꺼집니다</td>
                         </tr>
                         <tr>
                             <th scope="row">기기 저장 방식</th>
@@ -245,14 +256,14 @@
         <section class="manual-section" id="s4">
             <h2><span class="sec-no">4</span> 사용 전 준비</h2>
             <ol class="step-list">
-                <li><span class="step-title">기기 충전</span>측정 전에 SignalWiz 본체를 충분히 충전합니다. 장시간 측정 시에는 배터리 잔량을 미리
-                    확인합니다.</li>
+                <li><span class="step-title">기기 충전</span>측정 전에 USB Type-C 케이블로 SignalWiz 본체를 충분히 충전합니다. 완충 시 약
+                    13시간 연속 사용할 수 있으며, 장시간 측정 시에는 배터리 잔량을 미리 확인합니다.</li>
                 <li><span class="step-title">앱 설치</span>SignalWiz Mobile 앱을 스마트폰에 설치합니다. (Android 10 이상 기기 권장)</li>
                 <li><span class="step-title">블루투스 권한 허용</span>앱을 처음 실행하면 블루투스 검색·연결 권한 요청이 표시됩니다. 모두 허용합니다.
                     Android 11 이하에서는 기기 검색을 위해 위치 권한도 필요합니다.</li>
                 <li><span class="step-title">알림 권한 허용</span>녹화는 백그라운드 서비스로 동작하므로, 측정 중 상태 알림 표시를 위해 알림 권한을
                     허용합니다.</li>
-                <li><span class="step-title">전극 준비</span>전극과 케이블을 본체에 연결하고, 필요한 경우 전극 젤을 준비합니다.</li>
+                <li><span class="step-title">전극 준비</span>골드컵 전극을 본체 단자에 연결하고, 전도성 페이스트와 하이파픽스 의료용 테이프를 준비합니다.</li>
                 <li><span class="step-title">측정 환경 준비</span>전기적 노이즈가 적은 환경에서 측정하고, 스마트폰과 기기를 가까이 둡니다.</li>
                 <li><span class="step-title">전극 접촉 상태 확인 준비</span>측정 부위의 두피를 정돈하여 전극이 안정적으로 접촉하도록 합니다. 실제 접촉 상태는
                     연결 후 임피던스 화면에서 점검합니다.</li>
@@ -270,6 +281,11 @@
 
             <div class="shot-row">
                 <figure class="image-frame">
+                    <img src="/assets/images/signalwiz-mobile/manual/06_SignalWiz.png"
+                        alt="SignalWiz EEG 본체 — CH1~CH8, REF, GND 단자와 전원 버튼">
+                    <figcaption>SignalWiz EEG 본체</figcaption>
+                </figure>
+                <figure class="image-frame">
                     <img src="/assets/images/signalwiz-mobile/manual/01_bluetooth.png"
                         alt="블루투스 연결 화면 — 기기가 연결됨 상태로 표시되고 등록된 기기 목록이 보임">
                     <figcaption>[블루투스] 화면 — 기기 연결 완료(연결됨) 상태</figcaption>
@@ -277,7 +293,8 @@
             </div>
 
             <ol class="step-list">
-                <li><span class="step-title">SignalWiz 본체 전원 켜기</span>본체의 전원을 켜고 측정 준비 상태로 둡니다.</li>
+                <li><span class="step-title">SignalWiz 본체 전원 켜기</span>본체의 전원 버튼을 한 번 터치하면 전원이 켜집니다. (전원을 끌 때는 전원
+                    버튼을 약 3초간 길게 누릅니다.)</li>
                 <li><span class="step-title">앱 실행</span>SignalWiz Mobile 앱을 실행하면 [블루투스] 화면이 표시됩니다.</li>
                 <li><span class="step-title">블루투스 권한 확인</span>권한 요청이 표시되면 모두 허용합니다.</li>
                 <li><span class="step-title">기기 검색</span><strong>[기기 검색 시작]</strong> 버튼을 눌러 주변 기기를 검색합니다. 이미 페어링(등록)된
@@ -346,14 +363,14 @@
             </div>
 
             <ol class="step-list">
-                <li><span class="step-title">전극 부착 확인</span>측정 부위에 전극을 부착하고 케이블 연결 상태를 확인합니다. 필요 시 전극 젤을 보충합니다.
+                <li><span class="step-title">전극 부착 확인</span>측정 부위에 전극을 부착하고 케이블 연결 상태를 확인합니다. 필요 시 전도성 페이스트를 보충합니다.
                 </li>
                 <li><span class="step-title">[임피던스] 탭 이동</span>하단 탭에서 <strong>[임피던스]</strong>를 선택하면 측정이 자동으로
                     시작됩니다.</li>
                 <li><span class="step-title">순차 측정 확인</span>임피던스는 <strong>채널 단위로 순차 측정</strong>됩니다. 화면 상단에
                     <strong>“현재 측정 중: CHn”</strong>이 표시되며, 측정 중인 채널은 테두리가 강조됩니다.</li>
                 <li><span class="step-title">채널별 값 확인</span>각 채널 카드에 임피던스 값과 상태(GOOD/WARN/BAD/OPEN)가 표시됩니다.</li>
-                <li><span class="step-title">접촉 불량 조치</span>값이 높거나 <strong>OPEN</strong>으로 표시되는 채널은 전극을 다시 부착하고 젤을
+                <li><span class="step-title">접촉 불량 조치</span>값이 높거나 <strong>OPEN</strong>으로 표시되는 채널은 전극을 다시 부착하고 전도성 페이스트를
                     보충한 뒤 접촉 상태를 안정화합니다.</li>
             </ol>
 
@@ -569,7 +586,7 @@
             <ul class="clean">
                 <li>측정 중에는 움직임을 최소화하여 동잡음(움직임 노이즈)을 줄입니다.</li>
                 <li>케이블이 흔들리지 않도록 정리하고 고정합니다.</li>
-                <li>전극이 안정적으로 접촉되도록 하고, 필요 시 젤을 보충합니다.</li>
+                <li>전극이 안정적으로 접촉되도록 하고, 필요 시 전도성 페이스트를 보충합니다.</li>
                 <li>강한 전기적 노이즈가 있는 환경(전원 장치, 모터 등 근처)을 피합니다.</li>
                 <li>스마트폰과 기기 사이의 거리를 가깝게 유지하여 블루투스 연결이 끊기지 않도록 합니다.</li>
                 <li>측정 전 배터리 잔량을 확인합니다.</li>
@@ -607,8 +624,8 @@
                         </tr>
                         <tr>
                             <td>임피던스가 높게(BAD/OPEN) 표시됨</td>
-                            <td>전극 접촉 불량, 젤 부족</td>
-                            <td>전극 재부착, 젤 보충 후 접촉 안정화</td>
+                            <td>전극 접촉 불량, 전도성 페이스트 부족</td>
+                            <td>전극 재부착, 전도성 페이스트 보충 후 접촉 안정화</td>
                         </tr>
                         <tr>
                             <td>파형이 크게 튐</td>
@@ -647,7 +664,7 @@
                 <li><strong>기기 보관</strong> — 직사광선과 습기를 피해 보관합니다.</li>
                 <li><strong>배터리 관리</strong> — 장기 미사용 시 주기적으로 충전하여 과방전을 방지합니다.</li>
                 <li><strong>전극 케이블 관리</strong> — 무리하게 당기거나 꺾이지 않도록 정리하여 보관합니다.</li>
-                <li><strong>전극 청소</strong> — 사용 후 전극에 남은 젤을 닦아내고 건조하여 보관합니다.</li>
+                <li><strong>전극 청소</strong> — 사용 후 전극에 남은 전도성 페이스트를 닦아내고 건조하여 보관합니다.</li>
                 <li><strong>앱 업데이트</strong> — 앱 업데이트 전 진행 중인 측정을 종료하고 데이터를 저장합니다.</li>
                 <li><strong>데이터 백업</strong> — 저장된 CSV 파일은 PC 등으로 주기적으로 백업합니다.</li>
             </ul>
