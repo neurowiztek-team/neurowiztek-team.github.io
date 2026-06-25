@@ -2,7 +2,7 @@
    NEUROWIZTEK 제품 상세 사용설명서 공통 스타일 (manual.css)
    - 깔끔한 기술문서(흰 배경 / 넓은 여백 / 반응형 / 인쇄 대응)
    - class 구조는 여러 제품 설명서·퀵 가이드에서 재사용 가능
-   - 최초 적용: docs/signalwiz_mobile_manual.html
+   - 최초 적용: docs/signalwiz_detailed_manual.html
    ========================================================= */
 :root {
     --brand: #0b6cf0;
