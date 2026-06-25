@@ -419,6 +419,9 @@ ol.step-list>li strong {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 16px;
     margin: 20px 0;
+    /* 각 프레임을 같은 높이로 늘리지 않고 이미지 본래 높이에 맞춤
+       (높이가 다른 사진을 나란히 둘 때 아래쪽 검은 여백 방지) */
+    align-items: start;
 }
 
 .image-frame {
