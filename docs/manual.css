@@ -505,21 +505,43 @@ ol.step-list>li strong {
     gap: 10px;
 }
 
-.top-link {
+/* 화면 우하단 고정 빠른 이동(목차/맨 위로) */
+.float-nav {
     position: fixed;
     right: 18px;
     bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    z-index: 50;
+}
+
+.float-nav a {
     background: var(--brand);
     color: #fff;
     text-decoration: none;
-    width: 44px;
     height: 44px;
-    border-radius: 50%;
+    padding: 0 16px;
+    border-radius: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(11, 108, 240, 0.35);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.float-nav a.circle {
+    width: 44px;
+    padding: 0;
+    border-radius: 50%;
     font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.float-nav a:hover {
+    background: var(--brand-dark);
 }
 
 .print-btn {
@@ -609,7 +631,7 @@ ol.step-list>li strong {
     }
 
     .hero-back,
-    .top-link,
+    .float-nav,
     .print-btn {
         display: none !important;
     }

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signalwiz mobile 앱 상세 제품 사용설명서 - NEUROWIZTEK</title>
+    <title>Signalwiz 상세 제품 사용설명서 - NEUROWIZTEK</title>
     <meta name="description"
-        content="Signalwiz mobile 앱 상세 제품 사용설명서. Signalwiz 기기 본체와 모바일 앱을 이용한 블루투스 연결, 채널 설정, 임피던스 측정, 실시간 EEG 모니터링, 데이터 녹화 및 CSV 저장 방법을 안내합니다.">
+        content="Signalwiz 상세 제품 사용설명서. Signalwiz 기기 본체와 모바일 앱을 이용한 블루투스 연결, 채널 설정, 임피던스 측정, 실시간 EEG 모니터링, 데이터 녹화 및 CSV 저장 방법을 안내합니다.">
 
     <link rel="stylesheet" href="/docs/manual.css">
 </head>
@@ -17,9 +17,9 @@
 
         <!-- ═══════════ HERO ═══════════ -->
         <section class="manual-hero">
-            <a class="hero-back" href="/docs/signalwiz_mobile.html">← Signalwiz mobile 앱 간편 안내로 돌아가기</a>
+            <a class="hero-back" href="/docs/signalwiz_mobile.html">← Signalwiz 간편 안내로 돌아가기</a>
             <p class="eyebrow">NEUROWIZTEK · 제품 사용설명서</p>
-            <h1>Signalwiz mobile 앱 상세 제품 사용설명서</h1>
+            <h1>Signalwiz 상세 제품 사용설명서</h1>
             <p>Signalwiz 기기 본체와 Signalwiz mobile 앱을 사용하여 블루투스 연결, 채널 설정, 전극 임피던스 점검, 실시간 EEG 모니터링,
                 데이터 녹화 및 CSV 저장을 수행하는 방법을 단계별로 안내합니다.</p>
             <div class="manual-meta">
@@ -31,7 +31,7 @@
         </section>
 
         <!-- ═══════════ 목차 ═══════════ -->
-        <nav class="manual-toc" aria-label="목차">
+        <nav class="manual-toc" id="toc" aria-label="목차">
             <h2>목차</h2>
             <ol>
                 <li><a href="#s1"><span class="num">1.</span>제품 개요</a></li>
@@ -54,8 +54,8 @@
         <!-- ═══════════ 1. 제품 개요 ═══════════ -->
         <section class="manual-section" id="s1">
             <h2><span class="sec-no">1</span> 제품 개요</h2>
-            <p class="lead">Signalwiz mobile 앱은 Signalwiz 기기 본체에서 수집한 뇌파(EEG) 신호를 스마트폰에서 실시간으로 확인하고 저장하는 모바일
-                애플리케이션입니다.</p>
+            <p class="lead">Signalwiz는 뇌파(EEG)를 측정하는 <strong>Signalwiz 기기 본체</strong>와, 측정 신호를 실시간으로 확인·저장하는
+                <strong>Signalwiz mobile 앱</strong>을 합쳐 부르는 이름입니다.</p>
             <p>Signalwiz 기기 본체는 전극을 통해 측정한 EEG 신호를 디지털로 변환하여 블루투스로 전송하고, Signalwiz mobile 앱은 이 신호를
                 수신하여 전극 접촉 상태(임피던스) 점검, 실시간 파형 모니터링, 데이터 녹화(CSV 저장)를 수행합니다. 즉 <strong>기기는 측정·전송을,
                     앱은 표시·점검·저장을</strong> 담당합니다.</p>
@@ -722,7 +722,7 @@
         <!-- ═══════════ 푸터 ═══════════ -->
         <footer class="manual-foot">
             <div>
-                <strong>NEUROWIZTEK</strong> · Signalwiz mobile 앱 상세 제품 사용설명서<br>
+                <strong>NEUROWIZTEK</strong> · Signalwiz 상세 제품 사용설명서<br>
                 문서 버전 1.0 · 작성일 2026-06-25 · 앱 Ver 2.0 기준
             </div>
             <div>
@@ -732,7 +732,10 @@
         </footer>
     </main>
 
-    <a class="top-link" href="#" aria-label="맨 위로">↑</a>
+    <nav class="float-nav" aria-label="빠른 이동">
+        <a href="#toc" aria-label="목차로 이동">목차</a>
+        <a href="#" class="circle" aria-label="맨 위로">↑</a>
+    </nav>
 
 </body>
 
