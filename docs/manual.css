@@ -104,6 +104,18 @@ a {
     text-decoration: underline;
 }
 
+/* 히어로 상단 이동 링크 묶음(홈/상호 이동) */
+.hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin-bottom: 14px;
+}
+
+.hero-nav .hero-back {
+    margin-bottom: 0;
+}
+
 /* ── 목차 ───────────────────────────────────────────── */
 .manual-toc {
     background: var(--bg-soft);
