@@ -38,7 +38,7 @@
         </div>
         <h1>VetWiz 사용설명서</h1>
         <p>동물 심전도 측정 및 분석 솔루션</p>
-            <p style="margin:6px 0 0 0;"><a href="/docs/app_usage.html" class="page-cta">어플 사용법</a></p>
+            <p style="margin:6px 0 0 0;"><a href="/docs/vetwiz_ecg_app_usage.html" class="page-cta">어플 사용법</a></p>
         <span class="version-badge">Ver 1.0.0 (2025.12)</span>
     </header>
 
@@ -49,7 +49,6 @@
             <li><a href="/docs/vetwiz_ecg.html#components">구성품</a></li>
             <li><a href="/docs/vetwiz_ecg.html#setup">측정 준비 (셋업)</a></li>
             <li><a href="/docs/vetwiz_ecg.html#electrode">전극 부착 방법</a></li>
-            <!-- 애플리케이션 사용법은 별도 창(app_usage.html)으로 분리됨 -->
             <li><a href="/docs/vetwiz_ecg.html#basic_features">기본 기능</a></li>
             <li><a href="/docs/vetwiz_ecg.html#analysis">결과 분석 방법</a></li>
             <li><a href="/docs/vetwiz_ecg.html#troubleshooting">문제 해결</a></li>
@@ -97,19 +96,12 @@
             <h3>3-1. 기기 충전</h3>
             <ol class="step-list">
                 <li>USB 충전 케이블의 타입-C 커넥터를 기기의 충전 포트에 연결합니다.</li>
-                <li>충전 시 LED 표시등이 빨간색으로 표시됩니다.</li>
-                <li>약 2시간 후 LED가 녹색으로 변하면 충전이 완료됩니다.</li>
-                <li>완전히 충전되면 8시간 연속 사용 가능합니다.</li>
+                <li>충전 시 LED 표시등이 흰색으로 표시됩니다.</li>
+                <li>약 2시간 후 LED가 꺼지면 충전이 완료됩니다(?).</li>
+                <li>완전히 충전되면 8시간 연속 사용 가능합니다(?).</li>
             </ol>
 
-            <h3>3-2. 소프트웨어 설치</h3>
-            <ol class="step-list">
-                <li>제공된 설치 CD를 사용하거나 NEUROWIZTEK 공식 웹사이트에서 최신 버전을 다운로드합니다.</li>
-                <li>Windows 또는 macOS에 애플리케이션을 설치합니다.</li>
-                <li>초기 설정 마법사를 따라 기기와 소프트웨어를 연결합니다.</li>
-            </ol>
-
-            <h3>3-3. 동물 준비</h3>
+            <h3>3-2. 동물 준비</h3>
             <ol class="step-list">
                 <li>측정 30분 전부터 동물을 편안한 상태로 유지합니다.</li>
                 <li>측정 부위의 털을 약 2cm 정도 다듬거나 제거합니다.</li>
@@ -120,50 +112,20 @@
 
         <section id="electrode">
             <h2>4. 전극 부착 방법</h2>
-            
-            <h3>4-1. 표준 3전극 배치 (개, 고양이)</h3>
-            <img
-                src="images/vetwiz/electrode_placement_dog.jpg"
+                     <img
+                src="/images/vetwiz/%5B뉴로위즈텍%5D%20그래픽%20요소%20원본-04.png"
                 class="full-width-img"
                 style="max-width: 350px; display: block; margin: 20px auto;"
                 alt="개/고양이 전극 부착 위치"
             >
             <ol class="step-list">
-                <li><strong>우측 전극 (빨강):</strong> 우측 앞다리 관절 위쪽</li>
-                <li><strong>좌측 전극 (노랑):</strong> 좌측 앞다리 관절 위쪽</li>
-             img
-                src="images/vetwiz/electrode_placement_other.jpg"
-                class="full-width-img"
-                style="max-width: 350px; display: block; margin: 20px auto;"
-                alt="기타 동물 전극 부착 위치"
-            >
-            <   <li><strong>접지 전극 (검정):</strong> 우측 뒷다리 관절 위쪽</li>
-                <li>각 전극을 피부와 밀착되도록 부착합니다.</li>
+                <li><strong>SIG:</strong> 좌측 앞쪽 발바닥</li>
+                <li><strong>GND:</strong> 좌측 뒷쪽 발바닥</li>
+                <li><strong>REF:</strong> 우측 앞쪽 발바닥</li>
+                <li>각 전극을 발바닥과 밀착되도록 부착합니다.</li>
                 <li>전극이 움직이지 않도록 고정 벨트를 사용합니다.</li>
             </ol>
-
-            <h3>4-2. 기타 동물의 전극 배치</h3>
-            <ul>
-                <li><strong>토끼:</strong> 우측/좌측 귀 뒤쪽 부위</li>
-                <li><strong>쥐/기니피그:</strong> 앞다리와 뒷다리 내측</li>
-                <li><strong>새:</strong> 가슴 양쪽 부위</li>
-            </ul>
-
-            <h3>4-3. 전극 접착제 바르기</h3>
-            <ol class="step-list">
-                <li>일회용 전극의 뒷면에 콘덕팅 젤을 얇게 펴 바릅니다.</li>
-                <li>전극을 측정 부위에 수직으로 눌러 부착합니다.</li>
-                <li>5초 이상 누르고 있어 충분히 접착시킵니다.</li>
-            <img
-                src="images/vetwiz/app_interface.jpg"
-                class="full-width-img"
-                style="max-width: 400px; display: block; margin: 20px auto;"
-                alt="Vetwiz-ECG 애플리케이션 인터페이스"
-            >
-                <li>부착 후 전극이 피부와 완전히 접촉하는지 확인합니다.</li>
-            </ol>
-        </section>
-
+        
  
         <section id="basic_features">
             <h2>5. 기본 기능 (Basic Features)</h2>
