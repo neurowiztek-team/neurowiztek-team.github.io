@@ -261,6 +261,21 @@ img {
     background-color: #304cc2;
 }
 
+/* Stacked side buttons (bottom-right) */
+.side-buttons {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 1000;
+}
+.side-buttons .quick-guide-button {
+    position: static;
+}
+
 /* Inline CTA button placed under header */
 .page-cta {
     display: inline-block;
