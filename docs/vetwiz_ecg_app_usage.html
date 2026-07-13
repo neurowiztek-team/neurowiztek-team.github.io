@@ -20,6 +20,39 @@
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.07);
         }
+
+        .app-image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            margin: 12px 0;
+        }
+
+        .app-image-grid .app-inline-img {
+            width: calc(50% - 8px);
+            max-width: 430px;
+            margin: 0;
+            flex: 0 0 calc(50% - 8px);
+        }
+
+        .step-list li.step-dot::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            left: 8px;
+            top: 10px;
+            border-radius: 50%;
+            background-color: #1073f5d8;
+        }
+
+        @media (max-width: 768px) {
+            .app-image-grid .app-inline-img {
+                width: 100%;
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -72,10 +105,10 @@
                     </div>
                 </li>
                 <li>프로필리스트 화면에서 등록된 프로필을 확인한다.
+                    이때 상단에서 [신규 프로필 등록 완료]라는 안내 메시지가 뜹니다.</li>
                         <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
-                        <img src="/images/vetwiz/Screenshot_20260701-141041.jpg" alt="프로필 설정" class="app-inline-img">
-                    
-                
+                        <img src="/images/vetwiz/Screenshot_20260713-143432_Vetwiz.jpg" alt="프로필 설정" class="app-inline-img">
+                        </div>
             </ol>
 
             <h3>2. 생체신호 데이터 측정 및 저장</h3>
@@ -109,29 +142,89 @@
             <ol class="step-list">
                 <li>측정 데이터 리스트로 간다.</li>
                     <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
-                        <img src="/images/vetwiz/Screenshot_20260701-141959.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                        <img src="/images/vetwiz/Screenshot_20260701-141941.jpg" alt="모니터링 화면이동" class="app-inline-img">
                     </div>
   
                 <li>원하는 데이터를 선택시 상세정보를 볼 수 있다. </li>
                     <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
-                        <img src="/images/vetwiz/Screenshot_20260701-142022jpg" alt="모니터링 화면이동" class="app-inline-img">
-                        <img src="/images/vetwiz/Screenshot_20260701-142031.jpg" alt="모니터링 화면이동" class="app-inline-img">
-                        <img src="/images/vetwiz/Screenshot_20260701-142058.jpg" alt="모니터링 화면이동" class="app-inline-img">
-                        <img src="/images/vetwiz/Screenshot_20260701-143313.jpg" alt="모니터링 화면이동" class="app-inline-img">
- 
- 
+                        <div class="app-image-grid">
+                            <img src="/images/vetwiz/Screenshot_20260701-141959.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                            <img src="/images/vetwiz/Screenshot_20260701-142022.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                            <img src="/images/vetwiz/Screenshot_20260701-142031.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                            <img src="/images/vetwiz/Screenshot_20260701-142036.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                        </div>
                     </div>
   
-                <li>이때 선택한 데이터의 프로필 정보 확인 및 보고서를 내보낼 수 있다.</li>
+                <li>이때 우측 하단에서 선택한 데이터의 [프로필 정보] 확인 및 [보고서]를 내보낼 수 있다.</li>
                     <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
-                        <img src="/images/vetwiz/Screenshot_20260701-141941.jpg" alt="모니터링 화면이동" class="app-inline-img">
                     </div>
-  
+                <li class="step-dot">[프로필 정보 보기]에서는 선택한 프로필의 데이터를 다음과 같이 확인할 수 있다.</li>
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260701-142058.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                <li class="step-dot">[보고서 내보내기]에서는 클릭시 PDF파일을 생성 후 다운로드를 할 수 있다.</li>
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
             </ol>
 
             <h3>4. 검색 기능</h3>
+            <ol class="step-list">
+                <li>검색 기능에 들어가 보면 다음과 같은 필터들이 뜨게 된다.</li>
+                <div class="app-image-grid" style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px);">
+                    <img src="/images/vetwiz/Screenshot_20260713-141933_Vetwiz.jpg" alt="검색기능" class="app-inline-img">
+                    <img src="/images/vetwiz/Screenshot_20260713-143454_Vetwiz.jpg" alt="검색기능" class="app-inline-img">
+                </div>
+                <li>이때 찾고자 하는 필터를 선택하면 그에 해당되는 데이터만 표시가 된다.</li>
+                    <img src="/images/vetwiz/Screenshot_20260713-143517_Vetwiz.jpg" alt="검색기능" class="app-inline-img">
 
             <h3>5. 환경 설정</h3>
+            <p>[설정] 기능에는 다음과 같은 기능들이 있다.</p>
+            <ol class="step-list">
+                <li>
+                    <strong>[사용자 기본 정보 설정]</strong><br>
+                    '사용자 기본 정보 편집'을 누르면 다음과 같은 창이 뜨면서 사용자의 기본 정보를 바꿀 수 있다.
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-144515_Vetwiz.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                </li>
+                <li>
+                    <strong>[구독 설정]</strong><br>
+                    현재 내 구독 상황을 알 수 있는 페이지다.
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                </li>
+                <li>
+                    <strong>[알림 설정]</strong><br>
+                    푸시 및 심박수 등의 알림을 바꿀 수 있는 페이지다.
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                </li>
+                <li>
+                    <strong>[소리 설정]</strong><br>
+                    앱에서 지원하는 음량, 인터페이스 등의 소리를 설정할 수 있다.
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                </li>
+                <li>
+                    <strong>[데이터 저장 위치 및 관리 설정]</strong><br>
+                    현재 저장 위치가 어디인지 확인할 수 있다.
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                </li>
+                <li>
+                    <strong>[생체신호 모니터링 환경 설정]</strong><br>
+                    화면 및 그래프의 색상 등을 설정할 수 있다.
+                    <div style="margin-top:12px; margin-left:-35px; width:calc(100% + 35px); text-align:center;">
+                        <img src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg" alt="모니터링 화면이동" class="app-inline-img">
+                    </div>
+                </li>
+            </ol>
+
         </section>
     </main>
 
