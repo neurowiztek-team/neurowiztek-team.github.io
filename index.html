@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뉴로위즈텍 제품 소개</title>
     <style>
-        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-color: #f4f4f9; }
         .container { text-align: center; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         h1 { color: #333; }
-        .manual-link { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s; }
-        .manual-link:hover { background-color: #0056b3; }
+        .app-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 32px; margin-top: 28px; }
+        .app-link { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 140px; text-decoration: none; color: #333; font-weight: 700; transition: transform 0.15s; }
+        .app-link:hover { transform: translateY(-4px); }
+        .app-link img { width: 96px; height: 96px; object-fit: cover; border-radius: 22px; background: #fff; border: 1px solid #e3e6ee; box-shadow: 0 8px 18px rgba(0,0,0,0.15); }
+        .app-link span { font-size: 0.95rem; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>뉴로위즈텍 제품 소개</h1>
         <p>뉴로위즈텍 제품 사용 설명서입니다.</p>
-        <a href="./docs/measurewiz.html" class="manual-link">
-            MeasureWiz 설명서 보기 👉
-        </a>
-        <a href="./docs/signalwiz_quick.html" class="manual-link">
-            SignalWiz 설명서 보기 👉
-        </a>
-        <a href="./docs/vetwiz_quick_guide.html" class="manual-link">
-            Vetwiz 설명서 보기 👉
-        </a>
+        <div class="app-grid">
+            <a href="./docs/measurewiz.html" class="app-link">
+                <img src="./images/logo/MeasureWiz_LOGO-03_512x512px.png" alt="MeasureWiz 로고">
+                <span>MeasureWiz<br>설명서</span>
+            </a>
+            <a href="./docs/signalwiz_quick.html" class="app-link">
+                <img src="./images/logo/SignalWiz App icon 512x512.png" alt="SignalWiz 로고">
+                <span>SignalWiz<br>설명서</span>
+            </a>
+            <a href="./docs/vetwiz_quick_guide.html" class="app-link">
+                <img src="./images/logo/VetWiz 아이콘-01.jpg" alt="VetWiz 로고">
+                <span>VetWiz<br>설명서</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
