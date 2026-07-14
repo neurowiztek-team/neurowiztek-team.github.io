@@ -15,6 +15,12 @@
             color: inherit;
         }
 
+        /* ol 바로 아래에 놓인 이미지 래퍼는 li 여백(35px) 상쇄가 필요 없음 — 모바일 왼쪽 잘림 방지 */
+        ol.step-list > div {
+            margin-left: 0 !important;
+            width: 100% !important;
+        }
+
         /* inherit quick-guide button when page loaded standalone */
         .app-inline-img {
             width: 100%;
