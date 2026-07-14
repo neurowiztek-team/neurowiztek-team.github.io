@@ -4,136 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignalWiz 간편 안내 - NEUROWIZTEK</title>
-    <meta name="description"
-        content="SignalWiz 간편 안내. SignalWiz 기기 본체와 SignalWiz 모바일 앱으로 전원 켜기부터 연결·채널 설정·임피던스 확인·실시간 모니터링·데이터 저장까지 핵심 순서를 한 페이지로 안내합니다.">
-
-    <link rel="stylesheet" href="/docs/manual.css">
+    <title>SignalWiz 간편 안내 | NEUROWIZTEK</title>
+    <meta name="description" content="이 페이지는 새 주소로 이동되었습니다: SignalWiz 간편 안내.">
+    <meta name="robots" content="noindex">
+    <!-- 문서가 /docs/products/signalwiz/quick-guide.html (으)로 이동되었습니다. 기존 URL 호환용 리디렉션 스텁입니다. -->
+    <meta http-equiv="refresh" content="0; url=/docs/products/signalwiz/quick-guide.html">
+    <link rel="canonical" href="/docs/products/signalwiz/quick-guide.html">
+    <style>
+        body {
+            font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, -apple-system, Arial, sans-serif;
+            background: #f6f8fb; color: #1f2733; margin: 0;
+            display: flex; min-height: 100vh; align-items: center; justify-content: center; padding: 24px;
+        }
+        .redirect {
+            max-width: 520px; width: 100%; background: #fff; border: 1px solid #e1e7f0;
+            border-radius: 16px; padding: 32px; text-align: center;
+            box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+        }
+        h1 { font-size: 1.25rem; margin: 0 0 8px; }
+        p { color: #566072; line-height: 1.7; margin: 0 0 20px; }
+        .btn {
+            display: inline-block; background: #0b6cf0; color: #fff; text-decoration: none;
+            font-weight: 700; padding: 12px 22px; border-radius: 8px;
+        }
+        .btn:hover { background: #084ba8; }
+        .alt { margin-top: 16px; margin-bottom: 0; font-size: 0.9rem; }
+        .alt a { color: #0b6cf0; }
+    </style>
 </head>
 
 <body>
-
-    <main class="manual-page">
-
-        <!-- ═══════════ HERO ═══════════ -->
-        <section class="manual-hero">
-            <div class="hero-nav">
-                <a class="hero-back" href="/index.html">🏠 홈</a>
-                <a class="hero-back" href="/docs/signalwiz_detailed_manual.html">상세 제품 사용설명서 보기 →</a>
-            </div>
-            <h1>SignalWiz 간편 안내</h1>
-            <p>SignalWiz 기기 본체와 SignalWiz 모바일 앱으로 EEG를 측정·저장하는 기본 순서를 한 페이지로 안내합니다. 자세한 내용은
-                상세 제품 사용설명서를 참고하세요.</p>
-            <div class="manual-meta">
-                <span>지원 OS: Android 10 이상</span>
-            </div>
-        </section>
-
-        <!-- ═══════════ 준비 ═══════════ -->
-        <section class="manual-section" id="prep">
-            <div class="info-box">
-                <strong>시작 전 준비</strong>
-                <p>① SignalWiz 기기 본체를 USB Type-C로 충전합니다.<br>
-                    ② 구글 Play 스토어에서 <strong>‘Signalwiz mobile’</strong> 앱을 검색·설치하고 블루투스·알림 권한을 허용합니다.<br>
-                    ③ 골드컵 전극·전도성 페이스트·하이파픽스 테이프를 준비합니다.</p>
-            </div>
-        </section>
-
-        <!-- ═══════════ 핵심 순서 ═══════════ -->
-        <section class="manual-section" id="steps">
-            <h2><span class="sec-no">●</span> 6단계로 끝내는 측정</h2>
-
-            <ol class="step-list">
-                <li>
-                    <span class="step-title">전원 켜기</span>
-                    SignalWiz 기기 본체의 전원 버튼을 <strong>한 번 터치</strong>하면 켜집니다. (끌 때는 약 3초간 길게 누릅니다.)
-                    <figure class="image-frame step-shot">
-                        <img src="/assets/images/signalwiz-mobile/manual/06_SignalWiz 본체 기기.png"
-                            alt="SignalWiz 기기 본체 — 전원 버튼">
-                        <figcaption>SignalWiz 기기 본체</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <span class="step-title">앱 연결</span>
-                    SignalWiz 모바일 앱을 실행하고 <strong>[블루투스]</strong> 화면에서 기기를 선택해 연결합니다. 상단에
-                    <strong>“연결됨”</strong>이 표시되면 완료입니다.
-                    <figure class="image-frame step-shot">
-                        <img src="/assets/images/signalwiz-mobile/manual/01_bluetooth.png"
-                            alt="블루투스 연결 화면 — 연결됨 상태">
-                        <figcaption>[블루투스] — 연결됨</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <span class="step-title">채널 설정</span>
-                    <strong>[채널 설정]</strong> 탭에서 전극을 부착한 채널을 선택하고 <strong>[설정 완료]</strong>를 누릅니다.
-                    설정을 완료해야 임피던스·모니터를 사용할 수 있습니다.
-                    <figure class="image-frame step-shot">
-                        <img src="/assets/images/signalwiz-mobile/manual/02_channel.png"
-                            alt="측정 채널 설정 화면 — 사용 채널 선택">
-                        <figcaption>[채널 설정] — 사용 채널 선택</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <span class="step-title">임피던스 확인</span>
-                    <strong>[임피던스]</strong> 탭에서 채널별 전극 접촉 상태를 확인합니다.
-                    <strong>GOOD</strong>(초록)일수록 양호하며, <strong>OPEN</strong>(빨강)이면 전극을 다시 부착하고
-                    전도성 페이스트를 보충합니다.
-                    <figure class="image-frame step-shot">
-                        <img src="/assets/images/signalwiz-mobile/manual/03_impedance.png"
-                            alt="임피던스 측정 화면 — 채널별 접촉 상태">
-                        <figcaption>[임피던스] — 접촉 상태 점검</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <span class="step-title">실시간 모니터링</span>
-                    <strong>[모니터]</strong> 탭에서 선택한 채널의 EEG 파형을 실시간으로 확인합니다. 특정 채널만 평평하거나
-                    크게 튀면 전극·케이블 상태를 점검합니다.
-                    <figure class="image-frame step-shot">
-                        <img src="/assets/images/signalwiz-mobile/manual/04_monitor.png"
-                            alt="실시간 EEG 모니터링 화면 — 채널별 파형">
-                        <figcaption>[모니터] — 실시간 파형</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <span class="step-title">저장(녹화)</span>
-                    [모니터] 화면 우측 상단의 <strong>[저장 시작]</strong>을 누르면 녹화가 시작되고, <strong>[저장 중지]</strong>로
-                    종료합니다. 저장된 CSV는 <code>Download/Signalwiz mobile/</code> 폴더에서 확인합니다.
-                    <figure class="image-frame step-shot">
-                        <img src="/assets/images/signalwiz-mobile/manual/05_recording.png"
-                            alt="녹화 진행 화면 — REC 타이머와 저장 중지 버튼">
-                        <figcaption>녹화 중 — REC 타이머</figcaption>
-                    </figure>
-                </li>
-            </ol>
-
-            <div class="notice-box">
-                <strong>참고</strong>
-                <p>측정 중에는 움직임을 최소화하고 케이블을 고정하세요. 더 자세한 사양·문제 해결·CSV 구조는
-                    <a href="/docs/signalwiz_detailed_manual.html">상세 제품 사용설명서</a>를 참고하시기 바랍니다.</p>
-            </div>
-        </section>
-
-        <!-- ═══════════ 푸터 ═══════════ -->
-        <footer class="manual-foot">
-            <div>
-                <strong>NEUROWIZTEK</strong> · SignalWiz 간편 안내
-            </div>
-            <div>
-                기술 지원: office@neurowiztek.com<br>
-                © 2026 NEUROWIZTEK. All rights reserved.
-            </div>
-        </footer>
+    <main class="redirect">
+        <h1>SignalWiz 간편 안내</h1>
+        <p>이 문서는 새 주소로 이동되었습니다.<br>잠시 후 자동으로 이동합니다.</p>
+        <a class="btn" href="/docs/products/signalwiz/quick-guide.html">SignalWiz 간편 안내 바로가기 →</a>
+        <p class="alt"><a href="/docs/products/signalwiz/manual.html">상세 제품 사용설명서</a> · <a href="/index.html">제품 소개 홈</a></p>
     </main>
-
-    <nav class="float-nav" aria-label="빠른 이동">
-        <a href="/docs/signalwiz_detailed_manual.html" aria-label="상세 설명서로 이동">상세 설명서 →</a>
-    </nav>
-
 </body>
 
 </html>

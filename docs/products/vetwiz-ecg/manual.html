@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetWiz-ECG 제품 사용설명서 | NEUROWIZTEK</title>
+    <meta name="description"
+        content="VetWiz-ECG 동물 심전도(ECG) 측정 시스템 제품 사용설명서. 빠른 시작부터 구성품, 전극 부착, 충전, 문제 해결, 제품 사양까지 한 문서로 안내합니다.">
+    <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
+</head>
+
+<body class="docs-page product-vetwiz-ecg document-manual">
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <!-- ═══════════ 공통 헤더 ═══════════ -->
+    <header class="doc-header">
+        <div class="doc-header__inner">
+            <a class="doc-brand" href="/index.html">
+                <img src="/images/logo/VetWiz 아이콘-01.jpg" alt="">
+                <span>VetWiz-ECG <span class="doc-brand__sub">문서</span></span>
+            </a>
+            <button class="doc-menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="doc-nav"
+                aria-expanded="false">☰</button>
+            <nav class="doc-nav" id="doc-nav" aria-label="문서 내비게이션">
+                <a href="/docs/products/vetwiz-ecg/manual.html" aria-current="page">제품 사용설명서</a>
+                <a href="/docs/products/vetwiz-ecg/app-guide.html">앱 사용법</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="doc-layout">
+
+        <!-- ═══════════ 사이드 목차 ═══════════ -->
+        <aside class="doc-toc" aria-label="목차">
+            <details class="doc-toc__details" open>
+                <summary class="doc-toc__summary">목차</summary>
+                <nav aria-label="문서 목차">
+                    <ol>
+                        <li><a href="#overview">1. 제품 개요</a></li>
+                        <li><a href="#quick-start">2. 빠른 시작</a></li>
+                        <li><a href="#components">3. 구성품 확인</a></li>
+                        <li><a href="#setup">4. 전극 부착 및 측정 준비</a></li>
+                        <li><a href="#charging">5. 충전 및 배터리 관리</a></li>
+                        <li><a href="#led">6. 상태 표시(LED) 안내</a></li>
+                        <li><a href="#features">7. 기본 기능</a></li>
+                        <li><a href="#cautions">8. 측정 시 주의사항</a></li>
+                        <li><a href="#care">9. 세척 및 보관</a></li>
+                        <li><a href="#troubleshooting">10. 문제 해결</a></li>
+                        <li><a href="#specs">11. 제품 사양</a></li>
+                        <li><a href="#app-guide">12. 앱 사용법으로 이동</a></li>
+                        <li><a href="#contact">13. 고객지원 및 문의</a></li>
+                    </ol>
+                </nav>
+            </details>
+        </aside>
+
+        <!-- ═══════════ 본문 ═══════════ -->
+        <main class="doc-main" id="main">
+
+            <section class="doc-hero">
+                <h1>VetWiz-ECG 제품 사용설명서</h1>
+                <p>VetWiz-ECG는 동물의 심전도(ECG)를 측정·분석하는 시스템으로, 측정 기기 본체와 전용 VetWiz 앱으로 구성됩니다.
+                    이 문서는 처음 사용자를 위한 <strong>빠른 시작</strong>과 상세 사용설명을 한 곳에 담고 있습니다.</p>
+                <div class="doc-hero__meta">
+                    <span>동물 심전도(ECG) 측정</span>
+                    <span>Bluetooth 5.0</span>
+                    <span>전용 VetWiz 앱</span>
+                </div>
+            </section>
+
+            <!-- 1. 제품 개요 -->
+            <section class="doc-section" id="overview">
+                <h2><span class="sec-no">1</span> 제품 개요</h2>
+                <p class="lead">VetWiz-ECG는 고정밀 ECG 센서로 동물의 심전도를 측정하고, 블루투스로 전용 앱에 실시간 전송하여
+                    심박·호흡 등을 확인·기록하는 동물 생체신호 측정 솔루션입니다.</p>
+                <figure class="doc-figure figure-wide">
+                    <img class="doc-image" src="/images/vetwiz/편집9.png" alt="VetWiz-ECG 제품 본체 이미지">
+                </figure>
+                <ul>
+                    <li>고정밀 ECG 센서로 동물의 심전도 측정</li>
+                    <li>반려동물, 실험동물 등 다양한 동물에 적용 가능</li>
+                    <li>블루투스 5.0 무선 통신으로 실시간 데이터 전송</li>
+                    <li>C Type(USB Type-C) 충전식 배터리</li>
+                    <li>전용 VetWiz 앱 제공(측정·기록·보고서 내보내기)</li>
+                </ul>
+            </section>
+
+            <!-- 2. 빠른 시작 -->
+            <section class="doc-section" id="quick-start">
+                <h2><span class="sec-no">2</span> 빠른 시작</h2>
+                <p>제품을 처음 받았다면 아래 순서대로 진행하세요. 각 단계의 자세한 설명은 이어지는 섹션에서 확인할 수 있습니다.</p>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">🧰</span>
+                    <div class="notice__body">
+                        <p class="notice__title">시작 전 준비</p>
+                        <p>① VetWiz-ECG 기기 본체를 USB Type-C로 충전합니다. ② 구글 Play 스토어에서
+                            <a href="https://play.google.com/store/apps/details?id=com.neurowiztek.vetwiz&amp;hl=ko"
+                                target="_blank" rel="noopener">‘VetWiz’ 앱</a>을 설치하고 블루투스·알림 권한을 허용합니다.
+                            ③ 스냅 전극 케이블(3개)과 3M 패치 전극을 준비합니다.</p>
+                    </div>
+                </div>
+
+                <!-- 10단계 흐름 요약 카드 -->
+                <div class="quickstart-grid">
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">📦</span>
+                        <h3>구성품 확인</h3>
+                        <p>본체·전극 케이블·패치 전극이 모두 있는지 확인합니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">🔋</span>
+                        <h3>충전·전원</h3>
+                        <p>Type-C로 충전하고 기기 전원을 켭니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">🔌</span>
+                        <h3>전극 연결</h3>
+                        <p>스냅 전극 케이블을 본체에 연결합니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">🐾</span>
+                        <h3>전극 부착</h3>
+                        <p>SIG·GND·REF 위치에 전극을 발바닥과 밀착 부착합니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">📱</span>
+                        <h3>앱 실행</h3>
+                        <p>VetWiz 앱을 실행하고 권한을 허용합니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">🔗</span>
+                        <h3>기기 연결</h3>
+                        <p>[기기 추가]로 블루투스 기기를 연결합니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">📈</span>
+                        <h3>신호 확인</h3>
+                        <p>연결되면 실시간 ECG 파형이 표시됩니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">⏺️</span>
+                        <h3>측정 시작</h3>
+                        <p>프로필을 선택하고 [녹화 시작]을 누릅니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">⏹️</span>
+                        <h3>측정 종료</h3>
+                        <p>[녹화 종료]를 누르면 데이터가 저장됩니다.</p>
+                    </article>
+                    <article class="quickstart-card">
+                        <span class="qs-icon" aria-hidden="true">📄</span>
+                        <h3>결과 확인·저장</h3>
+                        <p>측정 데이터 리스트에서 확인하고 PDF 보고서를 내보냅니다.</p>
+                    </article>
+                </div>
+
+                <h3>단계별 안내(이미지)</h3>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">전원 켜기</span>
+                        충전된 VetWiz-ECG 기기 본체의 전원을 켭니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/[뉴로위즈텍] 그래픽 요소 원본_대지 1.png"
+                                alt="VetWiz-ECG 기기 본체">
+                            <figcaption>VetWiz-ECG 기기 본체</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">전극 부착</span>
+                        <strong>SIG</strong>(좌측 뒷쪽 발바닥) · <strong>GND</strong>(좌측 앞쪽 발바닥) ·
+                        <strong>REF</strong>(우측 앞쪽 발바닥) 위치에 전극을 발바닥과 밀착되도록 부착합니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/%5B뉴로위즈텍%5D%20그래픽%20요소%20원본-04.png"
+                                alt="개·고양이 전극 부착 위치 — SIG, GND, REF">
+                            <figcaption>전극 부착 위치(SIG · GND · REF)</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">앱 연결</span>
+                        VetWiz 앱을 실행하고 홈 화면에서 <strong>[기기 추가]</strong>를 누른 뒤 사용할 기기를 선택해
+                        블루투스로 연결합니다. 연결에 성공하면 실시간 신호 파형이 나타납니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140657.jpg"
+                                alt="기기 연결 성공 화면 — 실시간 신호 파형 표시">
+                            <figcaption>[기기 추가] — 연결 성공</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">프로필 등록·선택</span>
+                        <strong>[프로필 등록 바로가기]</strong>에서 ‘QR코드’ 또는 ‘프로필 직접 등록하기’로 반려동물 프로필을 등록합니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140707.jpg"
+                                alt="반려동물 프로필 등록 화면">
+                            <figcaption>프로필 등록 — QR코드 / 직접 등록</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">측정(녹화)</span>
+                        측정할 프로필을 선택한 뒤 모니터링 화면 우측 하단의 <strong>[녹화 시작]</strong>을 누르면 파형 녹화가 시작되고,
+                        <strong>[녹화 종료]</strong>를 누르면 측정 데이터가 저장됩니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141922.jpg"
+                                alt="모니터링 화면 — 녹화 진행 중">
+                            <figcaption>모니터링 — 녹화 진행 중</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">결과 확인</span>
+                        <strong>[측정 데이터 리스트]</strong>에서 저장된 데이터를 선택해 상세 정보를 확인하고,
+                        <strong>[보고서 내보내기]</strong>로 PDF 보고서를 다운로드할 수 있습니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141941.jpg"
+                                alt="측정 데이터 리스트 화면">
+                            <figcaption>[측정 데이터 리스트] — 결과 확인</figcaption>
+                        </figure>
+                    </li>
+                </ol>
+
+                <div class="notice notice--tip">
+                    <span class="notice__icon" aria-hidden="true">💡</span>
+                    <div class="notice__body">
+                        <p class="notice__title">팁</p>
+                        <p>앱 화면별 상세 사용 방법(측정·검색·설정·보고서 등)은
+                            <a href="/docs/products/vetwiz-ecg/app-guide.html">VetWiz 앱 사용법</a>에서 확인하세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. 구성품 -->
+            <section class="doc-section" id="components">
+                <h2><span class="sec-no">3</span> 구성품 확인</h2>
+                <p>제품 상자를 열어 아래 구성품이 모두 들어있는지 확인해 주세요.</p>
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">📟</span>
+                        <h3>VetWiz 하드웨어 본품</h3>
+                        <p>ECG 측정 기기 본체 · 1개</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">🧵</span>
+                        <h3>스냅 전극 케이블</h3>
+                        <p>90cm 스냅 전극 케이블 · 3개</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">🩹</span>
+                        <h3>패치 전극</h3>
+                        <p>2225H 3M 패치 전극 · 30개</p>
+                    </article>
+                </div>
+                <div class="notice notice--warning">
+                    <span class="notice__icon" aria-hidden="true">⚠️</span>
+                    <div class="notice__body">
+                        <p class="notice__title">구성품 누락 시</p>
+                        <p>구성품이 누락되었거나 손상된 경우, 임의로 사용하지 말고 구입처 또는
+                            <a href="#contact">고객지원</a>으로 문의해 주세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. 전극 부착 및 측정 준비 -->
+            <section class="doc-section" id="setup">
+                <h2><span class="sec-no">4</span> 전극 부착 및 측정 준비</h2>
+                <p>측정 전, 스냅 전극 케이블을 본체에 연결하고 아래 위치에 맞춰 전극을 부착합니다.</p>
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/images/vetwiz/%5B뉴로위즈텍%5D%20그래픽%20요소%20원본-04.png"
+                        alt="개·고양이 전극 부착 위치 안내 — SIG, GND, REF">
+                    <figcaption>전극 부착 위치(개·고양이)</figcaption>
+                </figure>
+                <ol class="steps">
+                    <li><span class="step-title">SIG</span>좌측 뒷쪽 발바닥에 부착합니다.</li>
+                    <li><span class="step-title">GND</span>좌측 앞쪽 발바닥에 부착합니다.</li>
+                    <li><span class="step-title">REF</span>우측 앞쪽 발바닥에 부착합니다.</li>
+                    <li><span class="step-title">밀착 확인</span>각 전극이 발바닥과 밀착되도록 부착합니다.</li>
+                </ol>
+                <div class="notice notice--tip">
+                    <span class="notice__icon" aria-hidden="true">💡</span>
+                    <div class="notice__body">
+                        <p class="notice__title">접촉 상태가 좋지 않을 때</p>
+                        <p>신호가 나타나지 않거나 불안정하면 전극을 재부착하고, 필요 시 젤을 추가하여 접촉 상태를 안정화합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. 충전 및 배터리 -->
+            <section class="doc-section" id="charging">
+                <h2><span class="sec-no">5</span> 충전 및 배터리 관리</h2>
+                <ol class="steps">
+                    <li><span class="step-title">케이블 연결</span>USB 충전 케이블의 Type-C 커넥터를 기기의 충전 포트에 연결합니다.</li>
+                    <li><span class="step-title">충전 중 확인</span>충전 시 LED 표시등이 흰색으로 표시됩니다.</li>
+                    <li><span class="step-title">완충 확인</span>LED 표시등이 꺼지면 완충 상태입니다.</li>
+                </ol>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">🔋</span>
+                    <div class="notice__body">
+                        <p class="notice__title">배터리 관리</p>
+                        <p>장시간 측정 전에는 배터리를 충분히 충전하고, 장기간 보관 시에는 주기적으로 충전하여 과방전을 방지합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. 상태 표시(LED) -->
+            <section class="doc-section" id="led">
+                <h2><span class="sec-no">6</span> 상태 표시(LED) 안내</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>LED 표시</th>
+                                <th>상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>흰색 점등</td>
+                                <td>충전 중</td>
+                            </tr>
+                            <tr>
+                                <td>꺼짐(충전 중일 때)</td>
+                                <td>완충 완료</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 7. 기본 기능 -->
+            <section class="doc-section" id="features">
+                <h2><span class="sec-no">7</span> 기본 기능</h2>
+                <ul>
+                    <li>생체 신호, 심박, 호흡수 실시간 모니터링</li>
+                    <li>동물별 프로필 관리(등록 / 수정 / 삭제)</li>
+                    <li>생체 신호·심박·호흡 측정 및 측정 데이터 확인</li>
+                    <li>프로필·측정 데이터 검색 기능</li>
+                    <li>이상 심박 알림, 소리·화면 등 앱 관련 설정</li>
+                </ul>
+                <p>각 기능의 화면별 자세한 사용 방법은 <a href="/docs/products/vetwiz-ecg/app-guide.html">VetWiz 앱 사용법</a>을 참고하시기 바랍니다.</p>
+            </section>
+
+            <!-- 8. 주의사항 -->
+            <section class="doc-section" id="cautions">
+                <h2><span class="sec-no">8</span> 측정 시 주의사항</h2>
+                <div class="notice notice--warning">
+                    <span class="notice__icon" aria-hidden="true">⚠️</span>
+                    <div class="notice__body">
+                        <p class="notice__title">정확한 측정을 위해</p>
+                        <p>측정 중에는 동물의 움직임을 최소화하고, 전극과 케이블이 떨어지지 않도록 고정합니다. 강한 전기적 노이즈가 있는
+                            환경은 피하고, 기기와 스마트폰의 거리를 가깝게 유지합니다.</p>
+                    </div>
+                </div>
+                <div class="notice notice--danger">
+                    <span class="notice__icon" aria-hidden="true">🚫</span>
+                    <div class="notice__body">
+                        <p class="notice__title">안전 주의</p>
+                        <p>본 제품은 동물의 심전도 측정을 보조하는 장비입니다. 측정 결과만으로 진단을 확정하지 말고, 이상이 의심되면
+                            반드시 수의사 등 전문가의 판단을 받으시기 바랍니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. 세척 및 보관 -->
+            <section class="doc-section" id="care">
+                <h2><span class="sec-no">9</span> 세척 및 보관</h2>
+                <ul>
+                    <li>사용 후 전극·케이블에 남은 이물질을 제거하고 건조하여 보관합니다.</li>
+                    <li>본체는 직사광선과 습기를 피해 보관합니다.</li>
+                    <li>케이블을 무리하게 당기거나 꺾이지 않도록 정리합니다.</li>
+                    <li>패치 전극은 일회성 소모품이므로, 접착력이 떨어진 전극은 새 전극으로 교체합니다.</li>
+                </ul>
+            </section>
+
+            <!-- 10. 문제 해결 -->
+            <section class="doc-section" id="troubleshooting">
+                <h2><span class="sec-no">10</span> 문제 해결</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>증상</th>
+                                <th>원인</th>
+                                <th>해결 방법</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>기기가 켜지지 않음</td>
+                                <td>배터리 방전</td>
+                                <td>Type-C 케이블로 충전하세요.</td>
+                            </tr>
+                            <tr>
+                                <td>블루투스 연결 실패</td>
+                                <td>범위 초과 또는 간섭</td>
+                                <td>기기 근처로 이동하여 다시 시도하세요.</td>
+                            </tr>
+                            <tr>
+                                <td>ECG 신호 없음</td>
+                                <td>전극 접촉 불량</td>
+                                <td>전극을 재부착하거나 젤을 추가하세요.</td>
+                            </tr>
+                            <tr>
+                                <td>데이터 저장 오류</td>
+                                <td>저장 공간 부족</td>
+                                <td>불필요한 파일을 삭제하거나 외부 저장소를 사용하세요.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 11. 제품 사양 -->
+            <section class="doc-section" id="specs">
+                <h2><span class="sec-no">11</span> 제품 사양</h2>
+                <div class="table-wrapper">
+                    <table class="spec-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">측정 신호</th>
+                                <td>동물 심전도(ECG)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">통신 방식</th>
+                                <td>Bluetooth 5.0 무선 통신</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전원 / 충전</th>
+                                <td>충전식 배터리, USB Type-C 충전</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전극 케이블</th>
+                                <td>90cm 스냅 전극 케이블</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">패치 전극</th>
+                                <td>2225H 3M 패치 전극</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전용 앱</th>
+                                <td>VetWiz 앱 (Android, 실시간 모니터링·기록·보고서)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 12. 앱 사용법으로 이동 -->
+            <section class="doc-section" id="app-guide">
+                <h2><span class="sec-no">12</span> 앱 사용법으로 이동</h2>
+                <p>앱의 화면별 상세 사용 방법(앱 설치·기기 연결·측정·검색·설정·보고서 등)은 별도 문서에서 안내합니다.</p>
+                <p><a class="btn btn--primary" href="/docs/products/vetwiz-ecg/app-guide.html">VetWiz 앱 사용법 보기 →</a></p>
+            </section>
+
+            <!-- 13. 고객지원 -->
+            <section class="doc-section" id="contact">
+                <h2><span class="sec-no">13</span> 고객지원 및 문의</h2>
+                <ul>
+                    <li><strong>기술 지원:</strong> <a href="mailto:office@neurowiztek.com">office@neurowiztek.com</a></li>
+                    <li><strong>전화:</strong> <a href="tel:+820232920502">+82-02-3292-0502</a></li>
+                    <li><strong>운영 시간:</strong> 평일 09:00 ~ 18:00 (한국 표준시)</li>
+                    <li><strong>공식 웹사이트:</strong> <a href="https://www.neurowiztek.com" target="_blank"
+                            rel="noopener">https://www.neurowiztek.com</a></li>
+                </ul>
+            </section>
+
+            <!-- 문서 이동 -->
+            <nav class="doc-pager" aria-label="문서 이동">
+                <a class="pager-next" href="/docs/products/vetwiz-ecg/app-guide.html">
+                    <span class="pager-label">다음 문서</span>
+                    <span class="pager-title">VetWiz 앱 사용법 →</span>
+                </a>
+            </nav>
+
+        </main>
+    </div>
+
+    <!-- ═══════════ 공통 푸터 ═══════════ -->
+    <footer class="doc-footer">
+        <div class="doc-footer__inner">
+            <div><strong>NEUROWIZTEK</strong> · VetWiz-ECG 제품 사용설명서</div>
+            <div>기술 지원: office@neurowiztek.com<br>© 2025 NEUROWIZTEK. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="맨 위로 이동">↑</button>
+
+    <script src="/docs/shared/js/docs-common.js" defer></script>
+</body>
+
+</html>

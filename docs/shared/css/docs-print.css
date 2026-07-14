@@ -1,0 +1,130 @@
+/* =============================================================
+   Neurowiztek 제품 문서 공통 인쇄/PDF 스타일 (docs-print.css)
+   - A4 기준, 내비/버튼 숨김, 페이지 나눔 제어(고아·과부 줄, 표·이미지 보호)
+   ============================================================= */
+@media print {
+    @page {
+        size: A4;
+        margin: 14mm;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+
+    /* 화면 전용 UI 숨김 */
+    .doc-header,
+    .doc-menu-toggle,
+    .doc-nav,
+    .to-top,
+    .doc-toc,
+    .doc-pager,
+    .skip-link {
+        display: none !important;
+    }
+
+    .doc-layout {
+        display: block;
+        max-width: none;
+        padding: 0;
+    }
+
+    .doc-main {
+        max-width: none;
+    }
+
+    /* 히어로(표지) → 본문 사이 자연스러운 전환 */
+    .doc-hero {
+        background: none !important;
+        color: #000;
+        border: none;
+        border-bottom: 3px solid #000;
+        border-radius: 0;
+        padding: 0 0 10px;
+        margin-bottom: 16px;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .doc-hero p,
+    .doc-hero__meta span {
+        color: #000 !important;
+    }
+
+    .doc-hero__meta span {
+        background: none;
+        border: 1px solid #999;
+    }
+
+    /* 섹션·제목: 제목이 페이지 끝에 홀로 남지 않게 */
+    .doc-section {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    .doc-section > h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+        border-bottom: 1.5px solid #000;
+    }
+
+    h2, h3, h4 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    p, li {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* 표·카드·이미지·단계 카드가 페이지 경계에서 잘리지 않게 */
+    .notice,
+    .card,
+    .quickstart-card,
+    figure,
+    .table-wrapper,
+    ol.steps > li,
+    img {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* 긴 표는 페이지를 넘길 수 있게 하되 머리글 반복 */
+    .table-wrapper,
+    table {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .notice,
+    .card,
+    .quickstart-card {
+        box-shadow: none;
+        background: #fff !important;
+    }
+
+    .app-shot,
+    .doc-image {
+        box-shadow: none;
+        max-height: 320px;
+        width: auto;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}
