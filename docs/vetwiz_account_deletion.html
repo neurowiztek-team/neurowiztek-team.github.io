@@ -1,171 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VetWiz 계정 및 데이터 삭제 안내</title>
-  <style>
-    :root {
-      --text: #1a1a1a;
-      --muted: #555;
-      --line: #e3e3e3;
-      --accent: #1f6feb;
-      --bg: #ffffff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #f5f6f8;
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
-                   "Noto Sans KR", "Malgun Gothic", sans-serif;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      background: var(--bg);
-      padding: 48px 40px 64px;
-      min-height: 100vh;
-    }
-    h1 {
-      font-size: 26px;
-      margin: 0 0 8px;
-    }
-    .updated {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 32px;
-    }
-    h2 {
-      font-size: 19px;
-      margin: 40px 0 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--line);
-    }
-    p { margin: 12px 0; }
-    ol, ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    .note {
-      background: #f0f5ff;
-      border: 1px solid #d3e2ff;
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 20px 0;
-      font-size: 15px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 15px;
-    }
-    th, td {
-      border: 1px solid var(--line);
-      padding: 10px 12px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th { background: #fafafa; width: 40%; }
-    a { color: var(--accent); }
-    .footer {
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .email { font-weight: 600; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetWiz 계정 및 데이터 삭제 안내 | NEUROWIZTEK</title>
+    <meta name="description" content="VetWiz 앱 사용자의 계정 및 관련 데이터 삭제 방법 안내. 앱 내 직접 삭제, 이메일 요청, 삭제되는 데이터와 보관 데이터, 부분 삭제를 안내합니다.">
+    <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
 </head>
-<body>
-  <div class="container">
-    <h1>VetWiz 계정 및 데이터 삭제 안내</h1>
-    <p class="updated">앱 이름: VetWiz · 개발사: 주식회사 뉴로위즈텍(NeuroWizTek Inc.) · 최종 업데이트: 2026-06-26</p>
 
-    <p>
-      본 페이지는 VetWiz 앱 사용자가 계정 및 관련 데이터의 삭제를 요청하는 방법을 안내합니다.
-      VetWiz는 앱 최초 실행 시 사용자를 위한 계정을 자동으로 생성하며, 아래 절차에 따라
-      해당 계정과 데이터를 삭제할 수 있습니다.
-    </p>
+<body class="docs-page product-vetwiz-ecg document-legal">
+    <a class="skip-link" href="#main">본문 바로가기</a>
 
-    <h2>1. 앱에서 직접 삭제 (권장)</h2>
-    <p>가장 빠르고 확실한 방법은 앱 내 삭제 기능을 사용하는 것입니다.</p>
-    <ol>
-      <li>VetWiz 앱을 실행합니다.</li>
-      <li><strong>[설정]</strong> 화면으로 이동합니다.</li>
-      <li>화면 <strong>우측 상단의 더보기(⋮) 메뉴</strong>를 엽니다.</li>
-      <li><strong>[계정 및 데이터 삭제]</strong> 항목을 선택합니다.</li>
-      <li>안내에 따라 삭제를 확인하면, 계정과 관련 데이터가 즉시 삭제됩니다.</li>
-    </ol>
-    <div class="note">
-      VetWiz는 별도의 로그인 없이 기기에서 계정이 자동 관리되므로, 사용자가 아이디·비밀번호를
-      입력할 필요 없이 앱 내 버튼만으로 본인 계정을 안전하게 삭제할 수 있습니다.
+    <!-- ═══════════ 공통 헤더 ═══════════ -->
+    <header class="doc-header">
+        <div class="doc-header__inner">
+            <a class="doc-brand" href="/index.html">
+                <img src="/images/logo/VetWiz 아이콘-01.jpg" alt="">
+                <span>VetWiz <span class="doc-brand__sub">법적 고지</span></span>
+            </a>
+            <button class="doc-menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="doc-nav"
+                aria-expanded="false">☰</button>
+            <nav class="doc-nav" id="doc-nav" aria-label="문서 내비게이션">
+                <a href="/docs/vetwiz_account_deletion.html" aria-current="page">계정·데이터 삭제</a>
+                <a href="/docs/vetwiz_personalpolicy.html">개인정보 처리방침</a>
+                <a href="/docs/products/vetwiz-ecg/manual.html">VetWiz-ECG 문서</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="doc-breadcrumb" aria-label="breadcrumb">
+        <a href="/index.html">🏠 제품 문서 홈</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <a href="/docs/products/vetwiz-ecg/manual.html">VetWiz-ECG</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">계정·데이터 삭제</span>
+    </nav>
+
+    <div class="doc-layout">
+
+        <!-- ═══════════ 사이드 목차 ═══════════ -->
+        <aside class="doc-toc" aria-label="목차">
+            <details class="doc-toc__details" open>
+                <summary class="doc-toc__summary">목차</summary>
+                <nav aria-label="문서 목차">
+                    <ol>
+                        <li><a href="#s1">1. 앱에서 직접 삭제 (권장)</a></li>
+                        <li><a href="#s2">2. 이메일로 삭제 요청</a></li>
+                        <li><a href="#s3">3. 삭제되는 데이터</a></li>
+                        <li><a href="#s4">4. 보관되는 데이터 및 보관 기간</a></li>
+                        <li><a href="#s5">5. 부분 삭제</a></li>
+                    </ol>
+                </nav>
+            </details>
+        </aside>
+
+        <!-- ═══════════ 본문 ═══════════ -->
+        <main class="doc-main" id="main">
+
+            <section class="doc-hero">
+                <h1>VetWiz 계정 및 데이터 삭제 안내</h1>
+                <p>앱 이름: VetWiz · 개발사: 주식회사 뉴로위즈텍(NeuroWizTek Inc.)</p>
+                <div class="doc-hero__meta">
+                    <span>최종 업데이트: 2026-06-26</span>
+                </div>
+            </section>
+
+            <section class="doc-section" id="intro">
+                <p class="lead">본 페이지는 VetWiz 앱 사용자가 계정 및 관련 데이터의 삭제를 요청하는 방법을 안내합니다. VetWiz는 앱 최초 실행 시 사용자를 위한 계정을 자동으로 생성하며, 아래 절차에 따라 해당 계정과 데이터를 삭제할 수 있습니다.</p>
+            </section>
+
+            <section class="doc-section" id="s1">
+                <h2>1. 앱에서 직접 삭제 (권장)</h2>
+                <p>가장 빠르고 확실한 방법은 앱 내 삭제 기능을 사용하는 것입니다.</p>
+                <ol class="steps">
+                    <li>VetWiz 앱을 실행합니다.</li>
+                    <li><strong>[설정]</strong> 화면으로 이동합니다.</li>
+                    <li>화면 <strong>우측 상단의 더보기(⋮) 메뉴</strong>를 엽니다.</li>
+                    <li><strong>[계정 및 데이터 삭제]</strong> 항목을 선택합니다.</li>
+                    <li>안내에 따라 삭제를 확인하면, 계정과 관련 데이터가 즉시 삭제됩니다.</li>
+                </ol>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">🔑</span>
+                    <div class="notice__body">
+                        <p>VetWiz는 별도의 로그인 없이 기기에서 계정이 자동 관리되므로, 사용자가 아이디·비밀번호를 입력할 필요 없이 앱 내 버튼만으로 본인 계정을 안전하게 삭제할 수 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="doc-section" id="s2">
+                <h2>2. 이메일로 삭제 요청</h2>
+                <p>앱을 이미 삭제하여 앱 내 기능을 사용할 수 없는 경우, 아래 이메일로 삭제를 요청할 수 있습니다. 요청 시 본인 확인을 위해 가입에 사용된 기기 정보나 병원/사용자 정보를 함께 알려주시면 처리가 원활합니다.</p>
+                <p>문의: <strong>office@neurowiztek.com</strong><br>
+                    제목 예시: <em>[VetWiz] 계정 및 데이터 삭제 요청</em></p>
+                <p>요청은 접수 후 영업일 기준 최대 30일 이내에 처리됩니다.</p>
+            </section>
+
+            <section class="doc-section" id="s3">
+                <h2>3. 삭제되는 데이터</h2>
+                <p>계정 삭제 시 다음 데이터가 삭제됩니다.</p>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <thead>
+                            <tr><th>구분</th><th>내용</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>계정 정보</td><td>인증 계정(Firebase Authentication) 및 계정 식별 정보</td></tr>
+                            <tr><td>사용자 정보</td><td>이름, 이메일, 전화번호, 주소 등 계정에 등록된 정보</td></tr>
+                            <tr><td>환자/프로필 정보</td><td>보호자 정보(이름·연락처·생년월일), 반려동물 정보, 동물등록번호, 계정과 연결된 측정 기록 등</td></tr>
+                            <tr><td>기기 내 데이터</td><td>앱에 저장된 로컬 데이터 및 설정값</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="doc-section" id="s4">
+                <h2>4. 보관되는 데이터 및 보관 기간</h2>
+                <p>사용자의 계정 및 데이터는 삭제 요청 시 <strong>지체 없이 파기</strong>하는 것을 원칙으로 합니다. 계정 정보, 사용자 정보, 환자/프로필 정보, 기기 내 데이터 등 개인을 식별할 수 있는 모든 데이터는 삭제 처리 시 파기되며 별도로 보관하지 않습니다.</p>
+                <p>다만, 측정 과정에서 수집된 생체신호 데이터는 개인 및 환자를 식별할 수 있는 정보를 제거하여 <strong>개인을 알아볼 수 없도록 처리(비식별화)한 후</strong>, AI 모델 개선 및 연구 목적으로 보관·활용될 수 있습니다. 이렇게 비식별 처리된 데이터는 특정 개인과 연결되지 않으므로 계정 삭제 후에도 보관될 수 있으며, 별도의 보관 기간 제한 없이 활용됩니다.</p>
+            </section>
+
+            <section class="doc-section" id="s5">
+                <h2>5. 부분 삭제</h2>
+                <p>계정 전체를 삭제하지 않고도, 앱 내에서 개별 환자/프로필을 삭제하여 해당 데이터만 삭제할 수 있습니다. (앱 &gt; 프로필 &gt; 삭제)</p>
+            </section>
+
+        </main>
     </div>
 
-    <h2>2. 이메일로 삭제 요청</h2>
-    <p>
-      앱을 이미 삭제하여 앱 내 기능을 사용할 수 없는 경우, 아래 이메일로 삭제를 요청할 수 있습니다.
-      요청 시 본인 확인을 위해 가입에 사용된 기기 정보나 병원/사용자 정보를 함께 알려주시면
-      처리가 원활합니다.
-    </p>
-    <p>
-      문의: <span class="email">office@neurowiztek.com</span><br />
-      제목 예시: <em>[VetWiz] 계정 및 데이터 삭제 요청</em>
-    </p>
-    <p>요청은 접수 후 영업일 기준 최대 30일 이내에 처리됩니다.</p>
+    <!-- ═══════════ 공통 푸터 ═══════════ -->
+    <footer class="doc-footer">
+        <div class="doc-footer__inner">
+            <div><strong>주식회사 뉴로위즈텍 (NeuroWizTek Inc.)</strong><br>
+                서울특별시 성북구 정릉로 161 메디사이언스파크 진리관 202호</div>
+            <div>문의: office@neurowiztek.com<br>Copyright NEUROWIZTEK. All Rights reserved.</div>
+            <div class="doc-footer__legal">
+                <a href="/docs/vetwiz_account_deletion.html" aria-current="page">계정·데이터 삭제</a>
+                <a href="/docs/vetwiz_personalpolicy.html">개인정보 처리방침</a>
+            </div>
+        </div>
+    </footer>
 
-    <h2>3. 삭제되는 데이터</h2>
-    <p>계정 삭제 시 다음 데이터가 삭제됩니다.</p>
-    <table>
-      <tr>
-        <th>구분</th>
-        <th>내용</th>
-      </tr>
-      <tr>
-        <td>계정 정보</td>
-        <td>인증 계정(Firebase Authentication) 및 계정 식별 정보</td>
-      </tr>
-      <tr>
-        <td>사용자 정보</td>
-        <td>이름, 이메일, 전화번호, 주소 등 계정에 등록된 정보</td>
-      </tr>
-      <tr>
-        <td>환자/프로필 정보</td>
-        <td>보호자 정보(이름·연락처·생년월일), 반려동물 정보, 동물등록번호, 계정과 연결된 측정 기록 등</td>
-      </tr>
-      <tr>
-        <td>기기 내 데이터</td>
-        <td>앱에 저장된 로컬 데이터 및 설정값</td>
-      </tr>
-    </table>
+    <button class="to-top" type="button" aria-label="맨 위로 이동">↑</button>
 
-    <h2>4. 보관되는 데이터 및 보관 기간</h2>
-    <p>
-      사용자의 계정 및 데이터는 삭제 요청 시 <strong>지체 없이 파기</strong>하는 것을 원칙으로 합니다.
-      계정 정보, 사용자 정보, 환자/프로필 정보, 기기 내 데이터 등 개인을 식별할 수 있는 모든 데이터는
-      삭제 처리 시 파기되며 별도로 보관하지 않습니다.
-    </p>
-    <p>
-      다만, 측정 과정에서 수집된 생체신호 데이터는 개인 및 환자를 식별할 수 있는 정보를 제거하여
-      <strong>개인을 알아볼 수 없도록 처리(비식별화)한 후</strong>, AI 모델 개선 및 연구 목적으로
-      보관·활용될 수 있습니다. 이렇게 비식별 처리된 데이터는 특정 개인과 연결되지 않으므로
-      계정 삭제 후에도 보관될 수 있으며, 별도의 보관 기간 제한 없이 활용됩니다.
-    </p>
-
-    <h2>5. 부분 삭제</h2>
-    <p>
-      계정 전체를 삭제하지 않고도, 앱 내에서 개별 환자/프로필을 삭제하여 해당 데이터만
-      삭제할 수 있습니다. (앱 &gt; 프로필 &gt; 삭제)
-    </p>
-
-    <div class="footer">
-      주식회사 뉴로위즈텍 (NeuroWizTek Inc.)<br />
-      서울특별시 성북구 정릉로 161 메디사이언스파크 진리관 202호<br />
-      문의: <span class="email">office@neurowiztek.com</span><br />
-      관련 문서: <a href="vetwiz_personalpolicy.html">개인정보 처리방침</a>
-    </div>
-  </div>
+    <script src="/docs/shared/js/docs-common.js" defer></script>
 </body>
+
 </html>

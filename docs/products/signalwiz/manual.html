@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignalWiz 상세 제품 사용설명서 | NEUROWIZTEK</title>
+    <meta name="description"
+        content="SignalWiz 상세 제품 사용설명서. SignalWiz 기기 본체와 모바일 앱을 이용한 블루투스 연결, 채널 설정, 임피던스 측정, 실시간 EEG 모니터링, 데이터 녹화 및 CSV 저장 방법을 안내합니다.">
+    <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
+</head>
+
+<body class="docs-page product-signalwiz document-manual">
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <!-- ═══════════ 공통 헤더 ═══════════ -->
+    <header class="doc-header">
+        <div class="doc-header__inner">
+            <a class="doc-brand" href="/index.html">
+                <img src="/images/logo/SignalWiz App icon 512x512.png" alt="">
+                <span>SignalWiz <span class="doc-brand__sub">문서</span></span>
+            </a>
+            <button class="doc-menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="doc-nav"
+                aria-expanded="false">☰</button>
+            <nav class="doc-nav" id="doc-nav" aria-label="문서 내비게이션">
+                <a href="/docs/products/signalwiz/quick-guide.html">간편 안내</a>
+                <a href="/docs/products/signalwiz/manual.html" aria-current="page">상세 사용설명서</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="doc-breadcrumb" aria-label="breadcrumb">
+        <a href="/index.html">🏠 제품 문서 홈</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <a href="/docs/products/signalwiz/manual.html">SignalWiz</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">상세 사용설명서</span>
+    </nav>
+
+    <div class="doc-layout">
+
+        <!-- ═══════════ 사이드 목차 ═══════════ -->
+        <aside class="doc-toc" aria-label="목차">
+            <details class="doc-toc__details" open>
+                <summary class="doc-toc__summary">목차</summary>
+                <nav aria-label="문서 목차">
+                    <ol>
+                        <li><a href="#s1">1. 제품 개요</a></li>
+                        <li><a href="#s2">2. 제품 구성</a></li>
+                        <li><a href="#s3">3. 제품 사양</a></li>
+                        <li><a href="#s4">4. 사용 전 준비</a></li>
+                        <li><a href="#s5">5. 기기 연결 방법</a></li>
+                        <li><a href="#s6">6. 측정 채널 설정</a></li>
+                        <li><a href="#s7">7. 임피던스 측정</a></li>
+                        <li><a href="#s8">8. 실시간 EEG 모니터링</a></li>
+                        <li><a href="#s9">9. 데이터 녹화(저장)</a></li>
+                        <li><a href="#s10">10. CSV 저장 파일 구조</a></li>
+                        <li><a href="#s11">11. 측정 시 주의사항</a></li>
+                        <li><a href="#s12">12. 문제 해결</a></li>
+                        <li><a href="#s13">13. 유지관리</a></li>
+                        <li><a href="#s14">14. 용어 설명</a></li>
+                    </ol>
+                </nav>
+            </details>
+        </aside>
+
+        <!-- ═══════════ 본문 ═══════════ -->
+        <main class="doc-main" id="main">
+
+            <section class="doc-hero">
+                <h1>SignalWiz 상세 제품 사용설명서</h1>
+                <p>SignalWiz 기기 본체와 SignalWiz 모바일 앱을 사용하여 블루투스 연결, 채널 설정, 전극 임피던스 점검, 실시간 EEG 모니터링,
+                    데이터 녹화 및 CSV 저장을 수행하는 방법을 단계별로 안내합니다. 간편 안내가 필요하면
+                    <a href="/docs/products/signalwiz/quick-guide.html" style="color:#fff;text-decoration:underline;">간편 안내</a>를 참고하세요.</p>
+                <div class="doc-hero__meta">
+                    <span>뇌파(EEG) 측정</span>
+                    <span>최대 8채널 · 250 SPS</span>
+                    <span>지원 OS: Android 10 이상</span>
+                </div>
+            </section>
+
+            <!-- 1. 제품 개요 -->
+            <section class="doc-section" id="s1">
+                <h2><span class="sec-no">1</span> 제품 개요</h2>
+                <p class="lead">SignalWiz는 뇌파(EEG)를 측정하는 <strong>SignalWiz 기기 본체</strong>와, 측정 신호를 실시간으로 확인·저장하는
+                    <strong>SignalWiz 모바일 앱</strong>을 합쳐 부르는 이름입니다.</p>
+                <p>SignalWiz 기기 본체는 전극을 통해 측정한 EEG 신호를 디지털로 변환하여 블루투스로 전송하고, SignalWiz 모바일 앱은 이 신호를
+                    수신하여 전극 접촉 상태(임피던스) 점검, 실시간 파형 모니터링, 데이터 녹화(CSV 저장)를 수행합니다. 즉 <strong>기기는 측정·전송을,
+                        앱은 표시·점검·저장을</strong> 담당합니다.</p>
+
+                <h3>사용 대상</h3>
+                <ul>
+                    <li>SignalWiz 기기 본체를 사용하여 EEG 신호를 측정·기록하려는 연구자 및 운용자</li>
+                    <li>전극 접촉 상태를 점검하고 측정 데이터를 CSV로 확보하려는 사용자</li>
+                </ul>
+
+                <h3>주요 기능 요약</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="card-ico" aria-hidden="true">🔗</span>
+                        <h3>블루투스 연결</h3>
+                        <p>SignalWiz 기기 본체를 검색·페어링하여 앱과 연결합니다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-ico" aria-hidden="true">⚙️</span>
+                        <h3>측정 채널 설정</h3>
+                        <p>실제 전극을 부착한 채널만 선택하여 측정·저장 대상으로 지정합니다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-ico" aria-hidden="true">⚡</span>
+                        <h3>임피던스 측정</h3>
+                        <p>채널별로 전극 접촉 상태를 순차적으로 점검합니다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-ico" aria-hidden="true">📈</span>
+                        <h3>실시간 EEG 모니터링</h3>
+                        <p>선택한 채널의 파형을 실시간으로 표시합니다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-ico" aria-hidden="true">⏺️</span>
+                        <h3>데이터 녹화</h3>
+                        <p>측정 신호를 백그라운드에서 안정적으로 기록합니다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-ico" aria-hidden="true">📄</span>
+                        <h3>CSV 파일 저장</h3>
+                        <p>녹화 데이터를 표준 CSV 파일로 내장 저장소에 저장합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. 제품 구성 -->
+            <section class="doc-section" id="s2">
+                <h2><span class="sec-no">2</span> 제품 구성</h2>
+                <p>실제 제공 구성품은 제품 모델·패키지에 따라 다를 수 있습니다. 구성품이 누락된 경우 구입처 또는 NEUROWIZTEK로 문의하시기 바랍니다.</p>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <caption class="sr-only">SignalWiz 제품 구성</caption>
+                        <thead>
+                            <tr>
+                                <th>구성품</th>
+                                <th>설명</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SignalWiz 기기 본체</td>
+                                <td>EEG 신호를 측정하고 블루투스로 전송하는 측정 기기</td>
+                                <td>1대</td>
+                            </tr>
+                            <tr>
+                                <td>골드컵 전극(Gold-cup electrode)</td>
+                                <td>두피에 접촉하여 EEG 신호를 수집하는 전극</td>
+                                <td>10개</td>
+                            </tr>
+                            <tr>
+                                <td>전도성 페이스트(Conductive paste)</td>
+                                <td>전극과 피부의 접촉을 돕고 신호 전달을 안정화하는 페이스트</td>
+                                <td>1개</td>
+                            </tr>
+                            <tr>
+                                <td>하이파픽스(Hypafix) 의료용 테이프</td>
+                                <td>전극을 측정 부위에 고정하는 의료용 테이프</td>
+                                <td>1개</td>
+                            </tr>
+                            <tr>
+                                <td>USB Type-C 충전 케이블</td>
+                                <td>본체 배터리 충전용 케이블</td>
+                                <td>1개</td>
+                            </tr>
+                            <tr>
+                                <td>SignalWiz 모바일 앱</td>
+                                <td>측정·점검·저장을 수행하는 Android 모바일 앱</td>
+                                <td>별도 설치</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 3. 제품 사양 -->
+            <section class="doc-section" id="s3">
+                <h2><span class="sec-no">3</span> 제품 사양</h2>
+
+                <h3>3.1 하드웨어 사양</h3>
+                <p>SignalWiz 기기 본체의 주요 하드웨어 사양은 다음과 같습니다.</p>
+                <div class="table-wrapper">
+                    <table class="spec-table">
+                        <caption class="sr-only">SignalWiz 하드웨어 사양</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">측정 신호</th>
+                                <td>EEG (뇌파)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">채널 수</th>
+                                <td>최대 8채널 (앱은 8채널 EEG 데이터를 처리하며, 사용자가 채널을 선택하여 일부만 측정·저장 가능)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ADC 해상도</th>
+                                <td>24비트 (채널당 24비트, 부호 포함)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">신호 환산</th>
+                                <td>입력 기준전압 4.5&nbsp;V, ADC 게인 24 기준으로 µV 단위로 환산 (앱 내부 처리 기준)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">샘플링 주파수</th>
+                                <td>250&nbsp;SPS (초당 250 표본)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">보조(Aux) 입력</th>
+                                <td>16비트 보조 입력 3채널 (aux1~aux3)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">입력 커넥터</th>
+                                <td>DIN 42802 (touch-proof) 규격</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">통신 방식</th>
+                                <td>Bluetooth (Classic, SPP 방식 페어링 연결)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">배터리</th>
+                                <td>3.7&nbsp;V 900&nbsp;mAh 리튬폴리머(Li-Po) 배터리 내장</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">충전 방식</th>
+                                <td>USB Type-C 케이블로 충전</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">연속 사용 시간</th>
+                                <td>약 13시간 (사용 환경에 따라 상이)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전원 조작</th>
+                                <td>전원 버튼을 한 번 터치하면 켜지고, 약 3초간 길게 누르면 꺼집니다</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">기기 저장 방식</th>
+                                <td>측정 데이터는 기기에 저장되지 않고 블루투스로 앱에 실시간 전송 (저장은 앱에서 수행)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>3.2 앱 사양</h3>
+                <div class="table-wrapper">
+                    <table class="spec-table">
+                        <caption class="sr-only">SignalWiz 앱 사양</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">앱 이름</th>
+                                <td>SignalWiz 모바일 앱</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">지원 OS</th>
+                                <td>Android 10 (API 29) 이상</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주요 화면</th>
+                                <td>블루투스 · 채널 설정 · 임피던스 · 모니터 (하단 4개 탭)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">신호 처리</th>
+                                <td>0.5~50&nbsp;Hz 밴드패스 필터 + 60&nbsp;Hz 노치 필터</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">저장 파일 형식</th>
+                                <td>CSV (UTF-8, 쉼표 구분)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">분석 / 점검 기능</th>
+                                <td>전극 임피던스 측정(채널별 순차), 실시간 파형 표시</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">권한 요구사항</th>
+                                <td>블루투스 검색·연결 권한, 위치 권한(Android 11 이하 검색용), 알림 권한, 포그라운드 서비스</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 4. 사용 전 준비 -->
+            <section class="doc-section" id="s4">
+                <h2><span class="sec-no">4</span> 사용 전 준비</h2>
+                <ol class="steps">
+                    <li><span class="step-title">기기 충전</span>측정 전에 USB Type-C 케이블로 SignalWiz 기기 본체를 충분히 충전합니다. 완충 시 약
+                        13시간 연속 사용할 수 있으며, 장시간 측정 시에는 배터리 잔량을 미리 확인합니다.</li>
+                    <li><span class="step-title">앱 설치</span>구글 Play 스토어에서 <strong>‘Signalwiz mobile’</strong> 앱을 검색하여 스마트폰에
+                        설치합니다. (Android 10 이상 기기 권장)</li>
+                    <li><span class="step-title">블루투스 권한 허용</span>앱을 처음 실행하면 블루투스 검색·연결 권한 요청이 표시됩니다. 모두 허용합니다.
+                        Android 11 이하에서는 기기 검색을 위해 위치 권한도 필요합니다.</li>
+                    <li><span class="step-title">알림 권한 허용</span>녹화는 백그라운드 서비스로 동작하므로, 측정 중 상태 알림 표시를 위해 알림 권한을
+                        허용합니다.</li>
+                    <li><span class="step-title">전극 준비</span>골드컵 전극을 본체 단자에 연결하고, 전도성 페이스트와 하이파픽스 의료용 테이프를 준비합니다.</li>
+                    <li><span class="step-title">측정 환경 준비</span>전기적 노이즈가 적은 환경에서 측정하고, 스마트폰과 기기를 가까이 둡니다.</li>
+                    <li><span class="step-title">전극 접촉 상태 확인 준비</span>측정 부위의 두피를 정돈하여 전극이 안정적으로 접촉하도록 합니다. 실제 접촉 상태는
+                        연결 후 임피던스 화면에서 점검합니다.</li>
+                </ol>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">💾</span>
+                    <div class="notice__body">
+                        <p class="notice__title">저장 권한 안내</p>
+                        <p>측정 데이터는 안드로이드 공용 다운로드 폴더에 저장되며, 별도의 파일 저장 권한을 요구하지 않습니다(Android 10 이상 범위 저장소 방식).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. 기기 연결 방법 -->
+            <section class="doc-section" id="s5">
+                <h2><span class="sec-no">5</span> 기기 연결 방법</h2>
+                <p>앱을 실행하면 가장 먼저 <strong>[블루투스]</strong> 화면이 표시됩니다. 아래 순서대로 SignalWiz 기기 본체를 연결합니다.</p>
+
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/assets/images/signalwiz-mobile/manual/06_SignalWiz 본체 기기.png"
+                            alt="SignalWiz 기기 본체 — CH1~CH8, REF, GND 단자와 전원 버튼">
+                        <figcaption>SignalWiz 기기 본체</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/assets/images/signalwiz-mobile/manual/01_bluetooth.png"
+                            alt="블루투스 연결 화면 — 기기가 연결됨 상태로 표시되고 등록된 기기 목록이 보임">
+                        <figcaption>[블루투스] 화면 — 기기 연결 완료(연결됨) 상태</figcaption>
+                    </figure>
+                </div>
+
+                <ol class="steps">
+                    <li><span class="step-title">SignalWiz 기기 본체 전원 켜기</span>본체의 전원 버튼을 한 번 터치하면 전원이 켜집니다. (전원을 끌 때는 전원
+                        버튼을 약 3초간 길게 누릅니다.)</li>
+                    <li><span class="step-title">앱 실행</span>SignalWiz 모바일 앱을 실행하면 [블루투스] 화면이 표시됩니다.</li>
+                    <li><span class="step-title">블루투스 권한 확인</span>권한 요청이 표시되면 모두 허용합니다.</li>
+                    <li><span class="step-title">기기 검색</span><strong>[기기 검색 시작]</strong> 버튼을 눌러 주변 기기를 검색합니다. 이미 페어링(등록)된
+                        기기는 <strong>등록된 기기</strong> 목록에 표시됩니다.</li>
+                    <li><span class="step-title">기기 선택</span>목록에서 사용할 SignalWiz 기기 본체를 선택합니다. 처음 연결하는 기기는 페어링이 진행됩니다.</li>
+                    <li><span class="step-title">연결 완료 확인</span>연결되면 화면 상단 상태가 <strong>“연결됨”</strong>으로 표시되고 기기 이름이
+                        함께 나타납니다.</li>
+                    <li><span class="step-title">다음 단계로 이동</span>연결이 완료되면 하단 탭에서 <strong>[채널 설정]</strong>으로 이동하여 측정
+                        채널을 지정합니다.</li>
+                </ol>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>앱은 정해진 이름으로 시작하는 SignalWiz 기기 본체만 검색·표시합니다. 기기가 목록에 나타나지 않으면 본체 전원과 권한 허용 여부를 먼저
+                            확인하세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. 채널 설정 -->
+            <section class="doc-section" id="s6">
+                <h2><span class="sec-no">6</span> 측정 채널 설정</h2>
+                <p class="lead">실제 전극을 부착(사용)한 채널만 선택하여 측정·저장 대상으로 지정하는 단계입니다. <strong>채널 설정을 완료해야 임피던스
+                        측정과 데이터 녹화를 사용할 수 있습니다.</strong></p>
+
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/assets/images/signalwiz-mobile/manual/02_channel.png"
+                        alt="측정 채널 설정 화면 — CH1~CH8 사용/미사용 선택과 설정 완료 버튼">
+                    <figcaption>[채널 설정] 화면 — 사용 채널 선택</figcaption>
+                </figure>
+
+                <ol class="steps">
+                    <li><span class="step-title">[채널 설정] 탭 이동</span>하단 탭에서 <strong>[채널 설정]</strong>을 선택합니다.</li>
+                    <li><span class="step-title">사용 채널 선택</span>CH1~CH8 카드 중 실제 전극을 부착한 채널을 눌러 <strong>‘사용’</strong> 상태로
+                        설정합니다. 사용하지 않는 채널은 <strong>‘미사용’</strong>으로 둡니다. (최소 1개 채널은 항상 선택되어 있어야 합니다.)</li>
+                    <li><span class="step-title">선택 내용 확인</span>화면 하단에서 <strong>선택된 채널</strong> 목록을 확인합니다.</li>
+                    <li><span class="step-title">설정 완료</span><strong>[설정 완료]</strong> 버튼을 누르면 선택한 채널 정보가 기기에 전달되고,
+                        임피던스 측정과 녹화 기능이 활성화됩니다.</li>
+                </ol>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">🧩</span>
+                    <div class="notice__body">
+                        <p class="notice__title">채널 선택의 의미</p>
+                        <p>선택한 채널만 임피던스 점검·실시간 표시·CSV 저장의 대상이 됩니다. 선택하지 않은(미사용) 채널은 측정에서 제외됩니다. 채널 선택을 변경하면
+                            <strong>[설정 완료]</strong>를 다시 눌러야 변경 내용이 적용됩니다.</p>
+                    </div>
+                </div>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>녹화(저장) 중에는 다른 탭으로 전환할 수 없으며, 채널 설정을 완료하기 전에는 [임피던스]·[모니터] 탭이 잠겨 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. 임피던스 측정 -->
+            <section class="doc-section" id="s7">
+                <h2><span class="sec-no">7</span> 임피던스 측정</h2>
+                <p>임피던스 측정은 전극이 두피에 얼마나 잘 접촉되어 있는지를 확인하는 과정입니다. 임피던스 값이 낮고 안정적일수록 전극 접촉 상태가 양호하며,
+                    측정 신호 품질도 좋아집니다.</p>
+
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/assets/images/signalwiz-mobile/manual/03_impedance.png"
+                        alt="임피던스 측정 화면 — 채널별 임피던스 값과 상태, 순차 측정 진행 표시">
+                    <figcaption>[임피던스] 화면 — 채널별 접촉 상태 점검</figcaption>
+                </figure>
+
+                <ol class="steps">
+                    <li><span class="step-title">전극 부착 확인</span>측정 부위에 전극을 부착하고 케이블 연결 상태를 확인합니다. 필요 시 전도성 페이스트를 보충합니다.</li>
+                    <li><span class="step-title">[임피던스] 탭 이동</span>하단 탭에서 <strong>[임피던스]</strong>를 선택하면 측정이 자동으로
+                        시작됩니다.</li>
+                    <li><span class="step-title">순차 측정 확인</span>임피던스는 <strong>채널 단위로 순차 측정</strong>됩니다. 화면 상단에
+                        <strong>“현재 측정 중: CHn”</strong>이 표시되며, 측정 중인 채널은 테두리가 강조됩니다.</li>
+                    <li><span class="step-title">채널별 값 확인</span>각 채널 카드에 임피던스 값과 상태(GOOD/WARN/BAD/OPEN)가 표시됩니다.</li>
+                    <li><span class="step-title">접촉 불량 조치</span>값이 높거나 <strong>OPEN</strong>으로 표시되는 채널은 전극을 다시 부착하고 전도성 페이스트를
+                        보충한 뒤 접촉 상태를 안정화합니다.</li>
+                </ol>
+
+                <h3>임피던스 상태 표시 기준</h3>
+                <p>각 채널의 임피던스 값에 따라 다음과 같이 색상과 상태가 표시됩니다.</p>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <caption class="sr-only">임피던스 상태 기준</caption>
+                        <thead>
+                            <tr>
+                                <th>상태</th>
+                                <th>임피던스 범위(저항)</th>
+                                <th>의미</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GOOD</td>
+                                <td>약 20&nbsp;kΩ 미만</td>
+                                <td>전극 접촉 양호</td>
+                            </tr>
+                            <tr>
+                                <td>WARN</td>
+                                <td>약 20&nbsp;kΩ ~ 100&nbsp;kΩ</td>
+                                <td>접촉 보통 — 가능하면 개선 권장</td>
+                            </tr>
+                            <tr>
+                                <td>BAD</td>
+                                <td>약 100&nbsp;kΩ ~ 1&nbsp;MΩ</td>
+                                <td>접촉 불량 — 전극 재부착 권장</td>
+                            </tr>
+                            <tr>
+                                <td>OPEN</td>
+                                <td>약 1&nbsp;MΩ 이상</td>
+                                <td>전극 개방/미접촉 — 전극·케이블 연결 확인 필요</td>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>값 없음</td>
+                                <td>아직 측정 전이거나 측정값이 없는 상태(대기)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>위 구간 값은 앱의 상태 표시 기준이며, 실제 측정 환경·전극 종류에 따라 양호 기준은 달라질 수 있습니다. 일반적으로 값이 낮고 안정적일수록
+                            전극 접촉 상태가 양호합니다. 선택한 채널만 순차적으로 측정되며, 측정하지 않은 채널은 표시되지 않습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. 실시간 EEG 모니터링 -->
+            <section class="doc-section" id="s8">
+                <h2><span class="sec-no">8</span> 실시간 EEG 모니터링</h2>
+                <p>[모니터] 화면에서는 현재 수신 중인 EEG 신호를 채널별 파형으로 실시간 확인할 수 있습니다.</p>
+
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/assets/images/signalwiz-mobile/manual/04_monitor.png"
+                        alt="실시간 EEG 모니터링 화면 — 채널별 파형, Y축 µV 라벨, 저장 시작 버튼">
+                    <figcaption>[모니터] 화면 — 채널별 실시간 파형</figcaption>
+                </figure>
+
+                <h3>화면 구성</h3>
+                <ul>
+                    <li><strong>채널별 파형 카드</strong> — 채널 설정에서 선택한 채널만 카드로 표시되며, 각 카드는 <code>CH n</code> 라벨과 색상을
+                        가집니다.</li>
+                    <li><strong>진폭(Y) 축</strong> — 세로축은 신호 진폭으로, 단위는 µV입니다. 기본 표시 범위는 −100µV ~ +100µV입니다.</li>
+                    <li><strong>시간(X) 축</strong> — 가로축은 시간으로, 약 5초 구간의 최근 파형이 흐르듯 표시됩니다.</li>
+                    <li><strong>Y축 범위 조정</strong> — 카드 왼쪽의 Y축 값(µV)을 탭하면 최소/최대값을 직접 입력하여 표시 배율을 조정할 수 있습니다.</li>
+                    <li><strong>저장 시작 버튼</strong> — 화면 우측 상단의 <strong>[저장 시작]</strong> 버튼으로 녹화를 시작/중지합니다.</li>
+                </ul>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">〰️</span>
+                    <div class="notice__body">
+                        <p class="notice__title">표시되는 신호 안내</p>
+                        <p>모니터에 표시되는 파형은 기저선 흔들림과 잡음을 줄이기 위해 0.5~50Hz 밴드패스 필터와 60Hz 노치 필터가 적용된 신호입니다.</p>
+                    </div>
+                </div>
+
+                <h3>신호 상태 해석</h3>
+                <ul>
+                    <li><strong>정상 신호</strong> — 일정한 범위 안에서 규칙적으로 변동하는 파형이 표시됩니다.</li>
+                    <li><strong>노이즈가 큰 신호</strong> — 파형이 화면 범위를 크게 벗어나 튀거나 진동이 과도하면 움직임·전기적 노이즈의 영향일 수 있습니다.</li>
+                    <li><strong>특정 채널 이상</strong> — 한 채널만 평평하거나 비정상적으로 표시되면 해당 채널의 전극 접촉 상태와 케이블 연결을 확인합니다.
+                        필요 시 [임피던스] 화면에서 접촉 상태를 다시 점검합니다.</li>
+                </ul>
+            </section>
+
+            <!-- 9. 데이터 녹화 -->
+            <section class="doc-section" id="s9">
+                <h2><span class="sec-no">9</span> 데이터 녹화(저장)</h2>
+                <p>측정 신호는 [모니터] 화면에서 녹화하여 CSV 파일로 저장합니다. 녹화는 백그라운드 서비스로 동작하므로 안정적으로 기록됩니다.</p>
+
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/assets/images/signalwiz-mobile/manual/05_recording.png"
+                        alt="녹화 진행 화면 — REC 경과 시간 표시와 저장 중지 버튼">
+                    <figcaption>녹화 중 화면 — REC 타이머와 [저장 중지] 버튼</figcaption>
+                </figure>
+
+                <ol class="steps">
+                    <li><span class="step-title">[모니터] 화면 진입</span>하단 탭에서 <strong>[모니터]</strong>를 선택합니다. (채널 설정 완료 및
+                        기기 연결 상태여야 합니다.)</li>
+                    <li><span class="step-title">녹화 시작</span>우측 상단의 <strong>[저장 시작]</strong> 버튼을 누르면 녹화가 시작됩니다.</li>
+                    <li><span class="step-title">녹화 중 상태 확인</span>녹화 중에는 버튼이 <strong>[저장 중지]</strong>로 바뀌고, 상단에
+                        <strong>REC 경과 시간(분:초)</strong>이 표시됩니다. 또한 상태 표시줄에 <strong>“데이터 기록 중”</strong> 알림이
+                        나타납니다.</li>
+                    <li><span class="step-title">녹화 종료</span><strong>[저장 중지]</strong> 버튼을 누르면 녹화가 종료되고 파일이 저장됩니다.</li>
+                    <li><span class="step-title">저장 확인</span>저장된 파일은 스마트폰의 <code>다운로드 &gt; Signalwiz mobile</code> 폴더에서
+                        확인할 수 있습니다.</li>
+                </ol>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📁</span>
+                    <div class="notice__body">
+                        <p class="notice__title">저장 위치</p>
+                        <p>기본 저장 경로는 <code>Download/Signalwiz mobile/</code> 입니다. 파일명은 <code>Raw_날짜_시간.csv</code> 형식으로
+                            자동 생성됩니다.</p>
+                    </div>
+                </div>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>녹화 중에는 다른 탭으로 전환할 수 없습니다. 장시간 녹화 전에는 배터리 잔량과 저장 공간을 미리 확인하세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. CSV 저장 파일 구조 -->
+            <section class="doc-section" id="s10">
+                <h2><span class="sec-no">10</span> CSV 저장 파일 구조</h2>
+                <p>녹화된 데이터는 표준 CSV(쉼표 구분) 형식으로 저장됩니다. 채널 설정에서 선택한 채널만 데이터 컬럼으로 기록됩니다.</p>
+
+                <div class="table-wrapper">
+                    <table class="spec-table">
+                        <caption class="sr-only">CSV 저장 파일 개요</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">저장 위치</th>
+                                <td><code>Download/Signalwiz mobile/</code> (내장 저장소 공용 다운로드 폴더)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">파일명 규칙</th>
+                                <td><code>Raw_yyyy-MM-dd_HH-mm-ss.csv</code> (녹화 시작 시각 기준 자동 생성)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">인코딩</th>
+                                <td>UTF-8 (BOM 포함)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첫 줄(헤더 메타)</th>
+                                <td><code># Measurement Start At : yyyy-MM-dd_HH:mm:ss</code> — 측정 시작 시각</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">둘째 줄(컬럼명)</th>
+                                <td><code>Timestamp,Ch1,…,aux1,aux2,aux3</code> — 선택한 채널만 순서대로 기록</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>컬럼 구조</h3>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <caption class="sr-only">CSV 컬럼 구조</caption>
+                        <thead>
+                            <tr>
+                                <th>컬럼</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>Timestamp</code></td>
+                                <td>각 표본의 기록 시각 (<code>yyyy-MM-dd HH:mm:ss.SSS</code>, 밀리초 단위)</td>
+                            </tr>
+                            <tr>
+                                <td><code>Ch1 … Ch8</code></td>
+                                <td>선택한 채널의 EEG 값(µV). 원래 채널 번호가 유지됩니다. (예: CH1·CH3만 선택 시 컬럼은
+                                    <code>Ch1,Ch3</code>)</td>
+                            </tr>
+                            <tr>
+                                <td><code>aux1, aux2, aux3</code></td>
+                                <td>보조(Aux) 입력 3채널 값(16비트)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>파일 예시</h3>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <caption class="sr-only">CSV 파일 예시</caption>
+                        <tbody>
+                            <tr>
+                                <td><code># Measurement Start At : 2026-06-25_14:03:21</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>Timestamp,Ch1,Ch2,Ch3,Ch4,Ch5,Ch6,aux1,aux2,aux3</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>2026-06-25 14:03:21.124,12.3,-4.1,7.8,…,0,0,0</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>현재 버전의 CSV에는 별도의 Battery 컬럼이나 샘플링 주파수 메타데이터가 포함되지 않습니다(파일 첫 줄에 측정 시작
+                            시각만 기록). 보조 신호는 <code>aux1~aux3</code> 컬럼에 기록됩니다. 데이터 컬럼 개수는 채널 설정에서 선택한 채널 수에
+                            따라 달라집니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 11. 측정 시 주의사항 -->
+            <section class="doc-section" id="s11">
+                <h2><span class="sec-no">11</span> 측정 시 주의사항</h2>
+                <ul>
+                    <li>측정 중에는 움직임을 최소화하여 동잡음(움직임 노이즈)을 줄입니다.</li>
+                    <li>케이블이 흔들리지 않도록 정리하고 고정합니다.</li>
+                    <li>전극이 안정적으로 접촉되도록 하고, 필요 시 전도성 페이스트를 보충합니다.</li>
+                    <li>강한 전기적 노이즈가 있는 환경(전원 장치, 모터 등 근처)을 피합니다.</li>
+                    <li>스마트폰과 기기 사이의 거리를 가깝게 유지하여 블루투스 연결이 끊기지 않도록 합니다.</li>
+                    <li>측정 전 배터리 잔량을 확인합니다.</li>
+                    <li>장시간 녹화 전에는 저장 공간을 충분히 확보합니다.</li>
+                </ul>
+            </section>
+
+            <!-- 12. 문제 해결 -->
+            <section class="doc-section" id="s12">
+                <h2><span class="sec-no">12</span> 문제 해결</h2>
+                <div class="table-wrapper">
+                    <table class="troubleshooting-table">
+                        <caption class="sr-only">문제 해결</caption>
+                        <thead>
+                            <tr>
+                                <th>증상</th>
+                                <th>가능한 원인</th>
+                                <th>조치 방법</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bluetooth 기기가 검색되지 않음</td>
+                                <td>기기 전원 꺼짐, 블루투스/위치 권한 미허용</td>
+                                <td>본체 전원과 권한 허용 여부 확인 후 다시 검색</td>
+                            </tr>
+                            <tr>
+                                <td>연결은 되었지만 파형이 표시되지 않음</td>
+                                <td>채널 미설정, 데이터 수신 지연</td>
+                                <td>[채널 설정] 완료 여부 확인, 재연결 후 [모니터] 확인</td>
+                            </tr>
+                            <tr>
+                                <td>특정 채널이 평평하게 표시됨</td>
+                                <td>전극 미연결 또는 접촉 불량</td>
+                                <td>해당 채널의 전극·케이블 연결 확인, 임피던스 재점검</td>
+                            </tr>
+                            <tr>
+                                <td>임피던스가 높게(BAD/OPEN) 표시됨</td>
+                                <td>전극 접촉 불량, 전도성 페이스트 부족</td>
+                                <td>전극 재부착, 전도성 페이스트 보충 후 접촉 안정화</td>
+                            </tr>
+                            <tr>
+                                <td>파형이 크게 튐</td>
+                                <td>움직임 노이즈, 케이블 흔들림</td>
+                                <td>움직임 최소화, 케이블 고정</td>
+                            </tr>
+                            <tr>
+                                <td>임피던스/모니터 탭이 눌리지 않음</td>
+                                <td>채널 설정 미완료</td>
+                                <td>[채널 설정]에서 채널 선택 후 [설정 완료] 실행</td>
+                            </tr>
+                            <tr>
+                                <td>녹화 중 탭이 전환되지 않음</td>
+                                <td>녹화(저장) 진행 중</td>
+                                <td>정상 동작 — [저장 중지] 후 탭 전환</td>
+                            </tr>
+                            <tr>
+                                <td>CSV 파일이 보이지 않음</td>
+                                <td>저장 위치 착오</td>
+                                <td><code>Download/Signalwiz mobile/</code> 폴더 확인</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>블루투스 권한을 허용하지 않으면 “블루투스 연결 권한이 필요합니다.” 안내가, 채널 설정 전 잠긴 탭을 누르면 “먼저 ‘채널 설정’에서 측정
+                            채널을 설정하세요.” 안내가, 녹화 중 탭 전환 시 “녹화 중에는 탭을 전환할 수 없습니다.” 안내가 표시됩니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13. 유지관리 -->
+            <section class="doc-section" id="s13">
+                <h2><span class="sec-no">13</span> 유지관리</h2>
+                <ul>
+                    <li><strong>기기 보관</strong> — 직사광선과 습기를 피해 보관합니다.</li>
+                    <li><strong>배터리 관리</strong> — 장기 미사용 시 주기적으로 충전하여 과방전을 방지합니다.</li>
+                    <li><strong>전극 케이블 관리</strong> — 무리하게 당기거나 꺾이지 않도록 정리하여 보관합니다.</li>
+                    <li><strong>전극 청소</strong> — 사용 후 전극에 남은 전도성 페이스트를 닦아내고 건조하여 보관합니다.</li>
+                    <li><strong>앱 업데이트</strong> — 앱 업데이트 전 진행 중인 측정을 종료하고 데이터를 저장합니다.</li>
+                    <li><strong>데이터 백업</strong> — 저장된 CSV 파일은 PC 등으로 주기적으로 백업합니다.</li>
+                </ul>
+            </section>
+
+            <!-- 14. 용어 설명 -->
+            <section class="doc-section" id="s14">
+                <h2><span class="sec-no">14</span> 용어 설명</h2>
+                <div class="table-wrapper">
+                    <table class="term-table">
+                        <caption class="sr-only">용어 설명</caption>
+                        <thead>
+                            <tr>
+                                <th>용어</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EEG</td>
+                                <td>뇌전도(Electroencephalography). 두피 전극으로 측정하는 뇌의 전기적 활동 신호.</td>
+                            </tr>
+                            <tr>
+                                <td>Channel(채널)</td>
+                                <td>전극 하나(또는 한 쌍)에서 측정되는 신호의 단위. 본 기기는 최대 8채널.</td>
+                            </tr>
+                            <tr>
+                                <td>Sampling Rate(샘플링 주파수)</td>
+                                <td>1초당 신호를 측정·기록하는 횟수. 값이 높을수록 더 촘촘한 신호를 기록.</td>
+                            </tr>
+                            <tr>
+                                <td>SPS</td>
+                                <td>Samples Per Second. 초당 표본 수, 샘플링 주파수의 단위.</td>
+                            </tr>
+                            <tr>
+                                <td>Impedance(임피던스)</td>
+                                <td>전극-피부 사이의 전기 저항. 낮을수록 접촉 상태가 양호.</td>
+                            </tr>
+                            <tr>
+                                <td>Lead-off / OPEN</td>
+                                <td>전극이 떨어졌거나 접촉되지 않은 상태. 임피던스가 매우 높게(OPEN) 표시됨.</td>
+                            </tr>
+                            <tr>
+                                <td>CSV</td>
+                                <td>쉼표로 값을 구분하는 표 형식 텍스트 파일. 측정 데이터 저장 형식.</td>
+                            </tr>
+                            <tr>
+                                <td>Bluetooth</td>
+                                <td>기기와 스마트폰을 무선으로 연결하는 근거리 통신 방식.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 문서 이동 -->
+            <nav class="doc-pager" aria-label="문서 이동">
+                <a class="pager-next" href="/docs/products/signalwiz/quick-guide.html">
+                    <span class="pager-label">다음 문서</span>
+                    <span class="pager-title">SignalWiz 간편 안내 →</span>
+                </a>
+            </nav>
+
+        </main>
+    </div>
+
+    <!-- ═══════════ 공통 푸터 ═══════════ -->
+    <footer class="doc-footer">
+        <div class="doc-footer__inner">
+            <div><strong>NEUROWIZTEK</strong> · SignalWiz 상세 제품 사용설명서</div>
+            <div>기술 지원: office@neurowiztek.com<br>© 2026 NEUROWIZTEK. All rights reserved.</div>
+            <div class="doc-footer__legal">
+                <a href="/docs/personalpolicy.html">개인정보 처리방침</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="맨 위로 이동">↑</button>
+
+    <script src="/docs/shared/js/docs-common.js" defer></script>
+</body>
+
+</html>

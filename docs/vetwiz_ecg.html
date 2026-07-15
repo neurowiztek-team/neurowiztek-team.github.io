@@ -4,159 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/">
-    <title>Vetwiz 사용설명서 - NEUROWIZTEK</title>
-    <link rel="stylesheet" href="/docs/style.css">
-    <link rel="stylesheet" href="/docs/mobile.css">
-    <meta name="description" content="Vetwiz-ECG 동물 심전도 측정 시스템 사용설명서. 반려동물 심전도 측정 및 분석 방법 안내.">
+    <title>VetWiz-ECG 제품 사용설명서 | NEUROWIZTEK</title>
+    <meta name="description" content="이 페이지는 새 주소로 이동되었습니다: VetWiz-ECG 제품 사용설명서.">
+    <meta name="robots" content="noindex">
+    <!-- 문서가 /docs/products/vetwiz-ecg/manual.html (으)로 이동되었습니다. 기존 URL 호환용 리디렉션 스텁입니다. -->
+    <meta http-equiv="refresh" content="0; url=/docs/products/vetwiz-ecg/manual.html">
+    <link rel="canonical" href="/docs/products/vetwiz-ecg/manual.html">
+    <style>
+        body {
+            font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, -apple-system, Arial, sans-serif;
+            background: #f6f8fb; color: #1f2733; margin: 0;
+            display: flex; min-height: 100vh; align-items: center; justify-content: center; padding: 24px;
+        }
+        .redirect {
+            max-width: 520px; width: 100%; background: #fff; border: 1px solid #e1e7f0;
+            border-radius: 16px; padding: 32px; text-align: center;
+            box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+        }
+        h1 { font-size: 1.25rem; margin: 0 0 8px; }
+        p { color: #566072; line-height: 1.7; margin: 0 0 20px; }
+        .btn {
+            display: inline-block; background: #0b6cf0; color: #fff; text-decoration: none;
+            font-weight: 700; padding: 12px 22px; border-radius: 8px;
+        }
+        .btn:hover { background: #084ba8; }
+        .alt { margin-top: 16px; margin-bottom: 0; font-size: 0.9rem; }
+        .alt a { color: #0b6cf0; }
+    </style>
 </head>
 
 <body>
-
-    <header>
-        <div class="logo">
-            <a href="index.html" style="color: white; text-decoration: none;">NEUROWIZTEK</a>
-        </div>
-        <h1>VetWiz 사용설명서</h1>
-        <p>동물 심전도 측정 및 분석 솔루션</p>
-            <p style="margin:6px 0 0 0;"><a href="/docs/vetwiz_quick_guide.html" class="page-cta">퀵 가이드</a> <a href="/docs/vetwiz_ecg_app_usage.html" class="page-cta">어플 사용법</a></p>
-    </header>
-
-    <nav class="toc">
-        <div class="toc-title">목차</div>
-        <ul class="toc-list">
-            <li><a href="/docs/vetwiz_ecg.html#overview">제품 개요</a></li>
-            <li><a href="/docs/vetwiz_ecg.html#components">구성품</a></li>
-            <li><a href="/docs/vetwiz_ecg.html#setup">측정 준비</a></li>
-            <li><a href="/docs/vetwiz_ecg.html#basic_features">기본 기능</a></li>
-            <li><a href="/docs/vetwiz_ecg.html#charging">기기 충전</a></li>
-            <li><a href="/docs/vetwiz_ecg.html#troubleshooting">문제 해결</a></li>
-            <li><a href="/docs/vetwiz_ecg.html#contact">지원 및 문의</a></li>
-        </ul>
-    </nav>
-
-    <main>
-
-        <section id="overview">
-            <h2>1. 제품 개요</h2>
-            <img
-                src="/images/vetwiz/편집9.png"
-                class="full-width-img"
-                style="width: 100%; max-width: 760px; height: auto; display: block; margin: 20px auto;"
-                alt="Vetwiz-ECG 제품 이미지"
-            >
-            <ul>
-                <li>고정밀 ECG 센서로 동물의 심전도 측정</li>
-                <li>반려동물, 실험동물 등 다양한 동물에 적용 가능</li>
-                <li>블루투스 5.0 무선 통신으로 실시간 데이터 전송</li>
-                <li>C Type 충전식 배터리</li>
-                <li>전용 어플리케이션 포함</li>
-            </ul>
-        </section>
-
-        <section id="components">
-            <h2>2. 구성품</h2>
-            <p>제품 상자를 열어 아래 구성품이 모두 들어있는지 확인해주세요.</p>
-            <ul>
-                <li>VetWiz 하드웨어 본품 (1개)</li>
-                <li>90cm 스냅 전극 케이블 (3개)</li>
-                <li>2225H 3M 패치 전극 (30개)</li>
-            </ul>
-        </section>
-
-        <section id="setup">
-            <h2>3. 측정 준비</h2>
-            <p>측정 전 아래 위치에 맞춰 전극을 부착합니다.</p>
-            <img
-                src="/images/vetwiz/%5B뉴로위즈텍%5D%20그래픽%20요소%20원본-04.png"
-                class="full-width-img"
-                style="max-width: 350px; display: block; margin: 20px auto;"
-                alt="개/고양이 전극 부착 위치"
-            >
-            <ol class="step-list">
-                <li><strong>SIG:</strong> 좌측 뒷쪽 발바닥</li>
-                <li><strong>GND:</strong> 좌측 앞쪽 발바닥</li>
-                <li><strong>REF:</strong> 우측 앞쪽 발바닥</li>
-                <li>각 전극을 발바닥과 밀착되도록 부착합니다.</li>
-            </ol>
-        </section>
-
-        <section id="basic_features">
-            <h2>4. 기본 기능 (Basic Features)</h2>
-
-            <ul>
-                <li>생체 신호, 심박, 호흡수 실시간 모니터링</li>
-                <li>동물 별 프로필 관리 (등록 / 수정 / 삭제)</li>
-                <li>생체 신호, 심박, 호흡 측정 및 측정 데이터 확인</li>
-                <li>프로필, 측정 데이터 검색 기능</li>
-                <li>이상 심박 알림, 소리 및 화면 등 앱 관련 설정</li>
-            </ul>
-            <p>각 기능의 자세한 사용 방법은 <a href="/docs/vetwiz_ecg_app_usage.html">어플 사용법</a>을 참고하시기 바랍니다.</p>
-        </section>
-
-        <section id="charging">
-            <h2>5. 기기 충전</h2>
-            <ol class="step-list">
-                <li>USB 충전 케이블의 타입-C 커넥터를 기기의 충전 포트에 연결합니다.</li>
-                <li>충전 시 LED 표시등이 흰색으로 표시됩니다.</li>
-                <li>LED 표시등이 꺼지면 완충 상태입니다.</li>
-            </ol>
-        </section>
-
-        <section id="troubleshooting">
-            <h2>6. 문제 해결</h2>
-            
-            <table class="troubleshooting-table">
-                <tr>
-                    <th>증상</th>
-                    <th>원인</th>
-                    <th>해결 방법</th>
-                </tr>
-                <tr>
-                    <td>기기가 켜지지 않음</td>
-                    <td>배터리 방전</td>
-                    <td>타입-C 케이블로 충전하세요</td>
-                </tr>
-                <tr>
-                    <td>블루투스 연결 실패</td>
-                    <td>범위 초과 또는 간섭</td>
-                    <td>기기 근처로 이동하고 다시 시도하세요</td>
-                </tr>
-                <tr>
-                    <td>ECG 신호 없음</td>
-                    <td>전극 접촉 불량</td>
-                    <td>전극을 재부착하거나 젤을 추가하세요</td>
-                </tr>
-                <tr>
-                    <td>데이터 저장 오류</td>
-                    <td>저장 공간 부족</td>
-                    <td>불필요한 파일을 삭제하거나 외부 저장소를 사용하세요</td>
-                </tr>
-            </table>
-        </section>
-
-
-
-        <section id="contact">
-            <h2>7. 지원 및 문의</h2>
-            <ul>
-                <li><strong>기술 지원:</strong>office@neurowiztek.com</li>
-                <li><strong>전화:</strong> +82-02-3292-0502</li>
-                <li><strong>운영 시간:</strong> 평일 09:00 ~ 18:00 (한국 표준시)</li>
-                <li><strong>공식 웹사이트:</strong> https://www.neurowiztek.com</li>
-            </ul>
-        </section>
-
+    <main class="redirect">
+        <h1>VetWiz-ECG 제품 사용설명서</h1>
+        <p>이 문서는 새 주소로 이동되었습니다.<br>잠시 후 자동으로 이동합니다.</p>
+        <a class="btn" href="/docs/products/vetwiz-ecg/manual.html">VetWiz-ECG 제품 사용설명서 바로가기 →</a>
+        <p class="alt"><a href="/docs/products/vetwiz-ecg/manual.html#app-install">VetWiz 앱 사용법</a> · <a href="/index.html">제품 소개 홈</a></p>
     </main>
-
-    <footer>
-        <p>&copy; 2025 NEUROWIZTEK. All rights reserved.</p>
-    </footer>
-
-    <div class="side-buttons">
-        <a href="/docs/vetwiz_quick_guide.html" class="quick-guide-button">퀵 가이드 →</a>
-        <a href="/docs/vetwiz_ecg_app_usage.html" class="quick-guide-button">어플 사용법 →</a>
-    </div>
 </body>
 
 </html>

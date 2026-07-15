@@ -1,0 +1,9 @@
+/* =============================================================
+   호환용 shim — vetwiz-docs.css
+   실제 스타일은 공통 문서 디자인 시스템으로 이전되었습니다.
+   기존/외부에서 이 파일을 직접 참조하는 경우를 위해 유지합니다.
+   신규 문서는 아래 3개 파일을 직접 링크하세요. (docs/README.md 참고)
+   ============================================================= */
+@import url("/docs/shared/css/docs-base.css");
+@import url("/docs/shared/css/docs-components.css");
+@import url("/docs/shared/css/docs-print.css");

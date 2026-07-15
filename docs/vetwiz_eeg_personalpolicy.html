@@ -1,81 +1,169 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Vetwiz EEG 개인정보처리방침</title>
-<style>
-  body { font-family: -apple-system, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif;
-         line-height: 1.7; color: #222; max-width: 760px; margin: 0 auto; padding: 24px; }
-  h1 { font-size: 1.6rem; border-bottom: 2px solid #333; padding-bottom: 8px; }
-  h2 { font-size: 1.15rem; margin-top: 32px; }
-  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
-  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f4f4f4; }
-  code { background: #f0f0f0; padding: 1px 4px; border-radius: 3px; }
-  .meta { color: #666; font-size: .9rem; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetwiz EEG 개인정보처리방침 | NEUROWIZTEK</title>
+    <meta name="description" content="동물 뇌파 측정·분석 앱 Vetwiz EEG의 개인정보처리방침. 본 앱은 개인정보를 수집하지 않으며 모든 데이터는 이용자 기기에만 저장됩니다.">
+    <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
 </head>
-<body>
-<h1>개인정보처리방침</h1>
-<p class="meta">애플리케이션명: Vetwiz EEG (동물 뇌파 측정·분석 앱)</p>
 
-<p>주식회사 뉴로위즈텍(이하 "회사")은 「개인정보 보호법」을 준수하며, Vetwiz EEG 앱(이하 "앱")
-이용자의 개인정보를 소중히 보호합니다. <strong>본 앱은 이용자의 개인정보를 일절 수집하지 않으며,
-모든 데이터는 이용자의 기기 내부에만 저장되고 외부 서버로 전송되지 않습니다.</strong></p>
+<body class="docs-page product-vetwiz-eeg document-legal">
+    <a class="skip-link" href="#main">본문 바로가기</a>
 
-<h2>1. 수집하는 개인정보 항목</h2>
-<p>본 앱은 회원가입·로그인·결제 기능이 없으며, 이름·이메일·전화번호·위치정보 등 어떠한 개인
-식별정보도 수집하지 않습니다. 앱이 생성·처리하는 데이터는 다음과 같으며, 모두 이용자 기기에만
-저장됩니다.</p>
-<table>
-  <tr><th>구분</th><th>내용</th><th>저장 위치</th></tr>
-  <tr><td>측정 데이터</td><td>블루투스 측정 장비에서 수신한 동물 뇌파(EEG) 신호 및 이를 저장한 녹화 파일(CSV)</td><td>기기 내부 저장소</td></tr>
-  <tr><td>분석 리포트</td><td>측정 결과를 분석한 PDF 리포트(파일명·측정시간·샘플레이트·채널 수·신호품질 등 기술 정보만 포함)</td><td>기기 공용 저장소 <code>Download/Signalwiz mobile/report</code></td></tr>
-  <tr><td>앱 설정</td><td>채널 구성, 측정 옵션 등 사용자 환경설정 값</td><td>기기 내부 저장소</td></tr>
-</table>
-<p>위 측정 데이터는 <strong>동물(반려동물 등)의 생체 신호</strong>로서 개인정보 보호법상 개인정보에
-해당하지 않습니다.</p>
+    <!-- ═══════════ 공통 헤더 ═══════════ -->
+    <header class="doc-header">
+        <div class="doc-header__inner">
+            <a class="doc-brand" href="/index.html">
+                <img src="/assets/images/vetwiz-eeg/manual/00_app_icon.png" alt="">
+                <span>VetWiz EEG <span class="doc-brand__sub">법적 고지</span></span>
+            </a>
+            <button class="doc-menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="doc-nav"
+                aria-expanded="false">☰</button>
+            <nav class="doc-nav" id="doc-nav" aria-label="문서 내비게이션">
+                <a href="/docs/vetwiz_eeg_personalpolicy.html" aria-current="page">개인정보처리방침</a>
+                <a href="/docs/products/vetwiz-eeg/manual.html">VetWiz EEG 문서</a>
+            </nav>
+        </div>
+    </header>
 
-<h2>2. 개인정보의 처리 목적</h2>
-<p>본 앱은 측정 장비와의 블루투스 연결, 뇌파 신호의 측정·기록·분석 및 리포트 생성을 위해서만
-데이터를 처리하며, 마케팅·광고·이용자 행태 분석 등의 목적으로 이용하지 않습니다.</p>
+    <nav class="doc-breadcrumb" aria-label="breadcrumb">
+        <a href="/index.html">🏠 제품 문서 홈</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <a href="/docs/products/vetwiz-eeg/manual.html">VetWiz EEG</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">개인정보처리방침</span>
+    </nav>
 
-<h2>3. 개인정보의 보유 및 파기</h2>
-<p>측정 데이터·리포트·설정값은 전적으로 이용자의 기기에 저장되며, 회사는 이에 접근하거나
-보관하지 않습니다. 이용자는 언제든지 기기 내 파일 관리 기능 또는 앱 삭제를 통해 해당 데이터를
-직접 삭제할 수 있습니다.</p>
+    <div class="doc-layout">
 
-<h2>4. 개인정보의 제3자 제공 및 처리위탁</h2>
-<p>본 앱은 데이터를 외부로 전송하지 않으므로, 개인정보를 제3자에게 제공하거나 처리를 위탁하지
-않습니다.</p>
+        <!-- ═══════════ 사이드 목차 ═══════════ -->
+        <aside class="doc-toc" aria-label="목차">
+            <details class="doc-toc__details" open>
+                <summary class="doc-toc__summary">목차</summary>
+                <nav aria-label="문서 목차">
+                    <ol>
+                        <li><a href="#s1">1. 수집하는 개인정보 항목</a></li>
+                        <li><a href="#s2">2. 개인정보의 처리 목적</a></li>
+                        <li><a href="#s3">3. 개인정보의 보유 및 파기</a></li>
+                        <li><a href="#s4">4. 개인정보의 제3자 제공 및 처리위탁</a></li>
+                        <li><a href="#s5">5. 앱이 요청하는 접근 권한</a></li>
+                        <li><a href="#s6">6. 이용자의 권리</a></li>
+                        <li><a href="#s7">7. 개인정보 보호책임자 및 문의처</a></li>
+                        <li><a href="#s8">8. 고지의 의무</a></li>
+                    </ol>
+                </nav>
+            </details>
+        </aside>
 
-<h2>5. 앱이 요청하는 접근 권한</h2>
-<table>
-  <tr><th>권한</th><th>사용 목적</th><th>필수/선택</th></tr>
-  <tr><td>블루투스(검색·연결)</td><td>측정 장비와 연결하여 뇌파 신호를 수신</td><td>필수</td></tr>
-  <tr><td>위치(정밀/대략)</td><td>Android 11 이하에서 블루투스 기기 검색 시 시스템이 요구하는 권한 (위치 추적 용도로 사용하지 않음)</td><td>필수</td></tr>
-  <tr><td>알림 표시</td><td>측정·녹화 중 진행 상태를 알림으로 표시</td><td>선택</td></tr>
-  <tr><td>포그라운드 서비스 / WAKE_LOCK</td><td>장시간 측정 중 화면이 꺼져도 데이터 수신·저장이 끊기지 않도록 유지</td><td>필수</td></tr>
-</table>
-<p>이용자는 기기 설정에서 권한을 언제든지 철회할 수 있으나, 필수 권한을 거부할 경우 측정 기능이
-제한될 수 있습니다.</p>
+        <!-- ═══════════ 본문 ═══════════ -->
+        <main class="doc-main" id="main">
 
-<h2>6. 이용자의 권리</h2>
-<p>앱이 수집·보관하는 개인정보가 없으므로 별도의 열람·정정·삭제 요청 절차는 적용되지 않으며,
-모든 데이터는 이용자가 자신의 기기에서 직접 관리·삭제할 수 있습니다.</p>
+            <section class="doc-hero">
+                <h1>개인정보처리방침</h1>
+                <p>애플리케이션명: Vetwiz EEG (동물 뇌파 측정·분석 앱)</p>
+                <div class="doc-hero__meta">
+                    <span>시행일자: 2026년 7월 1일</span>
+                </div>
+            </section>
 
-<h2>7. 개인정보 보호책임자 및 문의처</h2>
-<ul>
-  <li>회사: 주식회사 뉴로위즈텍</li>
-  <li>이메일: office@neurowiztek.com</li>
-  <li>주소: 서울특별시 성북구 정릉로 161 메디사이언스파크 진리관 202호</li>
-</ul>
+            <section class="doc-section" id="intro">
+                <p class="lead">주식회사 뉴로위즈텍(이하 "회사")은 「개인정보 보호법」을 준수하며, Vetwiz EEG 앱(이하 "앱") 이용자의 개인정보를 소중히 보호합니다. <strong>본 앱은 이용자의 개인정보를 일절 수집하지 않으며, 모든 데이터는 이용자의 기기 내부에만 저장되고 외부 서버로 전송되지 않습니다.</strong></p>
+            </section>
 
-<h2>8. 고지의 의무</h2>
-<p>본 개인정보처리방침의 내용 추가·삭제·수정이 있을 경우 시행일 전에 앱 또는 본 페이지를 통해
-공지합니다.</p>
+            <section class="doc-section" id="s1">
+                <h2>1. 수집하는 개인정보 항목</h2>
+                <p>본 앱은 회원가입·로그인·결제 기능이 없으며, 이름·이메일·전화번호·위치정보 등 어떠한 개인 식별정보도 수집하지 않습니다. 앱이 생성·처리하는 데이터는 다음과 같으며, 모두 이용자 기기에만 저장됩니다.</p>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <thead>
+                            <tr><th>구분</th><th>내용</th><th>저장 위치</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>측정 데이터</td><td>블루투스 측정 장비에서 수신한 동물 뇌파(EEG) 신호 및 이를 저장한 녹화 파일(CSV)</td><td>기기 내부 저장소</td></tr>
+                            <tr><td>분석 리포트</td><td>측정 결과를 분석한 PDF 리포트(파일명·측정시간·샘플레이트·채널 수·신호품질 등 기술 정보만 포함)</td><td>기기 공용 저장소 <code>Download/VetWiz EEG/report</code></td></tr>
+                            <tr><td>앱 설정</td><td>채널 구성, 측정 옵션 등 사용자 환경설정 값</td><td>기기 내부 저장소</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>위 측정 데이터는 <strong>동물(반려동물 등)의 생체 신호</strong>로서 개인정보 보호법상 개인정보에 해당하지 않습니다.</p>
+            </section>
 
-<p class="meta">시행일자: 2026년 7월 1일</p>
+            <section class="doc-section" id="s2">
+                <h2>2. 개인정보의 처리 목적</h2>
+                <p>본 앱은 측정 장비와의 블루투스 연결, 뇌파 신호의 측정·기록·분석 및 리포트 생성을 위해서만 데이터를 처리하며, 마케팅·광고·이용자 행태 분석 등의 목적으로 이용하지 않습니다.</p>
+            </section>
+
+            <section class="doc-section" id="s3">
+                <h2>3. 개인정보의 보유 및 파기</h2>
+                <p>측정 데이터·리포트·설정값은 전적으로 이용자의 기기에 저장되며, 회사는 이에 접근하거나 보관하지 않습니다. 이용자는 언제든지 기기 내 파일 관리 기능 또는 앱 삭제를 통해 해당 데이터를 직접 삭제할 수 있습니다.</p>
+            </section>
+
+            <section class="doc-section" id="s4">
+                <h2>4. 개인정보의 제3자 제공 및 처리위탁</h2>
+                <p>본 앱은 데이터를 외부로 전송하지 않으므로, 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다.</p>
+            </section>
+
+            <section class="doc-section" id="s5">
+                <h2>5. 앱이 요청하는 접근 권한</h2>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <thead>
+                            <tr><th>권한</th><th>사용 목적</th><th>필수/선택</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>블루투스(검색·연결)</td><td>측정 장비와 연결하여 뇌파 신호를 수신</td><td>필수</td></tr>
+                            <tr><td>위치(정밀/대략)</td><td>Android 11 이하에서 블루투스 기기 검색 시 시스템이 요구하는 권한 (위치 추적 용도로 사용하지 않음)</td><td>필수</td></tr>
+                            <tr><td>알림 표시</td><td>측정·녹화 중 진행 상태를 알림으로 표시</td><td>선택</td></tr>
+                            <tr><td>포그라운드 서비스 / WAKE_LOCK</td><td>장시간 측정 중 화면이 꺼져도 데이터 수신·저장이 끊기지 않도록 유지</td><td>필수</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>이용자는 기기 설정에서 권한을 언제든지 철회할 수 있으나, 필수 권한을 거부할 경우 측정 기능이 제한될 수 있습니다.</p>
+            </section>
+
+            <section class="doc-section" id="s6">
+                <h2>6. 이용자의 권리</h2>
+                <p>앱이 수집·보관하는 개인정보가 없으므로 별도의 열람·정정·삭제 요청 절차는 적용되지 않으며, 모든 데이터는 이용자가 자신의 기기에서 직접 관리·삭제할 수 있습니다.</p>
+            </section>
+
+            <section class="doc-section" id="s7">
+                <h2>7. 개인정보 보호책임자 및 문의처</h2>
+                <ul>
+                    <li>회사: 주식회사 뉴로위즈텍</li>
+                    <li>이메일: office@neurowiztek.com</li>
+                    <li>주소: 서울특별시 성북구 정릉로 161 메디사이언스파크 진리관 202호</li>
+                </ul>
+            </section>
+
+            <section class="doc-section" id="s8">
+                <h2>8. 고지의 의무</h2>
+                <p>본 개인정보처리방침의 내용 추가·삭제·수정이 있을 경우 시행일 전에 앱 또는 본 페이지를 통해 공지합니다.</p>
+                <p class="doc-meta">시행일자: 2026년 7월 1일</p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ═══════════ 공통 푸터 ═══════════ -->
+    <footer class="doc-footer">
+        <div class="doc-footer__inner">
+            <div><strong>주식회사 뉴로위즈텍 (NEUROWIZTEK)</strong><br>
+                서울특별시 성북구 정릉로 161 메디사이언스파크 진리관 202호</div>
+            <div>이메일: office@neurowiztek.com<br>Copyright NEUROWIZTEK. All Rights reserved.</div>
+            <div class="doc-footer__legal">
+                <a href="/docs/vetwiz_eeg_personalpolicy.html" aria-current="page">개인정보처리방침</a>
+                <a href="/docs/products/vetwiz-eeg/manual.html">VetWiz EEG 문서</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="맨 위로 이동">↑</button>
+
+    <script src="/docs/shared/js/docs-common.js" defer></script>
 </body>
+
 </html>

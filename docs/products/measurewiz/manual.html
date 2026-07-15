@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeasureWiz 사용설명서 | NEUROWIZTEK</title>
+    <meta name="description"
+        content="MeasureWiz 웨어러블 생체신호 측정 및 분석 시스템 사용설명서. EEG·ECG·EOG·EMG 측정 준비, 전극 연결 가이드, 앱 사용법, 충전 안내를 한 문서로 안내합니다.">
+    <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
+    <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
+</head>
+
+<body class="docs-page product-measurewiz document-manual">
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <!-- ═══════════ 공통 헤더 ═══════════ -->
+    <header class="doc-header">
+        <div class="doc-header__inner">
+            <a class="doc-brand" href="/index.html">
+                <img src="/images/logo/MeasureWiz_LOGO-03_512x512px.png" alt="">
+                <span>MeasureWiz <span class="doc-brand__sub">문서</span></span>
+            </a>
+            <button class="doc-menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="doc-nav"
+                aria-expanded="false">☰</button>
+            <nav class="doc-nav" id="doc-nav" aria-label="문서 내비게이션">
+                <a href="/docs/products/measurewiz/quick-guide.html">간편 안내</a>
+                <a href="/docs/products/measurewiz/manual.html" aria-current="page">상세 사용설명서</a>
+                <a href="/docs/products/measurewiz/stress-guide.html">스트레스 패러다임</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="doc-breadcrumb" aria-label="breadcrumb">
+        <a href="/index.html">🏠 제품 문서 홈</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <a href="/docs/products/measurewiz/manual.html">MeasureWiz</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">상세 사용설명서</span>
+    </nav>
+
+    <div class="doc-layout">
+
+        <!-- ═══════════ 사이드 목차 ═══════════ -->
+        <aside class="doc-toc" aria-label="목차">
+            <details class="doc-toc__details" open>
+                <summary class="doc-toc__summary">목차</summary>
+                <nav aria-label="문서 목차">
+                    <ol>
+                        <li><a href="#overview">1. 제품 개요</a></li>
+                        <li><a href="#components">2. 구성품</a></li>
+                        <li><a href="#setup">3. 측정 준비(셋업)</a></li>
+                        <li><a href="#app_use">4. 애플리케이션 사용법</a></li>
+                        <li><a href="#charging">5. 충전 안내</a></li>
+                        <li><a href="#bio_example">6. 생체신호 측정 예시</a></li>
+                        <li><a href="#contact">7. 고객지원 및 문의</a></li>
+                    </ol>
+                </nav>
+            </details>
+        </aside>
+
+        <!-- ═══════════ 본문 ═══════════ -->
+        <main class="doc-main" id="main">
+
+            <section class="doc-hero">
+                <h1>MeasureWiz 사용설명서</h1>
+                <p>MeasureWiz는 EEG·ECG·EOG·EMG 등 다양한 생체신호를 측정·분석하는 웨어러블 시스템입니다. 측정기 본체와 전용 MeasureWiz 앱으로
+                    신호를 측정·녹화하고 결과를 확인합니다.</p>
+                <div class="doc-hero__meta">
+                    <span>웨어러블 생체신호 측정</span>
+                    <span>EEG · ECG · EOG · EMG</span>
+                    <span>Bluetooth 5.0</span>
+                </div>
+            </section>
+
+            <!-- 1. 제품 개요 -->
+            <section class="doc-section" id="overview">
+                <h2><span class="sec-no">1</span> 제품 개요</h2>
+                <figure class="doc-figure figure-wide">
+                    <img class="doc-image" src="/images/뉴로위즈텍_MeasureWiz 설명서-최종(20240103)-01.jpg"
+                        alt="MeasureWiz 제품 및 측정 개요 이미지">
+                </figure>
+                <ul>
+                    <li>EEG/ECG/EOG/EMG 등 다양한 생체 신호 측정 가능</li>
+                    <li>웨어러블 타입</li>
+                    <li>블루투스 5.0 무선 통신으로 앱 연동</li>
+                    <li>USB 충전식</li>
+                </ul>
+            </section>
+
+            <!-- 2. 구성품 -->
+            <section class="doc-section" id="components">
+                <h2><span class="sec-no">2</span> 구성품</h2>
+                <p>제품 상자를 열어 아래 구성품이 모두 들어있는지 확인해주세요.</p>
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 측정기.png" alt="MeasureWiz 측정기">
+                        <figcaption>측정기</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 어플리케이션.png" alt="MeasureWiz 애플리케이션">
+                        <figcaption>애플리케이션</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 스냅형 전극 케이블.png" alt="스냅형 전극 케이블">
+                        <figcaption>스냅형 전극 케이블 × 3개</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 일회용 전극패드.png" alt="일회용 전극 패드">
+                        <figcaption>일회용 전극 패드 × 30개</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- 3. 측정 준비 -->
+            <section class="doc-section" id="setup">
+                <h2><span class="sec-no">3</span> 측정 준비(셋업)</h2>
+                <ol class="steps">
+                    <li>각각의 케이블을 측정기의 <strong>‘SIG’, ‘GND’, ‘REF’</strong> 극에 연결합니다.</li>
+                    <li>스냅형 전극 케이블과 일회용 전극 패드를 연결합니다.</li>
+                    <li>전극 패드를 알맞은 측정 부위 피부에 부착합니다. (아래 <strong>전극 연결 가이드</strong> 참고)</li>
+                    <li>측정기의 전원을 켜줍니다. (블루투스 연결을 위한 초록색 LED가 켜집니다.)</li>
+                    <li>스마트폰의 <strong>‘MeasureWiz’</strong> 앱과 블루투스 연결을 합니다.</li>
+                    <li>EEG, ECG, EOG, EMG 중 하나를 선택하여 신호를 측정합니다.</li>
+                </ol>
+
+                <h3>🛠️ 전극 연결 가이드 (측정 신호별)</h3>
+                <p>전극 부착 위치는 측정 부위에 따라 아래와 같이 다릅니다. (SIG=측정, REF=기준, GND=접지)</p>
+                <div class="table-wrapper">
+                    <table class="manual-table">
+                        <caption class="sr-only">측정 신호별 전극(SIG·REF·GND) 부착 위치</caption>
+                        <thead>
+                            <tr>
+                                <th>측정 신호</th>
+                                <th>SIG</th>
+                                <th>REF</th>
+                                <th>GND</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>뇌전도 (EEG)</td>
+                                <td>이마 왼편</td>
+                                <td>귀 뒤 뼈</td>
+                                <td>이마 중앙</td>
+                            </tr>
+                            <tr>
+                                <td>심전도 (ECG)</td>
+                                <td>왼 발목</td>
+                                <td>오른 손목</td>
+                                <td>왼 손목</td>
+                            </tr>
+                            <tr>
+                                <td>안전도 (EOG)</td>
+                                <td>왼 눈썹 위</td>
+                                <td>왼 이마 위</td>
+                                <td>이마 중앙</td>
+                            </tr>
+                            <tr>
+                                <td>근전도 (EMG)</td>
+                                <td>상박(이두)</td>
+                                <td>하박 위</td>
+                                <td>하박 아래</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 EEG 측정 예시.png" alt="EEG 측정 예시 — 전극 부착 위치">
+                        <figcaption>뇌전도(EEG) 측정 예시</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 ECG 측정 예시.png" alt="ECG 측정 예시 — 전극 부착 위치">
+                        <figcaption>심전도(ECG) 측정 예시</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 EOG 측정 예시.png" alt="EOG 측정 예시 — 전극 부착 위치">
+                        <figcaption>안전도(EOG) 측정 예시</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 EMG 측정 예시.png" alt="EMG 측정 예시 — 전극 부착 위치">
+                        <figcaption>근전도(EMG) 측정 예시</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- 4. 애플리케이션 사용법 -->
+            <section class="doc-section" id="app_use">
+                <h2><span class="sec-no">4</span> 애플리케이션 사용법</h2>
+                <ol class="steps">
+                    <li><span class="step-title">블루투스 등록</span>스마트폰의 블루투스 설정에서 <strong>‘MeasureWiz’</strong>을 등록합니다.</li>
+                    <li><span class="step-title">블루투스 연결</span>MeasureWiz 앱을 실행하여 블루투스 연결 버튼을 누릅니다.</li>
+                    <li><span class="step-title">생체 신호 선택</span>앱에서 뇌전도(EEG), 심전도(ECG), 안전도(EOG), 근전도(EMG) 중 하나를 선택합니다.</li>
+                    <li><span class="step-title">녹화 시작</span><strong>‘녹화 시작’</strong> 버튼을 누르면 <strong>‘녹화 중’</strong> 문구가 나옵니다.</li>
+                    <li><span class="step-title">저장 단위</span>녹화는 30초 단위로 자동 저장됩니다.</li>
+                    <li><span class="step-title">기록 확인</span><strong>‘기록’</strong>을 누르면 저장 위치 폴더(경로: <code>Download &gt; Measure</code>)에서
+                        데이터 자료(.csv 파일)를 불러와 기록된 자료를 확인할 수 있습니다.</li>
+                    <li><span class="step-title">결과 확인</span>측정 신호, 스펙트로그램, 파워 스펙트럼 결과를 확인할 수 있습니다.</li>
+                </ol>
+
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 블루투스 등록.jpg" alt="블루투스 등록 화면">
+                        <figcaption>1. 블루투스 등록</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 블루투스 연결.jpg" alt="블루투스 연결 화면">
+                        <figcaption>2. 블루투스 연결</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 생체신호 선택.jpg" alt="생체 신호 선택 화면">
+                        <figcaption>3. 생체신호 선택</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 녹화.jpg" alt="데이터 녹화 화면">
+                        <figcaption>4. 데이터 녹화 시작</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 실시간 측정 및 녹화.jpg" alt="실시간 측정 화면">
+                        <figcaption>5. 실시간 측정</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/Measurewiz 사용설명서 생체신호 기록 결과.jpg" alt="생체신호 기록 결과 화면">
+                        <figcaption>6. 생체신호 기록 결과</figcaption>
+                    </figure>
+                </div>
+
+                <h3>🧪 패러다임 사용 가이드</h3>
+                <p>스트레스 패러다임을 이용한 측정·분석 방법은 별도 문서에서 안내합니다.</p>
+                <p><a class="btn btn--primary" href="/docs/products/measurewiz/stress-guide.html">스트레스 패러다임 설명 보기 →</a></p>
+            </section>
+
+            <!-- 5. 충전 안내 -->
+            <section class="doc-section" id="charging">
+                <h2><span class="sec-no">5</span> 충전 안내</h2>
+                <p>측정기 우측 부분의 <strong>USB-C 타입 포트</strong>에 충전 케이블을 연결하여 충전합니다.</p>
+                <div class="notice notice--warning">
+                    <span class="notice__icon" aria-hidden="true">⚠️</span>
+                    <div class="notice__body">
+                        <p class="notice__title">충전 상태 확인</p>
+                        <p>케이블이 정상적으로 연결되면 초록색 LED 불이 들어옵니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. 생체신호 측정 예시 영상 -->
+            <section class="doc-section" id="bio_example">
+                <h2><span class="sec-no">6</span> 생체신호 측정 예시 영상(튜토리얼)</h2>
+                <p>보다 쉽고 정확한 측정을 위해 아래 튜토리얼 영상을 참고해주세요.</p>
+                <figure class="doc-figure">
+                    <div
+                        style="position:relative;width:100%;max-width:640px;margin:0 auto;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;border:1px solid var(--color-border);">
+                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+                            src="https://www.youtube.com/embed/kUrsGQ9KpC8" title="MeasureWiz 생체신호 측정 예시 영상"
+                            allowfullscreen></iframe>
+                    </div>
+                </figure>
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">📎</span>
+                    <div class="notice__body">
+                        <p class="notice__title">참고</p>
+                        <p>측정기 사용 전, 전극 패드 부착 방법 영상 시청을 권장합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. 고객지원 -->
+            <section class="doc-section" id="contact">
+                <h2><span class="sec-no">7</span> 고객지원 및 문의</h2>
+                <ul>
+                    <li><strong>기술 지원:</strong> <a href="mailto:office@neurowiztek.com">office@neurowiztek.com</a></li>
+                    <li><strong>전화:</strong> <a href="tel:+820232920502">+82-02-3292-0502</a></li>
+                    <li><strong>공식 웹사이트:</strong> <a href="https://www.neurowiztek.com" target="_blank"
+                            rel="noopener">https://www.neurowiztek.com</a></li>
+                </ul>
+            </section>
+
+            <!-- 문서 이동 -->
+            <nav class="doc-pager" aria-label="문서 이동">
+                <a class="pager-next" href="/docs/products/measurewiz/stress-guide.html">
+                    <span class="pager-label">다음 문서</span>
+                    <span class="pager-title">스트레스 패러다임 →</span>
+                </a>
+            </nav>
+
+        </main>
+    </div>
+
+    <!-- ═══════════ 공통 푸터 ═══════════ -->
+    <footer class="doc-footer">
+        <div class="doc-footer__inner">
+            <div><strong>NEUROWIZTEK</strong> · MeasureWiz 사용설명서</div>
+            <div>기술 지원: office@neurowiztek.com<br>© 2026 NEUROWIZTEK. All rights reserved.</div>
+            <div class="doc-footer__legal">
+                <a href="/docs/personalpolicy.html">개인정보 처리방침</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="맨 위로 이동">↑</button>
+
+    <script src="/docs/shared/js/docs-common.js" defer></script>
+</body>
+
+</html>
