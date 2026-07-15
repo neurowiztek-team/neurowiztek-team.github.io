@@ -99,6 +99,13 @@ docs/
   - ② 상세 사용설명서 → `manual.html`
   - ③ 활용 가이드 → `<주제>-guide.html` (예: `stress-guide.html`)
 
+### 문서 수정 시 함께 갱신할 것
+
+- **최종 수정일**: 제품 문서 푸터의 `최종 수정일: YYYY-MM-DD`를 의미 있는 내용 변경 때 갱신합니다(수동).
+- **sitemap.xml**: 새 문서 추가/삭제 시 `<url>` 항목과 `<lastmod>`를 갱신합니다.
+- **OG 메타**: 새 문서에는 `og:title/description/url/image` + `twitter:card`를 추가합니다(제품 로고를 절대 URL로).
+- 커밋 전 `python tools/check_docs.py` 실행(또는 PR에서 CI가 자동 검사).
+
 ---
 
 ## 공통 디자인 시스템 사용법

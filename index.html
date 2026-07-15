@@ -10,7 +10,8 @@
     <meta property="og:title" content="뉴로위즈텍 제품 소개">
     <meta property="og:description" content="뉴로위즈텍 제품(MeasureWiz·SignalWiz·VetWiz-ECG·VetWiz EEG) 사용 설명서 모음입니다.">
     <meta property="og:url" content="https://neurowiztek-team.github.io/index.html">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://neurowiztek-team.github.io/assets/images/share/og-home.png">
+    <meta name="twitter:card" content="summary_large_image">
     <style>
         body { font-family: Arial, "Malgun Gothic", sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-color: #f4f4f9; padding: 24px; box-sizing: border-box; }
         .container { text-align: center; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 880px; width: 100%; box-sizing: border-box; }
@@ -25,13 +26,26 @@
         .app-links .primary:hover { background: #084ba8; }
         .app-links .secondary { background: #eef2fb; color: #24324a; }
         .app-links .secondary:hover { background: #dfe7f7; }
+        .search { margin-top: 24px; }
+        .search input { width: 100%; max-width: 440px; padding: 12px 16px; font-size: 1rem; border: 1px solid #cfd6e4; border-radius: 10px; box-sizing: border-box; }
+        .search input:focus { outline: 2px solid #0b6cf0; border-color: #0b6cf0; }
+        .results { list-style: none; padding: 0; margin: 16px auto 0; max-width: 520px; text-align: left; }
+        .results li { margin: 0 0 8px; }
+        .results a { display: flex; justify-content: space-between; align-items: center; gap: 10px; text-decoration: none; padding: 10px 14px; border: 1px solid #e3e6ee; border-radius: 8px; color: #1f2733; background: #fff; font-weight: 600; }
+        .results a:hover { border-color: #0b6cf0; background: #f5f8ff; }
+        .results .tag { font-size: 0.78rem; font-weight: 600; color: #6a7688; white-space: nowrap; }
+        .results .empty { color: #888; padding: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>뉴로위즈텍 제품 소개</h1>
         <p>뉴로위즈텍 제품 사용 설명서입니다. 각 제품의 <strong>간편 안내</strong>(핵심 순서)와 <strong>상세 설명서</strong>(전체 기능)를 제공합니다.</p>
-        <div class="app-grid">
+        <div class="search">
+            <input id="q" type="search" placeholder="문서 검색 (예: 임피던스, 보고서, 스트레스, 전극)" aria-label="문서 검색" autocomplete="off">
+        </div>
+        <ul id="results" class="results" hidden></ul>
+        <div class="app-grid" id="grid">
             <div class="app-card">
                 <img src="./images/logo/MeasureWiz_LOGO-03_512x512px.png" alt="MeasureWiz 로고">
                 <span class="app-name">MeasureWiz</span>
@@ -66,5 +80,43 @@
             </div>
         </div>
     </div>
+    <script>
+        (function () {
+            var idx = [
+                { t: "MeasureWiz 간편 안내", p: "MeasureWiz", u: "./docs/products/measurewiz/quick-guide.html", k: "measurewiz 간편 quick start 시작 측정" },
+                { t: "MeasureWiz 상세 사용설명서", p: "MeasureWiz", u: "./docs/products/measurewiz/manual.html", k: "measurewiz manual 구성품 전극 eeg ecg eog emg 충전 앱 블루투스" },
+                { t: "MeasureWiz 스트레스 패러다임", p: "MeasureWiz", u: "./docs/products/measurewiz/stress-guide.html", k: "measurewiz stress 스트레스 패러다임 휴식 차트" },
+                { t: "SignalWiz 간편 안내", p: "SignalWiz", u: "./docs/products/signalwiz/quick-guide.html", k: "signalwiz 간편 quick 시작 측정" },
+                { t: "SignalWiz 상세 사용설명서", p: "SignalWiz", u: "./docs/products/signalwiz/manual.html", k: "signalwiz manual eeg 임피던스 채널 모니터 녹화 csv" },
+                { t: "VetWiz-ECG 간편 안내", p: "VetWiz-ECG", u: "./docs/products/vetwiz-ecg/quick-guide.html", k: "vetwiz ecg 심전도 간편 quick 프로필 측정" },
+                { t: "VetWiz-ECG 상세 사용설명서", p: "VetWiz-ECG", u: "./docs/products/vetwiz-ecg/manual.html", k: "vetwiz ecg 심전도 manual 구성품 전극 충전 사양" },
+                { t: "VetWiz-ECG 앱 사용법", p: "VetWiz-ECG", u: "./docs/products/vetwiz-ecg/manual.html#app-install", k: "vetwiz ecg 앱 사용법 프로필 측정 보고서 pdf 검색 설정 구독" },
+                { t: "VetWiz EEG 간편 안내", p: "VetWiz EEG", u: "./docs/products/vetwiz-eeg/quick-guide.html", k: "vetwiz eeg 뇌파 간편 quick 채널 임피던스 녹화" },
+                { t: "VetWiz EEG 상세 사용설명서", p: "VetWiz EEG", u: "./docs/products/vetwiz-eeg/manual.html", k: "vetwiz eeg 뇌파 manual 채널 임피던스 모니터 녹화 리포트" },
+                { t: "VetWiz EEG 분석(스펙트럼·Scalp Map)", p: "VetWiz EEG", u: "./docs/products/vetwiz-eeg/manual.html#analysis", k: "vetwiz eeg 분석 파워스펙트럼 scalp map 대역 델타 세타 알파 베타 감마" },
+                { t: "개인정보 처리방침 (홈페이지)", p: "법적 고지", u: "./docs/personalpolicy.html", k: "개인정보 처리방침 privacy 회사 홈페이지 쿠키" },
+                { t: "VetWiz 개인정보 처리방침", p: "법적 고지", u: "./docs/vetwiz_personalpolicy.html", k: "vetwiz ecg 개인정보 처리방침 privacy 앱" },
+                { t: "VetWiz EEG 개인정보처리방침", p: "법적 고지", u: "./docs/vetwiz_eeg_personalpolicy.html", k: "vetwiz eeg 개인정보 처리방침 privacy 앱" },
+                { t: "VetWiz 계정·데이터 삭제 안내", p: "법적 고지", u: "./docs/vetwiz_account_deletion.html", k: "vetwiz 계정 데이터 삭제 account deletion" }
+            ];
+            var q = document.getElementById("q");
+            var res = document.getElementById("results");
+            var grid = document.getElementById("grid");
+            if (!q) return;
+            function esc(s) { return s.replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; }); }
+            function render(list) {
+                if (!list.length) { res.innerHTML = '<li class="empty">검색 결과가 없습니다.</li>'; return; }
+                res.innerHTML = list.map(function (e) {
+                    return '<li><a href="' + e.u + '">' + esc(e.t) + '<span class="tag">' + esc(e.p) + '</span></a></li>';
+                }).join("");
+            }
+            q.addEventListener("input", function () {
+                var v = q.value.trim().toLowerCase();
+                if (!v) { res.hidden = true; res.innerHTML = ""; grid.hidden = false; return; }
+                var list = idx.filter(function (e) { return (e.t + " " + e.p + " " + e.k).toLowerCase().indexOf(v) >= 0; });
+                grid.hidden = true; res.hidden = false; render(list);
+            });
+        })();
+    </script>
 </body>
 </html>
