@@ -691,6 +691,65 @@ figure.doc-figure figcaption {
     text-decoration: underline;
 }
 
+/* 브레드크럼 — 상단 홈으로 돌아가는 경로 + 현재 위치 */
+.doc-breadcrumb {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: var(--space-sm) var(--space-md);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--font-size-small);
+    color: var(--color-text-muted);
+}
+
+.doc-breadcrumb a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.doc-breadcrumb a:hover,
+.doc-breadcrumb a:focus-visible {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.doc-breadcrumb .sep {
+    color: var(--color-border);
+}
+
+.doc-breadcrumb [aria-current="page"] {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+/* 촬영 필요 자리표시(placeholder) — 사진이 들어갈 자리에 어떤 사진이 필요한지 표시 */
+.photo-needed {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: flex-start;
+    margin: var(--space-sm) 0 0;
+    padding: var(--space-sm) var(--space-md);
+    border: 2px dashed var(--color-primary);
+    border-radius: 10px;
+    background: var(--color-primary-soft);
+    font-size: var(--font-size-small);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.photo-needed::before {
+    content: "📸";
+    flex: 0 0 auto;
+    font-size: 1.15em;
+}
+
+.photo-needed strong {
+    color: var(--color-text);
+}
+
 /* ── 맨 위로 버튼 ───────────────────────────────────────── */
 .to-top {
     position: fixed;
