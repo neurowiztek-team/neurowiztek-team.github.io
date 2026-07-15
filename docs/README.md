@@ -20,8 +20,8 @@ docs/
 │  │  └─ manual.html             ② 상세 사용설명서
 │  ├─ vetwiz-ecg/
 │  │  ├─ quick-guide.html        ① 간편 안내
-│  │  ├─ manual.html             ② 상세 사용설명서
-│  │  └─ app-guide.html          ③ 앱 사용법(활용 가이드)
+│  │  ├─ manual.html             ② 상세 사용설명서(앱 사용법 12~20장 통합)
+│  │  └─ app-guide.html          (구 앱 사용법 → manual.html#app-install 리디렉션 스텁)
 │  └─ vetwiz-eeg/
 │     ├─ quick-guide.html        ① 간편 안내(앱 화면 캡처 준비 중)
 │     └─ manual.html             ② 상세 사용설명서
@@ -57,7 +57,7 @@ docs/
 |---|---|---|---|
 | ① 간편 안내 | `quick-guide.html` | 1페이지 핵심 순서(전원→연결→측정→저장) | ✅ |
 | ② 상세 사용설명서 | `manual.html` | 사양·설치·전 기능·문제 해결·고객지원 | ✅ |
-| ③ 활용 가이드 | `<주제>-guide.html` | 제품 특화 심화(예: `stress-guide`, `app-guide`) | ⬜ |
+| ③ 활용 가이드 | `<주제>-guide.html` | 제품 특화 심화(예: `stress-guide`) | ⬜ |
 
 - 모든 제품 헤더 내비게이션은 `간편 안내 · 상세 사용설명서 · (활용 가이드)` 순으로 통일합니다.
 - 각 문서 푸터에는 해당 앱의 개인정보 처리방침 등 법적 고지 링크(`.doc-footer__legal`)를 둡니다.
@@ -73,9 +73,10 @@ docs/
 | `/docs/signalwiz_detailed_manual.html` | `/docs/products/signalwiz/manual.html` |
 | `/docs/signalwiz_quick.html` | `/docs/products/signalwiz/quick-guide.html` |
 | `/docs/vetwiz_ecg.html` | `/docs/products/vetwiz-ecg/manual.html` |
-| `/docs/vetwiz_ecg_app_usage.html` | `/docs/products/vetwiz-ecg/app-guide.html` |
+| `/docs/vetwiz_ecg_app_usage.html` | `/docs/products/vetwiz-ecg/manual.html#app-install` |
+| `/docs/products/vetwiz-ecg/app-guide.html` | `/docs/products/vetwiz-ecg/manual.html#app-install` |
 | `/docs/signalwiz_mobile.html` | `/docs/products/signalwiz/quick-guide.html` |
-| `/docs/app_usage.html` | `/docs/products/vetwiz-ecg/app-guide.html` |
+| `/docs/app_usage.html` | `/docs/products/vetwiz-ecg/manual.html#app-install` |
 | `/docs/vetwiz_quick_guide.html` | `/docs/products/vetwiz-ecg/manual.html#quick-start` |
 
 기존 URL은 **삭제하지 않습니다.** 각 경로에는 리디렉션 스텁이 있으며 다음을 포함합니다.
@@ -91,12 +92,12 @@ docs/
 
 ## 파일 명명 규칙
 
-- 새 문서 파일명은 **영문 소문자 + kebab-case**: `manual.html`, `quick-guide.html`, `app-guide.html`, `stress-guide.html`
+- 새 문서 파일명은 **영문 소문자 + kebab-case**: `quick-guide.html`, `manual.html`, `stress-guide.html`
 - 제품 디렉터리: `products/<product-slug>/` (예: `measurewiz`, `signalwiz`, `vetwiz-ecg`, `vetwiz-eeg`)
 - 문서 유형 표준 이름
   - ① 간편 안내 → `quick-guide.html`
   - ② 상세 사용설명서 → `manual.html`
-  - ③ 활용 가이드 → `<주제>-guide.html` (예: `app-guide.html`, `stress-guide.html`)
+  - ③ 활용 가이드 → `<주제>-guide.html` (예: `stress-guide.html`)
 
 ---
 
@@ -147,7 +148,7 @@ docs/
 ## 새 제품 문서 추가 절차
 
 1. `docs/products/<product-slug>/` 디렉터리를 만든다.
-2. `manual.html` / `quick-guide.html` / `app-guide.html` 중 필요한 문서를 만든다.
+2. `quick-guide.html`(①) / `manual.html`(②) / `<주제>-guide.html`(③) 중 필요한 문서를 만든다.
 3. 위 "공통 디자인 시스템 사용법"의 head/body 골격을 사용한다.
 4. 필요하면 `docs-base.css`에 `product-*` 강조색 블록을 추가한다.
 5. `index.html`(제품 소개)과 관련 문서에서 새 문서로 링크한다.

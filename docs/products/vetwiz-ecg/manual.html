@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VetWiz-ECG 제품 사용설명서 | NEUROWIZTEK</title>
     <meta name="description"
-        content="VetWiz-ECG 동물 심전도(ECG) 측정 시스템 제품 사용설명서. 빠른 시작부터 구성품, 전극 부착, 충전, 문제 해결, 제품 사양까지 한 문서로 안내합니다.">
+        content="VetWiz-ECG 동물 심전도(ECG) 측정 시스템 상세 사용설명서. 빠른 시작·구성품·전극 부착·충전·문제 해결·제품 사양과 VetWiz 앱 사용법(설치·연결·프로필·측정·결과·보고서·검색·설정)을 한 문서로 안내합니다.">
     <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
     <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
     <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
@@ -27,7 +27,6 @@
             <nav class="doc-nav" id="doc-nav" aria-label="문서 내비게이션">
                 <a href="/docs/products/vetwiz-ecg/quick-guide.html">간편 안내</a>
                 <a href="/docs/products/vetwiz-ecg/manual.html" aria-current="page">상세 사용설명서</a>
-                <a href="/docs/products/vetwiz-ecg/app-guide.html">앱 사용법</a>
             </nav>
         </div>
     </header>
@@ -51,8 +50,16 @@
                         <li><a href="#care">9. 세척 및 보관</a></li>
                         <li><a href="#troubleshooting">10. 문제 해결</a></li>
                         <li><a href="#specs">11. 제품 사양</a></li>
-                        <li><a href="#app-guide">12. 앱 사용법으로 이동</a></li>
-                        <li><a href="#contact">13. 고객지원 및 문의</a></li>
+                        <li><a href="#app-install">12. 앱 설치 및 권한 허용</a></li>
+                        <li><a href="#app-connect">13. 기기 연결</a></li>
+                        <li><a href="#profile">14. 프로필 등록</a></li>
+                        <li><a href="#measure">15. 측정 및 저장</a></li>
+                        <li><a href="#result">16. 결과 확인</a></li>
+                        <li><a href="#report">17. 보고서 내보내기(PDF)</a></li>
+                        <li><a href="#search">18. 검색 기능</a></li>
+                        <li><a href="#settings">19. 환경 설정</a></li>
+                        <li><a href="#faq">20. 자주 묻는 질문</a></li>
+                        <li><a href="#contact">21. 고객지원 및 문의</a></li>
                     </ol>
                 </nav>
             </details>
@@ -64,7 +71,7 @@
             <section class="doc-hero">
                 <h1>VetWiz-ECG 제품 사용설명서</h1>
                 <p>VetWiz-ECG는 동물의 심전도(ECG)를 측정·분석하는 시스템으로, 측정 기기 본체와 전용 VetWiz 앱으로 구성됩니다.
-                    이 문서는 처음 사용자를 위한 <strong>빠른 시작</strong>과 상세 사용설명을 한 곳에 담고 있습니다.</p>
+                    이 문서는 처음 사용자를 위한 <strong>빠른 시작</strong>, 기기 사용설명, 그리고 <strong>VetWiz 앱 사용법</strong>을 한 곳에 담고 있습니다.</p>
                 <div class="doc-hero__meta">
                     <span>동물 심전도(ECG) 측정</span>
                     <span>Bluetooth 5.0</span>
@@ -225,8 +232,7 @@
                     <span class="notice__icon" aria-hidden="true">💡</span>
                     <div class="notice__body">
                         <p class="notice__title">팁</p>
-                        <p>앱 화면별 상세 사용 방법(측정·검색·설정·보고서 등)은
-                            <a href="/docs/products/vetwiz-ecg/app-guide.html">VetWiz 앱 사용법</a>에서 확인하세요.</p>
+                        <p>앱 화면별 상세 사용 방법(측정·검색·설정·보고서 등)은 아래 <a href="#app-install">앱 사용법</a>(12~20장)에서 확인하세요.</p>
                     </div>
                 </div>
             </section>
@@ -338,7 +344,7 @@
                     <li>프로필·측정 데이터 검색 기능</li>
                     <li>이상 심박 알림, 소리·화면 등 앱 관련 설정</li>
                 </ul>
-                <p>각 기능의 화면별 자세한 사용 방법은 <a href="/docs/products/vetwiz-ecg/app-guide.html">VetWiz 앱 사용법</a>을 참고하시기 바랍니다.</p>
+                <p>각 기능의 화면별 자세한 사용 방법은 아래 <a href="#app-install">앱 사용법</a>(12~20장)에서 확인하세요.</p>
             </section>
 
             <!-- 8. 주의사항 -->
@@ -404,7 +410,7 @@
                             <tr>
                                 <td>데이터 저장 오류</td>
                                 <td>저장 공간 부족</td>
-                                <td>불필요한 파일을 삭제하거나 외부 저장소를 사용하세요.</td>
+                                <td>불필요한 파일을 삭제하거나 저장 위치를 변경하세요.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -446,16 +452,386 @@
                 </div>
             </section>
 
-            <!-- 12. 앱 사용법으로 이동 -->
-            <section class="doc-section" id="app-guide">
-                <h2><span class="sec-no">12</span> 앱 사용법으로 이동</h2>
-                <p>앱의 화면별 상세 사용 방법(앱 설치·기기 연결·측정·검색·설정·보고서 등)은 별도 문서에서 안내합니다.</p>
-                <p><a class="btn btn--primary" href="/docs/products/vetwiz-ecg/app-guide.html">VetWiz 앱 사용법 보기 →</a></p>
+            <!-- ═══════════ 앱 사용법(VetWiz 앱) ═══════════ -->
+            <div class="notice notice--info" style="margin-top:var(--space-xl);">
+                <span class="notice__icon" aria-hidden="true">📱</span>
+                <div class="notice__body">
+                    <p class="notice__title">여기부터는 VetWiz 앱 사용법입니다</p>
+                    <p>아래 12~20장은 VetWiz-ECG 전용 <strong>VetWiz 앱</strong>의 화면별 사용 방법입니다. 앱 설치부터 기기 연결, 측정,
+                        결과 확인, 보고서 내보내기, 환경 설정까지 실제 사용 순서대로 정리했습니다.</p>
+                </div>
+            </div>
+
+            <!-- 12. 앱 설치 및 권한 허용 -->
+            <section class="doc-section" id="app-install">
+                <h2><span class="sec-no">12</span> 앱 설치 및 권한 허용</h2>
+                <ul>
+                    <li><strong>지원 OS:</strong> Android</li>
+                    <li><strong>필요 준비물:</strong> VetWiz-ECG 기기 본체, 스냅 전극 케이블, 패치 전극, 블루투스 사용 가능 스마트폰</li>
+                </ul>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">앱 설치</span>
+                        구글 Play 스토어에서
+                        <a href="https://play.google.com/store/apps/details?id=com.neurowiztek.vetwiz&amp;hl=ko"
+                            target="_blank" rel="noopener">VetWiz 앱</a>을 검색하여 설치합니다.
+                    </li>
+                    <li>
+                        <span class="step-title">접근 권한 허용</span>
+                        앱을 실행하고 블루투스·알림 등 접근 권한을 허용합니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-135649.jpg"
+                                alt="앱 접근 권한 허용 화면">
+                            <figcaption>접근 권한 허용</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">기본 정보 등록</span>
+                        안내 화면에서 ‘확인’을 눌러 기본 정보에 들어갈 필수 입력 사항을 등록합니다.
+                        <div class="shot-grid">
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-135737.jpg"
+                                    alt="사용자 기본 정보 등록 화면">
+                                <figcaption>기본 정보 등록</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-135843.jpg"
+                                    alt="추가 사용자 기본 정보 입력 화면">
+                                <figcaption>추가 정보 입력</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ol>
             </section>
 
-            <!-- 13. 고객지원 -->
+            <!-- 13. 기기 연결 -->
+            <section class="doc-section" id="app-connect">
+                <h2><span class="sec-no">13</span> 기기 연결</h2>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">기기 추가</span>
+                        홈 화면에서 <strong>[기기 추가]</strong> 버튼을 누른 뒤 사용할 기기를 선택하여 블루투스로 연결합니다.
+                        <div class="shot-grid">
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140233.jpg"
+                                    alt="기기 추가 화면 — 기기 선택 1">
+                                <figcaption>기기 추가</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140518.jpg"
+                                    alt="기기 추가 화면 — 기기 선택 2">
+                                <figcaption>기기 선택</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140611.jpg"
+                                    alt="기기 추가 화면 — 블루투스 연결 진행">
+                                <figcaption>블루투스 연결</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-title">연결 성공 확인</span>
+                        연결에 성공하면 다음과 같이 생체 신호(파형)가 나타납니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140657.jpg"
+                                alt="기기 연결 성공 화면 — 생체 신호 파형 표시">
+                            <figcaption>연결 성공 — 실시간 신호</figcaption>
+                        </figure>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- 14. 프로필 등록 -->
+            <section class="doc-section" id="profile">
+                <h2><span class="sec-no">14</span> 프로필 등록</h2>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">프로필 등록 바로가기</span>
+                        화면 우측 <strong>[프로필 등록 바로가기]</strong>로 이동하여 ‘QR코드’ 또는 ‘프로필 직접 등록하기’를 선택해
+                        반려동물 프로필을 등록합니다.
+                        <div class="shot-grid">
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-140707.jpg"
+                                    alt="프로필 등록 화면 — QR코드 / 직접 등록 선택">
+                                <figcaption>QR코드 / 직접 등록</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260714-095839_Vetwiz.jpg"
+                                    alt="반려동물 프로필 직접 등록 입력 화면">
+                                <figcaption>프로필 정보 입력</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-title">프로필 확인</span>
+                        프로필 리스트 화면에서 등록된 프로필을 확인합니다. 이때 상단에 <strong>[신규 프로필 등록 완료]</strong> 안내
+                        메시지가 표시됩니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-143432_Vetwiz.jpg"
+                                alt="프로필 리스트 화면 — 등록된 프로필 확인">
+                            <figcaption>프로필 리스트</figcaption>
+                        </figure>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- 15. 측정 및 저장 -->
+            <section class="doc-section" id="measure">
+                <h2><span class="sec-no">15</span> 측정 및 저장</h2>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">모니터링 화면 이동</span>
+                        모니터링 화면으로 이동합니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141816.jpg"
+                                alt="모니터링 화면으로 이동">
+                            <figcaption>모니터링 화면</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">프로필 선택</span>
+                        좌측 상단의 <strong>[프로필을 선택하여 주세요]</strong>를 눌러 측정할 반려동물 프로필을 선택합니다.
+                        <div class="shot-grid">
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141825.jpg"
+                                    alt="측정 프로필 선택 화면 1">
+                                <figcaption>프로필 선택</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141832.jpg"
+                                    alt="측정 프로필 선택 화면 2">
+                                <figcaption>프로필 선택 완료</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-title">녹화 시작</span>
+                        우측 하단의 <strong>[녹화 시작]</strong> 버튼을 누르면 측정 대상의 생체 신호가 녹화됩니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141922.jpg"
+                                alt="모니터링 화면 — 녹화 진행 중">
+                            <figcaption>녹화 진행 중</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">녹화 종료 및 저장</span>
+                        <strong>[녹화 종료]</strong> 버튼을 누르면 측정된 데이터가 저장됩니다. 녹화 종료 후 레포트 생성이 진행되며,
+                        항목을 선택하여 저장할 수 있습니다. 저장된 데이터는 측정 데이터 리스트에서 확인할 수 있습니다.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- 16. 결과 확인 -->
+            <section class="doc-section" id="result">
+                <h2><span class="sec-no">16</span> 결과 확인</h2>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">측정 데이터 리스트</span>
+                        측정 데이터 리스트로 이동합니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141941.jpg"
+                                alt="측정 데이터 리스트 화면">
+                            <figcaption>측정 데이터 리스트</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="step-title">상세 정보 확인</span>
+                        원하는 데이터를 선택하면 상세 정보를 확인할 수 있습니다.
+                        <div class="shot-grid">
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-141959.jpg"
+                                    alt="측정 데이터 상세 정보 화면 1">
+                                <figcaption>상세 정보 1</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-142022.jpg"
+                                    alt="측정 데이터 상세 정보 화면 2">
+                                <figcaption>상세 정보 2</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-142031.jpg"
+                                    alt="측정 데이터 상세 정보 화면 3">
+                                <figcaption>상세 정보 3</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-142036.jpg"
+                                    alt="측정 데이터 상세 정보 화면 4">
+                                <figcaption>상세 정보 4</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-title">프로필 정보 보기</span>
+                        선택한 데이터의 우측 하단에서 <strong>[프로필 정보 보기]</strong>를 누르면 해당 프로필의 데이터를 확인할 수 있습니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260701-142058.jpg"
+                                alt="프로필 정보 보기 화면">
+                            <figcaption>프로필 정보 보기</figcaption>
+                        </figure>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- 17. 보고서 내보내기 -->
+            <section class="doc-section" id="report">
+                <h2><span class="sec-no">17</span> 보고서 내보내기(PDF)</h2>
+                <p>선택한 데이터의 우측 하단에서 <strong>[보고서 내보내기]</strong>를 누르면 PDF 파일이 생성되어 다운로드할 수 있습니다.</p>
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-140547_Android System.jpg"
+                        alt="보고서 PDF 다운로드 화면">
+                    <figcaption>보고서 내보내기 — PDF 다운로드</figcaption>
+                </figure>
+            </section>
+
+            <!-- 18. 검색 기능 -->
+            <section class="doc-section" id="search">
+                <h2><span class="sec-no">18</span> 검색 기능</h2>
+                <ol class="steps">
+                    <li>
+                        <span class="step-title">필터 확인</span>
+                        검색 기능에 들어가면 다음과 같은 필터가 표시됩니다.
+                        <div class="shot-grid">
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-141933_Vetwiz.jpg"
+                                    alt="검색 필터 화면 1">
+                                <figcaption>검색 필터</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-143454_Vetwiz.jpg"
+                                    alt="검색 필터 화면 2">
+                                <figcaption>필터 옵션</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-title">필터 적용</span>
+                        찾고자 하는 필터를 선택하면 해당되는 데이터만 표시됩니다.
+                        <figure class="doc-figure">
+                            <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-143517_Vetwiz.jpg"
+                                alt="필터 적용 결과 화면">
+                            <figcaption>필터 적용 결과</figcaption>
+                        </figure>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- 19. 환경 설정 -->
+            <section class="doc-section" id="settings">
+                <h2><span class="sec-no">19</span> 환경 설정</h2>
+                <p>[설정] 기능에는 다음과 같은 항목이 있습니다.</p>
+
+                <h3>사용자 기본 정보 설정</h3>
+                <p>‘사용자 기본 정보 편집’을 누르면 창이 열리며 사용자의 기본 정보를 변경할 수 있습니다.</p>
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/images/vetwiz/Screenshot_20260714-095758_Vetwiz.jpg"
+                        alt="사용자 기본 정보 설정 화면">
+                    <figcaption>사용자 기본 정보 설정</figcaption>
+                </figure>
+
+                <h3>구독 설정</h3>
+                <p>현재 사용자의 구독 상태 및 결제 내역을 확인할 수 있으며, <strong>[구독 플랜 신규 등록 &amp; 변경]</strong>에서 구독 플랜을
+                    신청·변경할 수 있습니다.</p>
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144537_Vetwiz.jpg"
+                            alt="구독 설정 화면 1">
+                        <figcaption>구독 상태</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260714-092424_Vetwiz.jpg"
+                            alt="구독 플랜 등록·변경 화면">
+                        <figcaption>구독 플랜 등록·변경</figcaption>
+                    </figure>
+                </div>
+
+                <h3>알림 설정</h3>
+                <p>푸시 및 심박수 등의 알림을 설정할 수 있습니다.</p>
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144540_Vetwiz.jpg"
+                        alt="알림 설정 화면">
+                    <figcaption>알림 설정</figcaption>
+                </figure>
+
+                <h3>소리 설정</h3>
+                <p>앱에서 지원하는 소리 기능을 각각 설정할 수 있습니다.</p>
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144545_Vetwiz.jpg"
+                            alt="소리 설정 화면 1">
+                        <figcaption>소리 설정</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144551_Vetwiz.jpg"
+                            alt="소리 설정 화면 2">
+                        <figcaption>소리 옵션</figcaption>
+                    </figure>
+                </div>
+
+                <h3>데이터 저장 위치 및 관리 설정</h3>
+                <p>현재 저장 위치를 확인할 수 있으며, 데이터 관리 설정을 할 수 있습니다.</p>
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144555_Vetwiz.jpg"
+                        alt="데이터 저장 위치 및 관리 설정 화면">
+                    <figcaption>데이터 저장 위치·관리</figcaption>
+                </figure>
+
+                <h3>생체신호 모니터링 환경 설정</h3>
+                <p>사용자에게 맞는 화면(라이트·다크 등)과 파장, 인디케이터 색상 등을 상세하게 설정할 수 있습니다.</p>
+                <div class="shot-grid">
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144600_Vetwiz.jpg"
+                            alt="모니터링 환경 설정 화면 1">
+                        <figcaption>화면 테마</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144615_Vetwiz.jpg"
+                            alt="모니터링 환경 설정 화면 2">
+                        <figcaption>파장 설정</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144621_Vetwiz.jpg"
+                            alt="모니터링 환경 설정 화면 3">
+                        <figcaption>인디케이터 색상</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144631_Vetwiz.jpg"
+                            alt="모니터링 환경 설정 화면 4">
+                        <figcaption>상세 설정</figcaption>
+                    </figure>
+                </div>
+
+                <h3>설정 초기화 및 삭제</h3>
+                <p>우측 상단의 점(⋮)을 누르면 설정을 초기화하거나 삭제할 수 있습니다.</p>
+                <figure class="doc-figure">
+                    <img class="app-shot" src="/images/vetwiz/Screenshot_20260713-144644_Vetwiz.jpg"
+                        alt="설정 초기화 및 삭제 화면">
+                    <figcaption>초기화·삭제</figcaption>
+                </figure>
+
+                <div class="notice notice--info">
+                    <span class="notice__icon" aria-hidden="true">🗑️</span>
+                    <div class="notice__body">
+                        <p class="notice__title">계정 및 데이터 삭제</p>
+                        <p>계정과 관련 데이터의 삭제 방법은 <a href="/docs/vetwiz_account_deletion.html">VetWiz 계정 및 데이터 삭제 안내</a>를,
+                            개인정보 처리 기준은 <a href="/docs/vetwiz_personalpolicy.html">개인정보 처리방침</a>을 참고하세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 20. FAQ -->
+            <section class="doc-section" id="faq">
+                <h2><span class="sec-no">20</span> 자주 묻는 질문</h2>
+                <h3>측정 데이터는 어디에서 확인하나요?</h3>
+                <p>측정 데이터 리스트에서 저장된 데이터를 확인하고, 데이터를 선택하면 상세 정보를 볼 수 있습니다.</p>
+                <h3>보고서를 PDF로 저장할 수 있나요?</h3>
+                <p>데이터 상세 화면 우측 하단의 <strong>[보고서 내보내기]</strong>를 누르면 PDF 파일을 생성·다운로드할 수 있습니다.</p>
+                <h3>데이터 저장 위치를 바꿀 수 있나요?</h3>
+                <p>[설정]의 <strong>데이터 저장 위치 및 관리 설정</strong>에서 현재 저장 위치를 확인하고 데이터 관리 설정을 변경할 수 있습니다.</p>
+            </section>
+
+            <!-- 21. 고객지원 -->
             <section class="doc-section" id="contact">
-                <h2><span class="sec-no">13</span> 고객지원 및 문의</h2>
+                <h2><span class="sec-no">21</span> 고객지원 및 문의</h2>
                 <ul>
                     <li><strong>기술 지원:</strong> <a href="mailto:office@neurowiztek.com">office@neurowiztek.com</a></li>
                     <li><strong>전화:</strong> <a href="tel:+820232920502">+82-02-3292-0502</a></li>
@@ -467,9 +843,9 @@
 
             <!-- 문서 이동 -->
             <nav class="doc-pager" aria-label="문서 이동">
-                <a class="pager-next" href="/docs/products/vetwiz-ecg/app-guide.html">
-                    <span class="pager-label">다음 문서</span>
-                    <span class="pager-title">VetWiz 앱 사용법 →</span>
+                <a href="/docs/products/vetwiz-ecg/quick-guide.html">
+                    <span class="pager-label">이전 문서</span>
+                    <span class="pager-title">← VetWiz-ECG 간편 안내</span>
                 </a>
             </nav>
 
