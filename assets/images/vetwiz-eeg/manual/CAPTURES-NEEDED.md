@@ -1,46 +1,58 @@
-# VetWiz EEG 사용설명서 — 추가 촬영 필요 화면 메모
+# VetWiz EEG 사용설명서 — 촬영 필요 이미지 메모
 
-`docs/products/vetwiz-eeg/manual.html`에 아직 **실제 화면 캡처가 들어가지 못한** 부분 목록입니다.
-adb에 기기가 연결되지 않아(그리고 저장소에도 해당 화면 캡처가 없어) 코드·문자열 기준 텍스트로만 서술해 둔 상태입니다.
+`docs/products/vetwiz-eeg/manual.html`에서 아직 **실제 이미지가 확정되지 않은** 자리 목록입니다.
+각 자리에는 문서 본문에 눈에 보이는 **“새로 캡처 필요” 안내 박스**와, 소스에 삽입용 **HTML 주석(`<!-- 📸 촬영 필요 … -->`)**을 넣어 두었습니다.
 
-> ⚠️ **반드시 실제 VetWiz EEG 앱(package `com.neurowiztek.vetwizeeg`) 화면·리소스만 사용하세요.**
-> SignalWiz Mobile 앱 화면·아이콘·기기 사진을 대신 넣지 마세요. **앱 화면은 물론 기기 본체 사진도 VetWiz EEG 기준으로 직접 준비**해야 합니다.
-> (기존에 SignalWiz Mobile 설명서의 기기 사진 `00_device_body.png`를 재사용했으나 제거했습니다.)
+> ⚠️ **반드시 현재 VetWiz EEG 앱(package `com.neurowiztek.vetwizeeg`) 화면·리소스만 사용하세요.**
+> SignalWiz Mobile 앱 화면·아이콘·기기 사진을 대신 넣지 마세요. **앱 화면·기기 사진 모두 VetWiz EEG 기준으로 직접 준비**해야 합니다.
 
-기존에 채워진 실제 캡처(참고): `01_bluetooth_connection` · `02_channel_setup` · `03_impedance` · `04_eeg_monitor` · `05_analysis_spectrum` · `06_analysis_scalp_map`, 아이콘 `00_app_icon`.
+## 배경(왜 다시 찍어야 하나)
+
+- 이전 버전 문서에서 앱 스크린샷 6종을 `VetWiz-EEG/docs/exhibition`·`docs/screenshots`의 기존 캡처로 채웠으나,
+  **현재 빌드 기준으로 새로 촬영하기 위해 모두 제거**했습니다(요청 사항).
+- 기기 본체 사진은 SignalWiz Mobile 설명서 자산을 재사용했던 것이라 제거했습니다.
+- **현재 문서에 확정 반영된 이미지는 앱 아이콘 `00_app_icon.png`(VetWiz EEG 스토어 아이콘) 하나뿐**입니다.
 
 ---
 
-## 아직 필요한 캡처 (실제 VetWiz EEG 앱 화면)
+## 필요한 이미지 목록 (모두 실제 VetWiz EEG 기준)
 
-| 파일명(권장) | 화면 | 앱에서 진입하는 방법 | 캡처에 반드시 보여야 할 것(실제 UI 문구) |
+| 파일명(권장) | 화면 | 진입 방법 | 담아야 할 것(실제 UI 문구) |
 |---|---|---|---|
-| `00_device_body.png` | **기기 본체(하드웨어) 사진** | VetWiz EEG 기기 본체 전면을 직접 촬영 | 전면의 **CH.1~CH.8·REF·GND 커넥터, 전원 버튼, 블루투스·충전 표시**. (앱 화면 아님) ⚠ SignalWiz 설명서 기기 사진 재사용 금지 |
-| `07_app_intro.png` | 앱 인트로/시작 화면 | 앱 최초 실행 직후 약 2.4초 | 태그라인 **“기억이 생명이다”**, VetWiz EEG 아이덴티티 |
-| `08_subject_input.png` | 피검체 정보 입력 다이얼로그 | [모니터] → **[녹화 시작]** 을 누르면 표시 | 제목 **“피검체 정보 입력”**, 필드 **동물 이름/ID · 견종(드롭다운) · 메모**, 버튼 **[측정 시작]** / **[이름 없이 시작]** |
-| `09_recording.png` | 녹화 진행 중 화면 | 피검체 입력 후 측정 시작 → 모니터에서 녹화 중 | **[녹화 중지]** 버튼, 상태 **‘녹화 중’**, 상단 상태표시줄 **“데이터 기록 중”** 알림 |
-| `10_record_library.png` (선택) | 녹화 라이브러리(기록 목록) | [분석] → **[녹화 CSV 불러오기]** | 파일 목록(동물 이름·견종·메모), 검색창 **‘이름으로 검색’**, **삭제/공유** 동작 |
-| `11_report.png` | 분석 보고서(PDF) | [분석]에서 파일 로드 → **[분석 보고서 출력]** → PDF 미리보기 | qEEG 리포트 1페이지(종합 요약) 또는 PDF 뷰어 화면 |
-| `12_settings.png` (선택) | 설정 화면 | [설정] 탭 | 하드웨어 설정·화면 모드·데이터 경로 등. **⚠️ 최신 빌드로 재촬영** — 기존 저장소 캡처(`05_settings_1/2`)에는 구버전 표기 **“SignalWiz EEG” / “Download/Signalwiz mobile”**가 남아 있어 사용 금지. 현재 코드 기준 경로는 **`Download/VetWiz EEG`**. |
+| `00_device_body.png` | **기기 본체(하드웨어) 사진** | VetWiz EEG 기기 본체 전면을 직접 촬영 | 전면의 **CH.1~CH.8·REF·GND 커넥터, 전원 버튼, 블루투스·충전 표시**. (앱 화면 아님) |
+| `01_bluetooth_connection.png` | 블루투스 | [블루투스] 탭 | 상단 **“연결됨”**, **등록된 기기** 목록에서 기기 연결됨. **하단 탭에 `분석`·`설정` 포함**(= VetWiz EEG 확인 포인트) |
+| `02_channel_setup.png` | 측정 채널 설정 | [채널 설정] 탭 | CH1~CH8 **사용/미사용** 카드, **“선택된 채널: …”**, **[설정 완료]** |
+| `03_impedance.png` | 임피던스 | [임피던스] 탭 | CH1~CH8 값(**kΩ**)과 **좋음/높음/매우 높음** 상태 |
+| `04_eeg_monitor.png` | 신호 모니터 | [모니터] 탭 | 상단 **시간 설정**·**[녹화 시작]**, **“Time Window: 5 s”**, 채널별 파형·µV Y축 |
+| `05_analysis_spectrum.png` | 분석 — 파워스펙트럼 | [분석] 탭 → 파일 로드 | **[녹화 CSV 불러오기]**, 파일 정보 카드(녹화 시간·250 SPS·0–50 Hz·채널 수), 채널 선택, **파워스펙트럼** 그래프. 상단 **“데이터 경로: VetWiz EEG”** 확인 |
+| `06_analysis_scalp_map.jpg` | 분석 — EEG Scalp Map | [분석] 탭 → Scalp Map | **“EEG Scalp Map · 상대 대역 파워”**, 대역 **Delta/Theta/Alpha/Beta/Gamma**, 강아지 두피 분포·0~100% 색상 막대 |
+| `07_app_intro.png` | 앱 인트로/시작 화면 | 앱 최초 실행 직후 약 2.4초 | 태그라인 **“기억이 생명이다”** |
+| `08_subject_input.png` | 피검체 정보 입력 다이얼로그 | [모니터] → **[녹화 시작]** | 제목 **“피검체 정보 입력”**, 필드 **동물 이름/ID·견종(드롭다운)·메모**, **[측정 시작]**/**[이름 없이 시작]** |
+| `09_recording.png` | 녹화 진행 중 | 측정 시작 후 모니터 | **[녹화 중지]**, 상태 **‘녹화 중’**, 상태표시줄 **“데이터 기록 중”** 알림 |
+| `10_record_library.png` (선택) | 녹화 라이브러리 | [분석] → **[녹화 CSV 불러오기]** | 파일 목록(동물 이름·견종), 검색창 **‘이름으로 검색’**, **삭제/공유** |
+| `11_report.png` | 분석 보고서(PDF) | [분석] → **[분석 보고서 출력]** → PDF | qEEG 리포트 1페이지(종합 요약) 또는 PDF 뷰어 |
+| `12_settings.png` (선택) | 설정 | [설정] 탭 | 하드웨어 설정·화면 모드·데이터 경로 등. **현재 코드 경로는 `Download/VetWiz EEG`** (구버전 캡처의 “SignalWiz EEG”/“Signalwiz mobile” 표기 금지) |
 
 파일명 규칙: **영문 소문자 · 숫자 접두어 · 공백/한글 없음**. 저장 위치: 이 폴더(`assets/images/vetwiz-eeg/manual/`).
 
+> ✅ **VetWiz EEG vs SignalWiz 구분 포인트:** 하단 탭에 **`분석`·`설정`이 있으면 VetWiz EEG**, 없으면(블루투스·채널설정·임피던스·모니터 4탭) SignalWiz입니다.
+> 화면 제목이 “블루투스”면 VetWiz EEG, “Bluetooth 기기”면 SignalWiz입니다.
+
 ---
 
-## 문서에 넣는 위치
+## 문서에 넣는 방법
 
-각 캡처가 들어갈 자리에는 `manual.html`에 **HTML 주석(`<!-- 📸 촬영 필요 ... -->`)**으로 표시해 두었습니다.
-캡처를 준비하면 해당 주석 자리에 아래 형태로 교체하세요.
+각 자리의 안내 박스/HTML 주석을 아래 형태로 교체하세요.
 
 ```html
 <figure class="doc-figure">
-  <img class="app-shot" src="/assets/images/vetwiz-eeg/manual/08_subject_input.png"
-       alt="VetWiz EEG 앱의 피검체 정보 입력 화면 — 동물 이름/ID·견종·메모 입력">
-  <figcaption>[모니터] → [녹화 시작] 시 표시되는 피검체 정보 입력</figcaption>
+  <img class="app-shot" src="/assets/images/vetwiz-eeg/manual/01_bluetooth_connection.png"
+       alt="VetWiz EEG 앱 블루투스 화면 — 상단 ‘연결됨’, 등록된 기기 목록">
+  <figcaption>[블루투스] 화면 — 기기 연결 완료(연결됨) 상태</figcaption>
 </figure>
 ```
 
-여러 장을 나란히 배치할 때는 `<div class="shot-grid"> … </div>`로 감쌉니다(분석 섹션 참고).
+분석 화면처럼 2장을 나란히 둘 때는 `<div class="shot-grid"> …figure×2… </div>`로 감쌉니다.
 
 ---
 
