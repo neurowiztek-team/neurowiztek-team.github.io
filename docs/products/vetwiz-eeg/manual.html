@@ -383,6 +383,9 @@
                 </figure>
                 <p>앱을 실행하면 잠깐 시작 화면(<strong>“기억이 생명이다”</strong>)이 표시된 뒤, 가장 먼저 <strong>[블루투스]</strong> 화면이 열립니다.
                     처음 사용 시에는 화면을 짚어 주는 사용 안내(튜토리얼)가 함께 표시됩니다.</p>
+                <!-- 📸 촬영 필요(실제 VetWiz EEG 앱 화면): 07_app_intro.png — 앱 인트로 화면(“기억이 생명이다”).
+                     진입: 앱 최초 실행 직후 약 2.4초. ⚠ SignalWiz 앱 화면 금지. 이 자리에 <figure class="doc-figure">…</figure> 삽입.
+                     세부 지침: /assets/images/vetwiz-eeg/manual/CAPTURES-NEEDED.md -->
 
                 <h3>하단 탭 구조</h3>
                 <p>앱은 하단의 6개 탭으로 구성되며, 왼쪽에서 오른쪽 순서대로 사용하는 것이 기본 흐름입니다.</p>
@@ -591,6 +594,11 @@
             <section class="doc-section" id="recording">
                 <h2><span class="sec-no">12</span> 측정 및 녹화</h2>
                 <p>측정 신호는 [모니터] 화면에서 녹화하여 CSV 파일로 저장합니다. 녹화는 백그라운드 서비스로 동작하므로 안정적으로 기록됩니다.</p>
+                <!-- 📸 촬영 필요(실제 VetWiz EEG 앱 화면) — 이 자리에 <div class="shot-grid">…</div> 로 2장 삽입:
+                     08_subject_input.png — 피검체 정보 입력 다이얼로그. 진입: [모니터] → [녹화 시작].
+                        담을 것: 제목 "피검체 정보 입력", 필드 동물 이름/ID·견종(드롭다운)·메모, 버튼 [측정 시작]/[이름 없이 시작].
+                     09_recording.png — 녹화 진행 중 화면. 담을 것: [녹화 중지], 상태 '녹화 중', 상태표시줄 "데이터 기록 중" 알림.
+                     ⚠ SignalWiz 앱 화면·아이콘 금지. 세부 지침: /assets/images/vetwiz-eeg/manual/CAPTURES-NEEDED.md -->
 
                 <ol class="steps">
                     <li><span class="step-title">녹화 시간 설정</span>[모니터] 화면에서 녹화 시간을 선택합니다. <strong>10초·30초·1분·3분·5분·10분·30분·1시간</strong>
@@ -636,6 +644,9 @@
                 <h2><span class="sec-no">13</span> 녹화 기록 관리</h2>
                 <p>저장된 녹화 파일은 <strong>[분석]</strong> 탭의 <strong>[녹화 CSV 불러오기]</strong>를 통해 열리는
                     <strong>녹화 라이브러리</strong>에서 관리합니다.</p>
+                <!-- 📸 촬영 필요(선택, 실제 VetWiz EEG 앱 화면): 10_record_library.png — 녹화 라이브러리(기록 목록).
+                     진입: [분석] → [녹화 CSV 불러오기]. 담을 것: 파일 목록(동물 이름·견종), 검색창 '이름으로 검색', 삭제/공유.
+                     ⚠ SignalWiz 앱 화면 금지. 세부 지침: /assets/images/vetwiz-eeg/manual/CAPTURES-NEEDED.md -->
                 <ul>
                     <li><strong>목록·검색</strong> — 저장된 녹화가 목록으로 표시되며, 동물 이름·견종·메모가 함께 보입니다. 상단의 <strong>이름으로 검색</strong>으로 찾을 수 있습니다.</li>
                     <li><strong>불러오기</strong> — 파일을 선택하면 분석 화면으로 불러옵니다.</li>
@@ -734,6 +745,10 @@
             <section class="doc-section" id="report">
                 <h2><span class="sec-no">15</span> 분석 보고서(PDF)</h2>
                 <p>분석 결과는 여러 페이지로 구성된 <strong>정량 뇌파(qEEG) 리포트(PDF)</strong>로 내보낼 수 있습니다.</p>
+                <!-- 📸 촬영 필요(실제 VetWiz EEG 앱 화면): 11_report.png — 분석 보고서(PDF).
+                     진입: [분석]에서 파일 로드 → [분석 보고서 출력] → PDF 미리보기. 담을 것: qEEG 리포트 1페이지(종합 요약) 또는 PDF 뷰어.
+                     ⚠ SignalWiz 앱 화면 금지. 이 자리에 <figure class="doc-figure">…</figure> 삽입.
+                     세부 지침: /assets/images/vetwiz-eeg/manual/CAPTURES-NEEDED.md -->
 
                 <ol class="steps">
                     <li><span class="step-title">분석 파일 준비</span>[분석] 탭에서 리포트로 만들 녹화 파일을 불러오고 채널·대역을 확인합니다.</li>
@@ -772,6 +787,9 @@
             <section class="doc-section" id="settings">
                 <h2><span class="sec-no">16</span> 설정</h2>
                 <p><strong>[설정]</strong> 탭에서 연결 정보와 화면·데이터 관련 옵션을 확인·변경합니다.</p>
+                <!-- 📸 촬영 필요(선택, 실제 VetWiz EEG 앱 화면): 12_settings.png — 설정 화면. 진입: [설정] 탭.
+                     ⚠ 반드시 최신 빌드로 재촬영. 기존 저장소 캡처(05_settings_1/2)에는 구버전 "SignalWiz EEG" / "Download/Signalwiz mobile"
+                     표기가 남아 있어 사용 금지(현재 코드 기준 경로는 Download/VetWiz EEG). 세부 지침: /assets/images/vetwiz-eeg/manual/CAPTURES-NEEDED.md -->
                 <div class="table-wrapper">
                     <table class="manual-table">
                         <caption class="sr-only">설정 항목</caption>
