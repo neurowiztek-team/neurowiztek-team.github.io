@@ -3,10 +3,11 @@
 `docs/products/vetwiz-eeg/manual.html`에 아직 **실제 화면 캡처가 들어가지 못한** 부분 목록입니다.
 adb에 기기가 연결되지 않아(그리고 저장소에도 해당 화면 캡처가 없어) 코드·문자열 기준 텍스트로만 서술해 둔 상태입니다.
 
-> ⚠️ **반드시 실제 VetWiz EEG 앱(package `com.neurowiztek.vetwizeeg`) 화면만 사용하세요.**
-> SignalWiz Mobile 앱 화면·아이콘을 대신 넣지 마세요. (기기 본체 사진은 브랜드 중립이라 공용 재사용 가능하지만, **앱 화면은 반드시 VetWiz EEG 것**이어야 합니다.)
+> ⚠️ **반드시 실제 VetWiz EEG 앱(package `com.neurowiztek.vetwizeeg`) 화면·리소스만 사용하세요.**
+> SignalWiz Mobile 앱 화면·아이콘·기기 사진을 대신 넣지 마세요. **앱 화면은 물론 기기 본체 사진도 VetWiz EEG 기준으로 직접 준비**해야 합니다.
+> (기존에 SignalWiz Mobile 설명서의 기기 사진 `00_device_body.png`를 재사용했으나 제거했습니다.)
 
-기존에 채워진 실제 캡처(참고): `01_bluetooth_connection` · `02_channel_setup` · `03_impedance` · `04_eeg_monitor` · `05_analysis_spectrum` · `06_analysis_scalp_map`, 아이콘 `00_app_icon`, 기기 본체 `00_device_body`.
+기존에 채워진 실제 캡처(참고): `01_bluetooth_connection` · `02_channel_setup` · `03_impedance` · `04_eeg_monitor` · `05_analysis_spectrum` · `06_analysis_scalp_map`, 아이콘 `00_app_icon`.
 
 ---
 
@@ -14,6 +15,7 @@ adb에 기기가 연결되지 않아(그리고 저장소에도 해당 화면 캡
 
 | 파일명(권장) | 화면 | 앱에서 진입하는 방법 | 캡처에 반드시 보여야 할 것(실제 UI 문구) |
 |---|---|---|---|
+| `00_device_body.png` | **기기 본체(하드웨어) 사진** | VetWiz EEG 기기 본체 전면을 직접 촬영 | 전면의 **CH.1~CH.8·REF·GND 커넥터, 전원 버튼, 블루투스·충전 표시**. (앱 화면 아님) ⚠ SignalWiz 설명서 기기 사진 재사용 금지 |
 | `07_app_intro.png` | 앱 인트로/시작 화면 | 앱 최초 실행 직후 약 2.4초 | 태그라인 **“기억이 생명이다”**, VetWiz EEG 아이덴티티 |
 | `08_subject_input.png` | 피검체 정보 입력 다이얼로그 | [모니터] → **[녹화 시작]** 을 누르면 표시 | 제목 **“피검체 정보 입력”**, 필드 **동물 이름/ID · 견종(드롭다운) · 메모**, 버튼 **[측정 시작]** / **[이름 없이 시작]** |
 | `09_recording.png` | 녹화 진행 중 화면 | 피검체 입력 후 측정 시작 → 모니터에서 녹화 중 | **[녹화 중지]** 버튼, 상태 **‘녹화 중’**, 상단 상태표시줄 **“데이터 기록 중”** 알림 |

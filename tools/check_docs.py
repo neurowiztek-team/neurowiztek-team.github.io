@@ -24,6 +24,7 @@ except (AttributeError, ValueError):
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ATTR_RE = re.compile(r"""(?:href|src)\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
+COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 BASE_RE = re.compile(r"""<base\s[^>]*href\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
 REFRESH_RE = re.compile(
     r"""<meta\s+http-equiv\s*=\s*["']refresh["']\s+content\s*=\s*["'][^"']*url=([^"']+)["']""",
@@ -88,7 +89,9 @@ def main():
             text = fh.read()
         bm = BASE_RE.search(text)
         base_href = bm.group(1) if bm else None
-        for url in ATTR_RE.findall(text):
+        # HTML 주석(<!-- ... -->) 안의 예시 마크업은 검사 대상에서 제외
+        scan_text = COMMENT_RE.sub("", text)
+        for url in ATTR_RE.findall(scan_text):
             target = resolve(url, hf, base_href)
             if target is None:
                 continue
