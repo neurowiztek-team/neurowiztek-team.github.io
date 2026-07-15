@@ -5,37 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뉴로위즈텍 제품 소개</title>
     <style>
-        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-color: #f4f4f9; }
-        .container { text-align: center; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        body { font-family: Arial, "Malgun Gothic", sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-color: #f4f4f9; padding: 24px; box-sizing: border-box; }
+        .container { text-align: center; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 880px; width: 100%; box-sizing: border-box; }
         h1 { color: #333; }
-        .app-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 32px; margin-top: 28px; }
-        .app-link { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 140px; text-decoration: none; color: #333; font-weight: 700; transition: transform 0.15s; }
-        .app-link:hover { transform: translateY(-4px); }
-        .app-link img { width: 96px; height: 96px; object-fit: cover; border-radius: 22px; background: #fff; border: 1px solid #e3e6ee; box-shadow: 0 8px 18px rgba(0,0,0,0.15); }
-        .app-link span { font-size: 0.95rem; }
+        .app-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 28px; margin-top: 28px; }
+        .app-card { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 170px; }
+        .app-card img { width: 96px; height: 96px; object-fit: cover; border-radius: 22px; background: #fff; border: 1px solid #e3e6ee; box-shadow: 0 8px 18px rgba(0,0,0,0.15); }
+        .app-name { font-weight: 700; color: #333; font-size: 1rem; }
+        .app-links { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+        .app-links a { display: block; text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 9px 10px; border-radius: 8px; transition: background 0.15s; }
+        .app-links .primary { background: #0b6cf0; color: #fff; }
+        .app-links .primary:hover { background: #084ba8; }
+        .app-links .secondary { background: #eef2fb; color: #24324a; }
+        .app-links .secondary:hover { background: #dfe7f7; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>뉴로위즈텍 제품 소개</h1>
-        <p>뉴로위즈텍 제품 사용 설명서입니다.</p>
+        <p>뉴로위즈텍 제품 사용 설명서입니다. 각 제품의 <strong>간편 안내</strong>(핵심 순서)와 <strong>상세 설명서</strong>(전체 기능)를 제공합니다.</p>
         <div class="app-grid">
-            <a href="./docs/products/measurewiz/manual.html" class="app-link">
+            <div class="app-card">
                 <img src="./images/logo/MeasureWiz_LOGO-03_512x512px.png" alt="MeasureWiz 로고">
-                <span>MeasureWiz<br>설명서</span>
-            </a>
-            <a href="./docs/products/signalwiz/quick-guide.html" class="app-link">
+                <span class="app-name">MeasureWiz</span>
+                <div class="app-links">
+                    <a class="primary" href="./docs/products/measurewiz/quick-guide.html">간편 안내</a>
+                    <a class="secondary" href="./docs/products/measurewiz/manual.html">상세 설명서</a>
+                </div>
+            </div>
+            <div class="app-card">
                 <img src="./images/logo/SignalWiz App icon 512x512.png" alt="SignalWiz 로고">
-                <span>SignalWiz<br>설명서</span>
-            </a>
-            <a href="./docs/products/vetwiz-ecg/manual.html" class="app-link">
+                <span class="app-name">SignalWiz</span>
+                <div class="app-links">
+                    <a class="primary" href="./docs/products/signalwiz/quick-guide.html">간편 안내</a>
+                    <a class="secondary" href="./docs/products/signalwiz/manual.html">상세 설명서</a>
+                </div>
+            </div>
+            <div class="app-card">
                 <img src="./images/logo/VetWiz 아이콘-01.jpg" alt="VetWiz ECG 로고">
-                <span>VetWiz ECG<br>설명서</span>
-            </a>
-            <a href="./docs/products/vetwiz-eeg/manual.html" class="app-link">
+                <span class="app-name">VetWiz ECG</span>
+                <div class="app-links">
+                    <a class="primary" href="./docs/products/vetwiz-ecg/quick-guide.html">간편 안내</a>
+                    <a class="secondary" href="./docs/products/vetwiz-ecg/manual.html">상세 설명서</a>
+                </div>
+            </div>
+            <div class="app-card">
                 <img src="./assets/images/vetwiz-eeg/manual/00_app_icon.png" alt="VetWiz EEG 로고">
-                <span>VetWiz EEG<br>설명서</span>
-            </a>
+                <span class="app-name">VetWiz EEG</span>
+                <div class="app-links">
+                    <a class="primary" href="./docs/products/vetwiz-eeg/quick-guide.html">간편 안내</a>
+                    <a class="secondary" href="./docs/products/vetwiz-eeg/manual.html">상세 설명서</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

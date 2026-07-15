@@ -1,0 +1,27 @@
+name: Check docs links
+
+# 문서 내부 링크·이미지·리디렉션을 PR과 main push마다 자동 검사합니다.
+# 깨진 링크가 있으면 tools/check_docs.py가 종료 코드 1을 반환하여 워크플로가 실패합니다.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run docs link checker
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/check_docs.py
