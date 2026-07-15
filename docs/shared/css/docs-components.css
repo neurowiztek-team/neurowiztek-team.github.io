@@ -671,6 +671,26 @@ figure.doc-figure figcaption {
     color: var(--color-text);
 }
 
+/* 푸터 법적 고지 링크 */
+.doc-footer__legal {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--color-border);
+}
+
+.doc-footer__legal a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+}
+
+.doc-footer__legal a:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
 /* ── 맨 위로 버튼 ───────────────────────────────────────── */
 .to-top {
     position: fixed;

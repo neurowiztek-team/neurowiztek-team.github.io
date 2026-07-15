@@ -12,14 +12,19 @@
 docs/
 ├─ products/                     제품별 활성 문서(정식 canonical 위치)
 │  ├─ measurewiz/
-│  │  ├─ manual.html             MeasureWiz 사용설명서
-│  │  └─ stress-guide.html       MeasureWiz 스트레스 패러다임
+│  │  ├─ quick-guide.html        ① 간편 안내
+│  │  ├─ manual.html             ② 상세 사용설명서
+│  │  └─ stress-guide.html       ③ 스트레스 패러다임(활용 가이드)
 │  ├─ signalwiz/
-│  │  ├─ manual.html             SignalWiz 상세 제품 사용설명서
-│  │  └─ quick-guide.html        SignalWiz 간편 안내
-│  └─ vetwiz-ecg/
-│     ├─ manual.html             VetWiz-ECG 제품 사용설명서(빠른 시작 #quick-start 포함)
-│     └─ app-guide.html          VetWiz 앱 사용법
+│  │  ├─ quick-guide.html        ① 간편 안내
+│  │  └─ manual.html             ② 상세 사용설명서
+│  ├─ vetwiz-ecg/
+│  │  ├─ quick-guide.html        ① 간편 안내
+│  │  ├─ manual.html             ② 상세 사용설명서
+│  │  └─ app-guide.html          ③ 앱 사용법(활용 가이드)
+│  └─ vetwiz-eeg/
+│     ├─ quick-guide.html        ① 간편 안내(앱 화면 캡처 준비 중)
+│     └─ manual.html             ② 상세 사용설명서
 │
 ├─ shared/                       공통 문서 디자인 시스템
 │  ├─ css/
@@ -29,14 +34,14 @@ docs/
 │  └─ js/
 │     └─ docs-common.js          모바일 메뉴·목차 접힘·스크롤 스파이·맨 위로
 │
-├─ 정책 문서(현재 위치 유지 — 아래 "정책 문서" 참고)
-│  ├─ personalpolicy.html
-│  ├─ vetwiz_personalpolicy.html
-│  ├─ vetwiz_eeg_personalpolicy.html
-│  └─ vetwiz_account_deletion.html
+├─ 법적 고지(공통 시스템 적용 · 현재 위치 유지 — 아래 "법적 고지 문서" 참고)
+│  ├─ personalpolicy.html            회사 공통 개인정보 처리방침(홈페이지)
+│  ├─ vetwiz_personalpolicy.html     VetWiz(ECG) 앱 개인정보 처리방침
+│  ├─ vetwiz_eeg_personalpolicy.html VetWiz EEG 앱 개인정보처리방침
+│  └─ vetwiz_account_deletion.html   VetWiz 계정·데이터 삭제 안내
 │
-├─ 레거시 CSS(정책·레거시 페이지 전용, 유지)
-│  ├─ style.css / mobile.css     MeasureWiz 레거시 문서·정책 페이지
+├─ 레거시 CSS(레거시 페이지 전용, 유지)
+│  ├─ style.css / mobile.css     레거시 문서
 │  └─ manual.css                 SignalWiz 레거시 문서
 │
 ├─ vetwiz-docs.css / vetwiz-docs.js   호환용 shim(공통 시스템으로 이전)
@@ -44,8 +49,18 @@ docs/
 └─ 기존 URL 호환용 리디렉션 스텁(*.html, 아래 URL 대응표 참고)
 ```
 
-> 참고: `VetWiz EEG` 제품은 현재 **개인정보처리방침만** 존재합니다(사용설명서·앱 사용법·퀵 가이드 없음).
-> 향후 문서가 생기면 `products/vetwiz-eeg/`에 동일 규칙으로 추가합니다.
+### 문서 종류 표준: 3단 체계(Tier)
+
+모든 제품은 아래 3단 체계로 문서를 제공합니다. ①·②는 공통 필수, ③은 제품 특화(선택).
+
+| Tier | 파일명(공통) | 성격 | 필수 |
+|---|---|---|---|
+| ① 간편 안내 | `quick-guide.html` | 1페이지 핵심 순서(전원→연결→측정→저장) | ✅ |
+| ② 상세 사용설명서 | `manual.html` | 사양·설치·전 기능·문제 해결·고객지원 | ✅ |
+| ③ 활용 가이드 | `<주제>-guide.html` | 제품 특화 심화(예: `stress-guide`, `app-guide`) | ⬜ |
+
+- 모든 제품 헤더 내비게이션은 `간편 안내 · 상세 사용설명서 · (활용 가이드)` 순으로 통일합니다.
+- 각 문서 푸터에는 해당 앱의 개인정보 처리방침 등 법적 고지 링크(`.doc-footer__legal`)를 둡니다.
 
 ---
 
@@ -79,9 +94,9 @@ docs/
 - 새 문서 파일명은 **영문 소문자 + kebab-case**: `manual.html`, `quick-guide.html`, `app-guide.html`, `stress-guide.html`
 - 제품 디렉터리: `products/<product-slug>/` (예: `measurewiz`, `signalwiz`, `vetwiz-ecg`, `vetwiz-eeg`)
 - 문서 유형 표준 이름
-  - 사용설명서 → `manual.html`
-  - 퀵 가이드 → `quick-guide.html`
-  - 앱 사용법 → `app-guide.html`
+  - ① 간편 안내 → `quick-guide.html`
+  - ② 상세 사용설명서 → `manual.html`
+  - ③ 활용 가이드 → `<주제>-guide.html` (예: `app-guide.html`, `stress-guide.html`)
 
 ---
 
@@ -150,13 +165,16 @@ docs/
 
 ---
 
-## 정책 문서 관리 원칙
+## 법적 고지 문서 관리 원칙
 
-- `personalpolicy.html`(회사 공통 개인정보처리방침), `vetwiz_personalpolicy.html`,
+- `personalpolicy.html`(회사 공통 개인정보 처리방침), `vetwiz_personalpolicy.html`,
   `vetwiz_eeg_personalpolicy.html`, `vetwiz_account_deletion.html`은 **현재 위치(`/docs/*.html`)를 유지**합니다.
-- 이유: 이 URL들은 앱스토어·Play 콘솔 등에 **등록된 법적 문서 주소**일 수 있어, 리디렉션 도입 자체가 위험합니다. URL 안정성을 최우선으로 둡니다.
-- 정책 문서 내부의 외부 링크(회사 홈페이지 등)도 유지합니다.
-- 향후 `policies/`로 이관하려면 위험도를 검토한 뒤 스텁과 함께 별도 커밋으로 진행합니다.
+- 이유: 이 URL들은 앱스토어·Play 콘솔 등에 **등록된 법적 문서 주소**일 수 있어, 리디렉션·이동 자체가 위험합니다. URL 안정성을 최우선으로 둡니다.
+- 이 문서들은 공통 디자인 시스템(껍데기)만 적용했고 **법적 문구는 원문 그대로 보존**했습니다. 조항 내용을 임의로 수정하지 마세요.
+- 문서 종류(3단 체계)에는 포함하지 않는 **별도 카테고리(법적 고지)**입니다. 각 제품 문서 푸터에서 링크로 연결합니다.
+- 앱별 방침 매핑: VetWiz-ECG → `vetwiz_personalpolicy.html` + `vetwiz_account_deletion.html`,
+  VetWiz EEG → `vetwiz_eeg_personalpolicy.html`, SignalWiz·MeasureWiz → (앱 전용 방침 없음) 회사 공통 `personalpolicy.html`.
+- 향후 `policies/` 또는 `legal/`로 이관하려면 위험도를 검토한 뒤 스텁과 함께 별도 커밋으로 진행합니다.
 
 ---
 
@@ -209,6 +227,8 @@ python tools/check_docs.py
 
 ## 남아 있는 개선 과제
 
-- **MeasureWiz·SignalWiz 공통 UI 재스킨(단계 2):** 두 제품은 아직 전용 CSS(`style.css`+`mobile.css`, `manual.css`)를 사용합니다. 콘텐츠·측정 절차를 보존한 채 공통 컴포넌트로 재구성하는 작업은 시각 회귀 검토가 필요하므로 별도 커밋으로 진행 예정.
+- **VetWiz EEG 앱 화면 캡처:** `products/vetwiz-eeg/`의 상세 사용설명서·간편 안내는 앱 화면 자리를 "촬영 필요" 안내로 비워 두었습니다. 현재 VetWiz EEG 빌드에서 실제 화면을 캡처해 교체해야 합니다(지침: `assets/images/vetwiz-eeg/manual/CAPTURES-NEEDED.md`). VetWiz EEG 기기 본체 사진도 필요.
+- ~~VetWiz EEG 방침 저장 경로 확인~~ **(해결)** `vetwiz_eeg_personalpolicy.html`의 분석 리포트 저장 위치를 회사 확인에 따라 `Download/VetWiz EEG/report`로 수정했습니다. (SignalWiz mobile 앱에는 분석 리포트 기능이 없음)
+- **SignalWiz·MeasureWiz 앱 방침(선택):** 두 앱이 배포·데이터 수집 중이라면 앱 전용 개인정보 처리방침 신설을 검토합니다. 현재는 회사 공통 방침을 링크.
 - **이미지 디렉터리 통합:** `images/` ↔ `assets/images/` 혼재 해소.
-- **정책 문서 이관(선택):** 위험도 검토 후 `policies/`로 이동.
+- **법적 고지 문서 이관(선택):** 위험도 검토 후 `legal/`로 이동.
