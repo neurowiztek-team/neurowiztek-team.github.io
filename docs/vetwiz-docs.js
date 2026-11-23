@@ -5,8 +5,10 @@
    신규 문서는 docs-common.js 를 직접 링크하세요. (docs/README.md 참고)
    ============================================================= */
 (function () {
+    // 이 파일 위치 기준 상대경로로 해석합니다(웹 서버·file:// 더블클릭 모두 동작).
+    var self = document.currentScript && document.currentScript.src;
     var s = document.createElement("script");
-    s.src = "/docs/shared/js/docs-common.js";
+    s.src = self ? new URL("shared/js/docs-common.js", self).href : "/docs/shared/js/docs-common.js";
     s.defer = true;
     document.head.appendChild(s);
 })();

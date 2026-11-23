@@ -1,6 +1,6 @@
 @echo off
-rem Local preview: the site uses root-absolute links (/docs/..., /assets/...),
-rem so pages do not work when double-clicked (file://). Serve the repo root instead.
+rem Local preview server. Pages also open by double-click (relative links);
+rem use this to preview exactly as GitHub Pages serves the site (incl. 404.html).
 cd /d "%~dp0.."
 start "" http://localhost:8000/
 python -m http.server 8000

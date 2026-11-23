@@ -1,8 +1,8 @@
 # Neurowiztek 제품 문서 (docs/)
 
 이 디렉터리는 GitHub Pages(`https://neurowiztek-team.github.io/`)로 배포되는 제품 문서 모음입니다.
-사이트는 저장소 루트에서 서빙되므로 모든 내부 참조는 **루트 절대경로**(`/docs/...`, `/images/...`, `/assets/...`)를 사용합니다.
-덕분에 문서를 하위 디렉터리로 옮겨도 CSS·JS·이미지 참조가 깨지지 않습니다.
+모든 내부 참조는 **상대경로**(`../../shared/css/...`, `../../../images/...`)를 사용합니다.
+덕분에 웹 서버뿐 아니라 탐색기에서 HTML을 더블클릭(`file://`)해도 그대로 열립니다. 문서를 다른 깊이의 디렉터리로 옮기면 상대경로를 다시 맞춰야 합니다(예외: `404.html`은 임의 주소에서 서빙되므로 루트 절대경로 유지, `rel="canonical"`도 루트 절대경로 유지).
 
 ---
 
@@ -115,13 +115,13 @@ docs/
 ```html
 <head>
   ...
-  <link rel="stylesheet" href="/docs/shared/css/docs-base.css">
-  <link rel="stylesheet" href="/docs/shared/css/docs-components.css">
-  <link rel="stylesheet" href="/docs/shared/css/docs-print.css">
+  <link rel="stylesheet" href="../../shared/css/docs-base.css">
+  <link rel="stylesheet" href="../../shared/css/docs-components.css">
+  <link rel="stylesheet" href="../../shared/css/docs-print.css">
 </head>
 <body class="docs-page product-vetwiz-ecg document-manual">
   ...
-  <script src="/docs/shared/js/docs-common.js" defer></script>
+  <script src="../../shared/js/docs-common.js" defer></script>
 </body>
 ```
 
@@ -168,7 +168,7 @@ docs/
 
 - 현재 이미지는 `/images/...`(다수)와 `/assets/images/...`(SignalWiz)로 **혼재**되어 있습니다.
 - 이번 정리에서는 참조 안정성을 위해 **이미지를 이동하지 않았습니다.**
-- 모든 이미지는 루트 절대경로로 참조합니다. 한 문서 안에서는 표기 방식을 일관되게 유지하세요.
+- 모든 이미지는 문서 위치 기준 상대경로로 참조합니다. 한 문서 안에서는 표기 방식을 일관되게 유지하세요.
 - 향후 `assets/images/`로 통합하려면 (1) 파일 이동 → (2) 참조 일괄 수정 → (3) 링크 검증 순으로 진행합니다. 별도 검토 커밋 권장.
 
 ---
